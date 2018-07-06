@@ -1,15 +1,15 @@
 var uzs = document.getElementById('uzs');
 var usd = document.getElementById('usd');
 
-uzs.onkeypress = function () {
-	usd.value = uzs.value * 0.00125;
+uzs.oninput = function () {
+	usd.value = uzs.value / 8005;
 	if (isNaN(usd.value)) {
 		usd.value = "Ensert a number";
 	}
 }
 
-usd.onkeypress = function () {
-	uzs.value = usd.value * 8030;
+usd.oninput = function () {
+	uzs.value = usd.value * 8005;
 	if (isNaN(uzs.value)) {
 		uzs.value = "Ensert a number";
 	}
