@@ -15,6 +15,53 @@ body{
 	background: #F6F6F6;
 }
 
+/*--------------------------------------------*/
+
+.btn_up{
+	position: fixed;
+	bottom: -50px;
+	right: 50px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 1px solid #B6B4B6;
+	background: #E9E9E9;
+	z-index: 100;
+	transition: .4s;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	opacity: 0;
+
+}
+
+.btn_up:after{
+	content: '';
+	width: 10px;
+	height: 10px;
+	border-top: 2px solid #3C3C3C;
+	border-left: 2px solid #3C3C3C;
+	transform: rotate(45deg);
+	position: absolute;
+	top: 4px;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+
+.btn_up.btn_up-active{
+	bottom: 50px;
+	opacity: 1;
+}
+
+.btn_up:hover{
+	outline: none;
+	cursor: pointer;
+	background: #C1C1C1;
+
+}
+
+/*--------------------------------------------*/
+
 .grid-header{
 	width: 80%;
 	margin: 0 auto;
