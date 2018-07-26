@@ -95,6 +95,7 @@ img{
         width: 100%;
         margin: 0;
         border: none;
+        border-bottom: 1px solid #9CDCFE;
         box-shadow: none;
     }
     .main{
