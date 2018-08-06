@@ -158,6 +158,15 @@ header{
 nav{
 	background: #E9E9E9;
 	border-bottom: 1px solid #B6B4B6;
+	transition: .4s box-shadow;
+}
+
+.fixed-menu{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	box-shadow:0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08);
 }
 
 .grid-nav{
