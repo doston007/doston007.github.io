@@ -193,7 +193,7 @@ button{
 	background-position: 50% 50%;
 }
 
-.features h4{
+#features h4{
 	font-size: 24px;
 	font-weight: normal;
 	margin: 30px 0 25px;
@@ -397,9 +397,12 @@ ul.slick-dots li.slick-active button:before{
 	color: #008ed6;
 }
 
-.card:hover .card-price,.card:hover .order-button{
+.card:hover .card-price,
+.card:hover .order-button,
+.card:hover .card-price p{
 	color: #fff;
 	background: #008ed6;
+	border-color: #008ed6;
 }
 
 /*end of PRICING section*/
@@ -448,10 +451,9 @@ ul.slick-dots li.slick-active button:before{
 }
 
 .contact-form textarea{
-	max-width: 100%;
-	min-width: 100%;
-	min-height: calc(100% - 20px);
-	max-height: calc(100% - 20px);
+	width: 100%;
+	height: calc(100% - 20px);
+	resize: none;
 }
 
 .send-message{
