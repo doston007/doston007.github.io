@@ -28,6 +28,7 @@ p{
 #home{
 	background: url(../img/home_bg.png) no-repeat;
 	background-size: cover;
+	padding-top: 116px;
 }
 
 #home .container{
@@ -37,11 +38,18 @@ p{
 }
 
 header{
+	padding: 40px 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+header .container{
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
-	padding: 40px 0;
 }
 
 .logo{
@@ -61,6 +69,39 @@ header a{
 nav{
 	display: flex;
 	flex-flow: row-nowrap;
+}
+
+.nav-btn{
+	flex-flow: column nowrap; 
+	justify-content: space-between;
+	align-items: center;
+	width: 30px;
+	height: 20px;
+	cursor: pointer;
+	display: none
+}
+
+.nav-btn span{
+	width: 100%;
+	height: 3px;
+	background: #333;
+	display: block;
+	transition: .5s;
+	position: relative;
+	top: 20px;
+	left: -50px;
+}
+
+.btn-active span:nth-child(2){
+	opacity: 0;
+}
+
+.btn-active span:first-child{
+	transform: rotate(45deg) translate(25%, 4.5px);
+}
+
+.btn-active span:last-child{
+	transform: rotate(-45deg) translate(25%, -4.5px);
 }
 
 nav a{
@@ -179,17 +220,17 @@ button{
 }
 
 .settings{
-	background: url(../img/settings.png) no-repeat;
+	background: url(../img/Settings.png) no-repeat;
 	background-position: 50% 50%;
 }
 
 .like{
-	background: url(../img/like.png) no-repeat;
+	background: url(../img/Like.png) no-repeat;
 	background-position: 50% 50%;
 }
 
 .phone{
-	background: url(../img/phone.png) no-repeat;
+	background: url(../img/Phone.png) no-repeat;
 	background-position: 50% 50%;
 }
 
@@ -333,6 +374,10 @@ ul.slick-dots li.slick-active button:before{
 .question h1 span{
 	font-weight: normal;
 	opacity: .5;
+}
+
+.question .buttons{
+	display: flex;
 }
 
 .question .download{
@@ -526,4 +571,62 @@ footer{
 
 .social a:last-child:hover{
 	color: #0274B3;
+}
+
+@media (max-width: 992px){
+	#home .view{
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 768px){
+	#home .container{
+		background: none;
+	}
+
+	#features .col-md-3:not(:first-child){
+		margin-top: 50px;
+	}
+
+	.features-part-2 .col-md-5:first-child{
+		display: none;
+	}
+
+	.question .container{
+		flex-direction: column;
+	}
+
+	.question .buttons{
+		margin-top: 30px;
+	}
+
+	#pricing .col-md-3:not(:first-child){
+		margin-top: 50px;
+	}
+
+	nav{
+		flex-flow: column;
+		position: fixed;
+		width: 50%;
+		height: 100vh;
+		top: 0;
+		right: -50%;
+		background: rgba(0,0,0,.4);
+		z-index: 99;
+		transition: .5s;
+	}
+
+	nav.nav-active{
+		right: 0;
+	}
+
+	nav a{
+		margin: 0;
+		padding: 10px;
+		text-align: center;
+	}
+
+	.nav-btn{
+		display: flex;
+	}
 }
