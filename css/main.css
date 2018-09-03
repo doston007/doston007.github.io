@@ -17,6 +17,7 @@ body{
 	max-width: 900px;
 	margin: 0 auto;
 	background: #F6F6F6;
+	border-top: 5px solid #333;
 	color: #333;
 	min-height: 100vh;
 	display: flex;
@@ -105,6 +106,10 @@ footer{
 	font-size: .8em;
 	text-transform: uppercase;
 	font-weight: bold;
+}
+
+footer a{
+	text-decoration: none;
 }
 
 @media screen and (max-width: 460px) {
