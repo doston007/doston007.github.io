@@ -50,10 +50,62 @@ $(function() {
 	$('.bodybuilder').click(function(e){
 		e.preventDefault();
 		bodybuilderActivate();
-	})
+	});
 
 	$('.kids').click(function(e){
 		e.preventDefault();
 		kidsActivate();
-	})
+	});
+
+	// Box
+	$(".boxs-container").stick_in_parent();
+
+
+	var notHave = $('.boxs-container').offset().top;
+	$(window).scroll(function() {
+		var boxPos = $('.boxs-container').offset().top - notHave;
+		$('.box-4').css('opacity', boxPos / 20 / 100);
+		$('.box-3').css('opacity', boxPos / 18 / 100);
+		$('.box-2').css('opacity', boxPos / 5 / 100);
+	});
+
+	// Product-2 slider
+	function slimActivate(){
+		$('.product-2').removeClass('package-active');
+		$('.product-2').addClass('slim-active');
+		$('.package').removeClass('active');
+		$('.slim').addClass('active');
+		$('.package-text').fadeOut('fast',function() {
+			$('.slim-text').fadeIn('fast');
+		});
+	}
+
+	function packageActivate(){
+		$('.product-2').removeClass('slim-active');
+		$('.product-2').addClass('package-active');
+		$('.slim').removeClass('active');
+		$('.package').addClass('active');
+		$('.slim-text').fadeOut('fast',function() {
+			$('.package-text').fadeIn('fast');
+		});
+	}
+
+	$('.product-2 .arrow').click(function(){
+		if($('.product-2').hasClass('package-active')){
+			slimActivate();
+		} else if($('.product-2').hasClass('slim-active')){
+			packageActivate();
+		}
+	});
+
+	$('.package').click(function(e){
+		e.preventDefault();
+		packageActivate();
+	});
+
+	$('.slim').click(function(e){
+		e.preventDefault();
+		slimActivate();
+	});
+
 });

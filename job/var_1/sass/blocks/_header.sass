@@ -1,0 +1,68 @@
+header
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	font-size: 14px
+	padding-top: 35px
+	z-index: 99
+	.container
+		display: flex
+		flex-flow: row nowrap
+		justify-content: space-between
+		>div
+			display: flex
+			flex-flow: row nowrap
+			align-items: center
+
+nav
+	display: flex
+	flex-flow: row nowrap
+	align-items: center
+	a
+		text-decoration: none
+		color: $text
+		margin-left: 40px
+		transition: .2s color
+		&.active, &:hover
+			color: $accent
+
+.langs
+	margin-right: 60px
+	position: relative
+	ul
+		display: none
+		position: absolute
+		top: 22px
+		left: 0
+	a
+		color: $light-text
+		text-decoration: none
+		transition: .2s color
+		&.active, &:hover
+			color: $text
+
+		&.active
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				top: 2px
+				left: -20px
+				width: 16px
+				height: 11px
+				background: url(../img/english_flag.png)
+			&:after
+				content: ''
+				position: absolute
+				top: 4px
+				right: -10px
+				width: 5px
+				height: 5px
+				border-bottom: 1px solid $light-text
+				border-left: 1px solid $light-text
+				transform: rotate(-45deg)
+				transition: .2s transform
+
+.opened a.active:after
+	transform: rotate(135deg)

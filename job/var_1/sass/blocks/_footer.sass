@@ -1,0 +1,60 @@
+footer
+	background: url(../img/footer-bg.png) no-repeat
+	background-size: cover
+	color: #fff
+	text-align: center
+	nav
+		display: inline-flex
+		margin-bottom: 55px
+		a
+			color: rgba(255,255,255,.7)
+			&.active, &:hover
+				color: #fff
+			&:first-child
+				margin-left: 0
+	p
+		font-size: 32px
+		margin-bottom: 40px
+	.button-check
+		background: transparent
+		border: 1px solid #fff
+		font-weight: bold
+		transition: .2s all
+		&:hover
+			background: #fff
+			color: $accent
+			opacity: 1
+
+.footer-logo
+	margin: 100px 0
+	display: inline-block
+
+.contacts
+	margin-bottom: 90px
+	span
+		font-size: 20px
+		margin-right: 45px
+		padding-left: 25px
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			left: 0
+			bottom: 2px
+			display: block
+			width: 18px
+			height: 18px
+			background-size: cover
+			background-position: 0% 0%
+		&:last-child
+			margin-right: none
+
+.tel:after
+	background: url(../img/tel.svg) no-repeat
+
+.email:after
+	background: url(../img/email.svg) no-repeat
+
+.made-by
+	padding-bottom: 40px
+	display: block
