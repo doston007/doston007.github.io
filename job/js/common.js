@@ -1,4 +1,13 @@
 $(function() {
+	// mob menu
+	$('nav').css('top', $('header').outerHeight(true));
+	
+	$('.burger-btn').click(function(event) {
+		event.preventDefault();
+		$('header nav').slideToggle('fast');
+		$(this).toggleClass('menu-opened')
+	});
+	
 	// Lang toggle
 	$('.langs .active').click(function(event){
 		event.preventDefault();
@@ -157,13 +166,5 @@ $(function() {
 		}
 	});
 
-	// mob menu
-	$('nav').css('top', $('header').outerHeight(true));
-	
-	$('.burger-btn').click(function(event) {
-		event.preventDefault();
-		$('header nav').slideToggle('fast');
-		$(this).toggleClass('menu-opened')
-	});
 
 });
