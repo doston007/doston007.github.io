@@ -1,0 +1,191 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++lg-block()
+
+// ≥992px
++md-block()
+	nav a
+		margin-left: 20px
+	.langs
+		margin-right: 30px
+	footer
+		nav
+			display: none
+	.hero .col,
+	.product-text,
+	.product-2 .col,
+	.documents .col
+		margin-left: 0
+	.documents-img
+		width: 70%
+
+// ≥768px
++sm-block()
+	header
+		background-color: $bg-grey
+	nav
+		flex-direction: column
+		align-items: flex-start
+		position: fixed
+		left: 0
+		width: 100%
+		background-color: $bg-grey
+		padding: 50px 0
+		display: none
+		overflow-x: auto
+		a
+			display: block
+			text-align: left
+			margin-left: 115px
+			font-size: 30px
+	.show-sm
+		display: block
+	.hide-sm
+		display: none
+	.logo
+		margin-right: 50px
+	.langs
+		margin-right: 70px
+	.hero-slider
+		width: 70%
+		height: 50%
+		top: 50%
+	.sponsors
+		display: inline-flex
+		flex-direction: column
+		.sponsor
+	.hero-slide
+		&-2
+			background-position: 0 0
+		&-3
+			background-position: -50% 0
+	.what-is-it
+		padding-top: 90px
+		padding-bottom: 400px
+		.arrow-left
+			bottom: 30%
+			left: calc(100% - 110px)
+		.arrow-right
+			bottom: 30%
+			left: calc(100% - 55px)
+		&-slider
+			width: 200%
+			height: 30%
+			right: 0%
+	.kids-active
+		.what-is-it-slider
+			right: -100%
+		.bodybuilder-img
+			width: 0
+	.product
+		.container
+			height: auto
+			padding-top: 100px
+			padding-bottom: 100px
+	.boxs-container
+		height: 50vh
+		width: 100%
+		padding-top: 50vh
+	.product-2
+		padding-bottom: 250px
+		height: auto
+		.container
+			align-items: flex-start
+		&-slider
+			width: 200%
+			left: 0
+			height: 50%
+		.col
+			margin-top: 50px
+	.documents
+		height: auto
+		padding: 50px 0
+		&-img
+			height: 50%
+			width: 50%
+	.distributors
+		.col-left
+			display: none
+	.another-page-resaved
+		.title, .subtitle
+			margin-left: 0
+
+// ≥576px
++xs-block()
+	.show-xs
+		display: block
+	.hide-xs
+		display: none
+	header
+		.container
+			padding-top: 15px
+			padding-bottom: 15px
+			nav
+				padding: 10px 0
+				>a
+					margin: 0
+					text-align: center
+				.button-check
+					padding: 10px 10px
+					font-size: 24px
+					display: inline-block
+					margin-top: 30px
+	.langs-nav
+		margin-top: 20px
+		a
+			display: inline-block
+			font-weight: bold
+			font-size: 24px
+			margin-left: 40px
+			text-align: center
+			color: $light-text
+			&:first-child
+				margin-left: 0
+		.active
+			position: relative
+			color: $text
+			&:before
+				content: ''
+				position: absolute
+				top: 14px
+				left: -25px
+				width: 20px
+				height: 13px
+				background: url(../img/english_flag.png) no-repeat
+				background-size: cover
+	.hero-slide-3
+		background-position: 0 0
+	.hero-slide-2
+		background-position: 10% 0
+	.another-page-resaved
+		.title
+			font-size: 18px
+		.subtitle
+			font-size: 10px
+			margin-bottom: 15px
+		.code
+			font-size: 70px
+			span
+				padding-bottom: 70px
+
+// ------------------------------------
+
+@media screen and (min-width: 1600px)
+	.another-page-resaved
+		.code
+			font-size: 100px
+			span
+				padding-bottom: 100px
+	footer
+		height: 100vh
+		display: flex
+		align-items: center
+		justify-content: center
+
+@media screen and (max-width: 320px)
+	.hero-slider
+		width: 100%

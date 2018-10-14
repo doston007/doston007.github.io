@@ -1,0 +1,112 @@
+.what-is-it
+	padding: 140px 0
+	position: relative
+	overflow-x: hidden
+	.container
+		display: flex
+		flex-flow: row nowrap
+		justify-content: flex-end
+	.col
+		+col()
+		+size(5.5)
+		+size-sm(12)
+		z-index: 3
+	p
+		margin: 25px 0 35px
+	span
+		display: block
+		margin-bottom: 23px
+		font-size: 12px
+	.text
+		margin-bottom: 45px
+	&-slider
+		width: 100%
+		right: 50%
+		height: 100%
+		bottom: 0
+		position: absolute
+		display: flex
+		flex-flow: row nowrap
+		transition: .5s right
+	.arrow-left
+		bottom: 0
+		right: 50%
+	.arrow-right
+		bottom: 0
+		left: 50%
+
+.bodybuilder-img
+	width: 50%
+	height: 100%
+	background: url(../img/bodybuilder.jpg) no-repeat
+	background-size: cover
+	background-position: 50% 50%
+	transition: width .5s
+
+.kids-img
+	width: 50%
+	height: 100%	
+	background: url(../img/kids.jpg) no-repeat
+	background-size: cover
+	background-position: 80% 50%
+
+.tabs
+	margin-top: 45px
+	a
+		text-transform: uppercase
+		font-size: 14px
+		text-decoration: none
+		margin-right: 30px
+		color: $light-text
+		font-weight: bold
+		transition: .2s
+		&:hover
+			color: $accent
+		&.active
+			color: $accent
+			border-bottom: 2px solid $accent
+
+.arrow
+	position: absolute
+	display: flex
+	flex-flow: row nowrap
+	justify-content: center
+	align-items: center
+	border: none
+	width: 55px
+	height: 55px
+	cursor: pointer
+	transition: .2s
+	&:hover
+		opacity: .7
+
+.arrow-left
+	background-color: $bg-grey
+	&:after
+		content: ''
+		display: inline-block
+		width: 15px
+		height: 15px
+		border-top: 1px solid $text
+		border-left: 1px solid $text
+		transform: rotate(-45deg)
+
+.arrow-right
+	background-color: $accent
+	&:after
+		content: ''
+		display: inline-block
+		width: 15px
+		height: 15px
+		border-top: 1px solid #fff
+		border-right: 1px solid #fff
+		transform: rotate(45deg)
+
+.bodybuilder-text
+	display: none
+
+.kids-active
+	.what-is-it-slider
+		right: 0
+	.bodybuilder-img
+		width: 0

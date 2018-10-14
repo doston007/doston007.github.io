@@ -1,0 +1,50 @@
+.button-check
+	text-transform: uppercase
+	color: #fff
+	background: $accent
+	text-decoration: none
+	padding: 15px 14px
+	transition: .2s opacity
+	text-align: center
+	&:hover
+		opacity: .7
+
+.button-explore
+	text-transform: uppercase
+	text-decoration: none
+	border: 1px solid $accent
+	color: $accent
+	font-weight: bold
+	padding: 15px 22px
+	transition: .2s
+	display: inline-block
+	&:hover
+		background-color: $accent
+		color: #fff
+
+.burger-btn
+	width: 36px
+	height: 26px
+	span
+		width: 100%
+		display: block
+		border-bottom: 4px solid #000
+		padding-top: 6px
+		transition: .2s
+	&:after, &:before
+		content: ''
+		display: block
+		padding-top: 6px
+		width: 100%
+		border-bottom: 4px solid #000
+		transition: .2s
+	&:before
+		padding-top: 0
+
+.menu-opened
+	span
+		opacity: 0
+	&:before
+		transform: rotate(45deg) translate(6px, 5px)
+	&:after
+		transform: rotate(-45deg) translate(7px, -10px)
