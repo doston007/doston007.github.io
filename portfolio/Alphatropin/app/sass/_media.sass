@@ -25,7 +25,7 @@
 
 // ≥768px
 +sm-block()
-	header
+	.header-bg, header
 		background-color: $bg-grey
 	nav
 		flex-direction: column
@@ -53,11 +53,14 @@
 	.hero-slider
 		width: 70%
 		height: 50%
-		top: 50%
+		bottom: 0
 	.sponsors
 		display: inline-flex
-		flex-direction: column
+		flex-direction: row
 		.sponsor
+			margin-bottom: 20px
+			p
+				margin-top: 10px
 	.hero-slide
 		&-2
 			background-position: 0 0
@@ -122,8 +125,8 @@
 		display: none
 	header
 		.container
-			padding-top: 15px
-			padding-bottom: 15px
+			padding-top: 10px
+			padding-bottom: 10px
 			nav
 				padding: 10px 0
 				>a
@@ -157,6 +160,13 @@
 				height: 13px
 				background: url(../img/english_flag.png) no-repeat
 				background-size: cover
+	.hero
+		padding-top: 150px
+		padding-bottom: 350px
+	.hero-slider
+		width: 100%
+		bottom: 0
+		height: 30%
 	.hero-slide-3
 		background-position: 0 0
 	.hero-slide-2
@@ -171,6 +181,17 @@
 			font-size: 70px
 			span
 				padding-bottom: 70px
+	.logo
+		img
+			height: 36px
+	.burger-btn
+		&:after, & span
+			padding-top: 5px
+	.menu-opened
+		&:before
+			transform: rotate(45deg) translate(4px, 5px)
+		&:after
+			transform: rotate(-45deg) translate(6px, -10px)
 
 // ------------------------------------
 
@@ -181,11 +202,7 @@
 			span
 				padding-bottom: 100px
 	footer
-		height: 100vh
+		height: 65vh
 		display: flex
-		align-items: center
+		align-items: flex-start
 		justify-content: center
-
-@media screen and (max-width: 320px)
-	.hero-slider
-		width: 100%

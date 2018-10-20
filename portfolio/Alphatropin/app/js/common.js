@@ -1,4 +1,13 @@
 $(function() {
+	// header-bg
+	$(window).scroll(function() {
+		if($(window).scrollTop() >= 50){
+			$('header').addClass('header-bg');
+		} else {
+			$('header').removeClass('header-bg')
+		}
+	});
+
 	// mob menu
 	$('nav').css('top', $('header').outerHeight(true));
 	
@@ -146,12 +155,12 @@ $(function() {
 		winPos = $(window).scrollTop();
 		for (var i = 0; i < sectionsLink.length; i++) {
 			if (winPos >= sectionsPos[i] - 200) {
-				$('nav').find('.active').removeClass('active');
+				$('nav>a.active').removeClass('active');
 				$('nav a[href="#' + sectionsLink[i] + '"]').addClass('active');
 			}
 		}
-		if (winPos >= contactPos - 200) {
-			$('nav').find('.active').removeClass('active');
+		if (winPos >= contactPos - 500) {
+			$('nav>a.active').removeClass('active');
 			$('nav a[href="#contact"]').addClass('active');
 		}
 	});
