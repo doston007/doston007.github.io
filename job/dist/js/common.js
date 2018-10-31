@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	var header = document.getElementsByTagName('header')[0];
 
 	window.onscroll = function() {
-		if(window.scrollY >= 10) {
+		if(window.scrollY >= 50) {
 			header.classList.add('fixed-header');
 		} else {
 			header.classList.remove('fixed-header');
