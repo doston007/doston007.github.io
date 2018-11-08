@@ -1,0 +1,35 @@
+.nav
+	border-top: 1px solid rgba(#fff, .45);
+	display: flex
+	justify-content: space-around
+	&__link
+		color: rgba(#fff, .6)
+		text-decoration: none
+		padding-top: 8px
+		padding-bottom: 8px
+		transition: .2s
+		position: relative
+		padding-right: 20px
+		&:after,
+		&:before
+			opacity: 0
+			transition: .2s
+			content: ''
+			position: absolute
+			width: 55%
+			border-bottom: 3px solid $color-gold
+		&:before
+			bottom: 0
+			left: 0
+		&:after
+			bottom: -5px
+			right: 0
+		&--active,
+		&:hover
+			color: $color-gold
+			opacity: 1
+		&--active:after,
+		&--active:before,
+		&:hover:after,
+		&:hover:before
+			opacity: 1

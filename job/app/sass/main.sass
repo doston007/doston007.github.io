@@ -1,0 +1,37 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "grid"
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $color-gold
+	color: #fff
+
+.img-responsive
+	display: block
+	width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+
+// BLOCKS
+@import 'blocks/page'
+@import 'blocks/header'
+@import 'blocks/logo'
+@import 'blocks/nav'
+@import 'blocks/lang'
+@import 'blocks/sign-in'
+@import 'blocks/main'
+
+
+@import "media" // Always at the end
