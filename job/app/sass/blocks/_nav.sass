@@ -1,7 +1,11 @@
 .nav
 	border-top: 1px solid rgba(#fff, .45);
-	display: flex
-	justify-content: space-around
+	&-wrapper
+		list-style: none
+		display: flex
+		justify-content: space-around
+	&__item
+		display: flex
 	&__link
 		color: rgba(#fff, .6)
 		text-decoration: none
@@ -24,12 +28,12 @@
 		&:after
 			bottom: -5px
 			right: 0
-		&--active,
-		&:hover
-			color: $color-gold
-			opacity: 1
-		&--active:after,
-		&--active:before,
-		&:hover:after,
-		&:hover:before
-			opacity: 1
+	&__item.active a,
+	&__link:hover
+		color: $color-gold
+		opacity: 1
+	&__item.active a:after,
+	&__item.active a:before,
+	&__link:hover:after,
+	&__link:hover:before
+		opacity: 1

@@ -1,0 +1,37 @@
+$break_lg: 1200px
+$break_md: 992px
+$break_sm: 720px
+$break_xs: 576px
+
+
+=lg($name, $value)
+    @media screen and (max-width: $break_lg)
+        #{$name}: $value
+
+=lg-block()
+    @media screen and (max-width: $break_lg)
+        @content
+
+=md($name, $value)
+    @media screen and (max-width: $break_md)
+        #{$name}: $value
+
+=md-block()
+    @media screen and (max-width: $break_md)
+        @content
+
+=sm($name, $value)
+    @media screen and (max-width: $break_sm)
+        #{$name}: $value
+
+=sm-block()
+    @media screen and (max-width: $break_sm)
+        @content
+
+=xs($name, $value)
+    @media screen and (max-width: $break_xs)
+        #{$name}: $value
+
+=xs-block()
+    @media screen and (max-width: $break_xs)
+        @content

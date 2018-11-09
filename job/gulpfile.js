@@ -37,6 +37,7 @@ gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/fullpage/fullpage.min.js',
+		'app/libs/countdown/jquery.countdown.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
