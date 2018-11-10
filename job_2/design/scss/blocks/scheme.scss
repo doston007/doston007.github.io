@@ -1,0 +1,78 @@
+.scheme{
+	padding: 30px 0 75px;
+	text-align: center;
+	.content{
+		background: #E31D36;
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			display: block;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 110px;
+			background-image: url(../../img/bg-bottom.png);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			display: block;
+			left: -20px;
+			bottom: 70px;
+			width: 293px;
+			height: 343px;
+			background-image: url(../../img/operator.png);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+		}
+	}
+	form{
+		width: 350px;
+		border: none;
+		margin: 0 auto;
+		position: relative;
+		z-index: 1;
+	}
+	h2{
+		font-size: 32px;
+	}
+	.subtitle{
+		color: #fff;
+		font-size: 18px;
+		padding-top: 15px;
+	}
+	&-row{
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+		margin-top: 55px;
+		margin-bottom: 30px;
+		position: relative;
+		z-index: 2;
+	}
+	.step{
+		width: 140px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-left: 25px;
+		&:last-child{
+			width: 152px;
+		}
+		p{
+			font-size: 14px;
+			color: #fff;
+			line-height: 1.4;
+		}
+	}
+	.img-wrapper{
+		background: #fff;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

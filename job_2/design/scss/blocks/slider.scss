@@ -1,0 +1,47 @@
+.slider{
+	position: relative;
+	width: 1020px;
+	margin: 0 auto;
+	.frame {
+		position: relative;
+		width: 1020px;
+		margin: 0 auto;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	.slides {
+		display: inline-flex;
+	}
+
+	.js_slide {
+		font-size: 18px;
+		width: 1020px;
+		display: inline-flex;
+		align-items: center;
+		flex-flow: row nowrap;
+	}
+
+	.prev, .next {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		display: block;
+		cursor: pointer;
+		z-index: 99;
+		width: 30px;
+		height: 95px;
+		svg{
+			fill: $blood-red;
+		}
+	}
+
+	.next {
+		right: -60px;
+	}
+
+	.prev {
+		left: -65px;
+	}
+
+}

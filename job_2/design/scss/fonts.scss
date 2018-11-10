@@ -1,0 +1,15 @@
+$url: '../../fonts/';
+
+@font-face {
+	font-family: 'Freeset';
+	src: url($url + 'freeset-cyrillic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Freeset';
+	src:  url($url + 'freeset-bold-cyrillic.ttf') format('truetype');
+	font-weight: 700;
+	font-style: bold;
+}

@@ -1,0 +1,58 @@
+.gift{
+	padding: 25px 0;
+	h2{
+		font-size: 32px;
+		text-align: center;
+		line-height: 1;
+	}
+	p{
+		font-size: 14px;
+		padding-left: 5px;
+		margin-left: 15px;
+		position: relative;
+		&:before{
+			content: '';
+			top: 10px;
+			left: 0;
+			display: block;
+			position: absolute;
+			width: 2px;
+			height: 2px;
+			background: $blood-red;
+			border-radius: 50%;
+		}
+	}
+	.subtitle{
+		font-size: 22px;
+		text-align: center;
+		&:before{
+			display: none;
+		}
+	}
+	&-row{
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: stretch;
+		margin-top: 65px;
+	}
+	.step{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-end;
+		position: relative;
+		&:nth-child(2):after,
+		&:nth-child(3):after{
+			content: '';
+			display: block;
+			position: absolute;
+			width: 75px;
+			height: 35px;
+			background-image: url(../../img/gift-arrow.png);
+			background-repeat: no-repeat;
+			left: 60px;
+			top: 50%;
+			transform: translate(0, -50%);
+		}
+	}
+}

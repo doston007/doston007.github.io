@@ -1,0 +1,155 @@
+.testimonials{
+	text-align: center;
+	background: #E3ECED;
+	position: relative;
+	padding-bottom: 100px;
+	&:after{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100px;
+		display: block;
+		bottom: 0;
+		left: 0;
+		background: url(../../img/bg-bottom.png) no-repeat 100% 100%;
+		background-size: 100% 100%;
+	}
+	h2{
+		color: $blood-red;
+		padding: 55px 0;
+		font-size: 32px;
+	}
+	&-form{
+		position: absolute;
+		z-index: 1;
+		left: 50%;
+		transform: translate(-50%, 40px);
+	}
+}
+
+.left-col{
+	width: 50%;
+	margin-right: 10px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.right-col{
+	width: 50%;
+	height: 100%;
+	background: #fff;
+	text-align: left;
+	line-height: 1;
+	padding: 5px;
+	box-sizing: border-box;
+	strong{
+		display: block;
+	}
+	p{
+		margin-bottom: 10px;
+		white-space: normal;
+	}
+	h3{
+		line-height: 1.65;
+	}
+}
+
+.gallery{
+	display: flex;
+	width: 100%;
+	flex-flow: row nowrap;
+	margin-top: 5px;
+	height: 65px;
+	overflow: hidden;
+	.photo{
+		width: 100%;
+		margin-right: 5px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+}
+
+.videos-slider{
+	.left-col{
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+
+.main-img, .main-video{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	&:after{
+		content: '';
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		width: 44px;
+		height: 43px;
+		background: url(../../img/in-full.png) no-repeat;
+	}
+}
+
+.main-img img{
+	width: 100%;
+	height: 100%;
+}
+
+.main-video{
+	&:before{
+		content: '';
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 130px;
+		height: 80px;
+		background-color: rgba(0,0,0,.7);
+		border-radius: 15px;
+		transition: all .2s;
+	}
+	&:after{
+		content: '';
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 0;
+		height: 0;
+		border-left: 28px solid white;
+		border-top: 18px solid transparent;
+		border-bottom: 18px solid transparent;
+
+	}
+	&:hover:before{
+		background-color: red;
+	}
+}
+
+.thanks{
+	font-size: 30px;
+	color: $blood-red;
+	margin: 40px auto;
+	position: relative;
+	display: inline-block;
+	padding: 0 170px;
+	white-space: nowrap;
+	&:after,
+	&:before{
+		content: '';
+		position: absolute;
+		width: 90px;
+		border-bottom: 5px solid $blood-red;
+		bottom: 50%;
+	}
+	&:before{
+		left: 0;
+	}
+	&:after{
+		right: 0;
+	}
+}

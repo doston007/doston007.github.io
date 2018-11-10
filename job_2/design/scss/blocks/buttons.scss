@@ -1,0 +1,94 @@
+.button{
+	border: none;
+	display: inline-block;
+	padding: 10px;
+	text-transform: uppercase;
+	color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+	text-align: center;
+	background-color: $blood-red;
+	transition: .2s;
+	font-size: 18px;
+	position: relative;
+	overflow: hidden;
+	&:active{
+		box-shadow: inset 0 3px 5px 0 rgba(0,0,0,.4);
+	}
+}
+
+.button-submit{
+	&:after{
+		content: '';
+		position: absolute;
+		display: block;
+		width: 200%;
+		background-color: #EC5A6D;
+		height: 80px;
+		bottom: 50%;
+		left: 50%;
+		transform: translate(-50%, 0);
+		border-radius: 50%;
+		z-index: 0;
+	}
+	span{
+		position: relative;
+		z-index: 1;
+		white-space: nowrap;
+	}
+}
+
+.button-order{
+	background: $light-grey;
+	border: 1px solid #5c5959;
+	color: #5c5959;
+	font-size: 16px;
+	text-align: center;
+	padding: 5px 25px;
+	line-height: 1;
+	text-transform: none;
+	box-shadow: none;
+}
+
+.button-buy{
+	border: 2px solid $light-grey;
+	background-image: linear-gradient(#fff, $light-grey);
+	color: $text;
+	padding: 5px;
+	border-radius: 8px;
+	background-color: transparent;
+}
+
+.nav-btn{
+	background: $light-grey;
+	border: 1px solid #5c5959;
+	display: block;
+	padding: 5px;
+	border-radius: 5px;
+	span{
+		transition: all .5s;
+		width: 35px;
+		display: block;
+		height: 5px;
+		background-color: #5c5959;
+		margin-bottom: 5px;
+		border-radius: 8px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.nav-btn-active{
+	span{
+		&:nth-child(1){
+			transform: rotate(45deg) translate(8px,7px);
+		}
+		&:nth-child(2){
+			transform: scaleX(0);
+		}
+		&:nth-child(3){
+		    transform: rotate(-45deg) translate(6px,-7px);
+		}
+	}
+}
