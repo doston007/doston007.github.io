@@ -9,9 +9,179 @@
 
 // ≥992px
 +md-block()
+	.sidebar
+		display: flex
+	.container
+		margin-top: 0
+	.section
+		padding: 30px 0
+	.header
+		display: none
+	.header-mob
+		display: block
+	.left-col,
+	.right-col
+		width: 100%
+		margin-top: 80px
+	.winner__title
+		margin-top: 0
+		margin-bottom: 0
+	.mouse-down
+		display: none
+	.how-it-was
+		padding: 0
+		&__col
+			width: 50%
+	.partners
+		&__col
+			width: 50%
+			align-items: flex-end
+		&__health-harm
+			margin-bottom: 100px
+			margin-top: 50px
+
+	#fp-nav
+		ul
+			display: none
+	.main
+		padding-bottom: 0 
+		.left-col,
+		.right-col
+			width: 50%
+			padding: 0 15px
+			margin-top: 0
+		&__brend-img
+			width: 100%
+			height: auto
+		&__box
+			width: 100%
+			padding: 30px
+	.regulations,
+	.participants
+		padding-top: 0 
+	.partners__col
+		margin-bottom: 35px
+		padding: 0 20px
+		align-items: center
+	.winner
+		padding-bottom: 80px
 
 // ≥768px
 +sm-block()
-
+	.main
+		padding-top: 70px
+	.winner
+		&__button-icon
+			display: inline-flex
+		&__iframe
+			display: none
+		.right-col
+			margin-top: 0
+	.participants
+		padding: 0
+		&__profile
+			display: none
+		&__left-col
+			display: none
+	.regulations
+		.right-col
+			margin-top: 180px
+	.partners__health-harm
+		margin-bottom: 250px
+		width: 90%
+		margin-left: auto
+		margin-right: auto
+		img
+			width: 100%
+			height: auto
+	.how-it-was
+		&__title
+			margin-bottom: 20px
+		&__col
+			padding: 5px
+	.footer
+		&__container
+			flex-flow: column nowrap
+			align-items: center
+			justify-content: center
+		&__info
+			align-items: center
+			order: 1
+		&__author-logo
+			margin: 20px 0
+			order: 3
+		&__social
+			order: 2
+			border-bottom: 1px solid #fff
+			padding: 15px 0
+	.participants__right-col
+		margin-top: 40px
+	.sidebar
+		width: 50%
 // ≥576px
 +xs-block()
+	.partners__health-harm
+		margin-top: 5px
+		margin-bottom: 220px
+	.participants__col
+		width: 50%
+	.how-it-was__col
+		width: 100%
+	.video
+		width: 90%
+		margin: 0 auto
+		align-items: center
+		img
+			width: 100%
+			height: auto
+	#fp-nav
+		display: none
+	.header-mob__logo
+		width: 120px
+	.partners 
+		img
+			width: 100%
+			height: auto
+		&__col
+			padding: 0 10px
+	.person
+		&__ava
+			width: 75%
+			margin: 0 auto
+			border-width: 10px
+		&__text
+			top: -15px
+			right: -9px
+			font-size: 16px
+			small
+				font-size: 14px
+	.lang
+		&__link
+			padding: 0 5px
+			font-size: 12px
+	.profile__img-wrapper
+		width: 200px
+		height: 200px
+	.regulations__box
+		padding: 35px
+		overflow: hidden
+	.section
+		padding: 50px 0
+	.sidebar
+		top: 77px
+		width: 70%
+	.main
+		&__box
+			width: 100%
+			padding: 20px
+			border-radius: 15px
+		.time-left
+			font-size: 12px
+			small
+				font-size: 8px
+		.clock
+			font-size: 12px
+		&__button
+			font-size: 8px
+			border-radius: 5px
+			margin-top: 10px

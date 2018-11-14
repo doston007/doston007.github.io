@@ -1,16 +1,16 @@
 .sign-in
 	text-decoration: none
 	&__text
-		font-size: 14px
+		font-size: 16px
+		text-transform: uppercase
 		font-weight: 700
 		color: #fff
 		text-decoration: none
 		margin-left: 3px
-		padding-right: 20px
 		position: relative
 		&:after,
 		&:before
-			transition: .2s
+			transition: .4s
 			content: ''
 			position: absolute
 			width: 55%
@@ -21,3 +21,12 @@
 		&:after
 			bottom: -3px
 			right: 0
+	&:active
+		.sign-in__text
+			&:after
+				bottom: 0
+				right: 24px
+			&:before
+				bottom: -3px
+				left: 24px				
+				

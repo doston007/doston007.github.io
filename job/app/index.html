@@ -1,229 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
 
-<head>
+		<meta charset="UTF-8">
 
-	<meta charset="UTF-8">
+		<title>Hennessey</title>
+		<meta name="description" content="">
 
-	<title>Hennessey</title>
-	<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<!-- Template Basic Images Start -->
+		<meta property="og:image" content="path/to/image.jpg">
+		<link rel="icon" href="img/favicon/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+		<!-- Template Basic Images End -->
+		
+		<!-- Custom Browsers Color Start -->
+		<meta name="theme-color" content="#000">
+		<!-- Custom Browsers Color End -->
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-	<!-- Template Basic Images End -->
-	
-	<!-- Custom Browsers Color Start -->
-	<meta name="theme-color" content="#000">
-	<!-- Custom Browsers Color End -->
+		<link rel="stylesheet" href="css/main.min.css">
 
-	<link rel="stylesheet" href="css/main.min.css">
+	</head>
 
-</head>
+	<body class="page">
 
-<body class="page">
-
-	<header class="header">
-		<div class="header__container">
-			<a href="index.html" class="header__logo logo">
-				<img src="img/logo.png" alt="Logo">
-			</a>
-			<div class="header__right-col">
-				<div class="header__top-side">
-					<a href="#" class="header__sign-in sign-in">
-						<svg class="sign-in__icon" width="18" height="23" viewBox="0 0 18 23">
-							<defs>
-								<path id="4slqa" d="M1257.37 52.12c-.64-1.26-6.14-1.965-6.248-2.937-.188-1.687.625-1.468 1.187-2.937.29-.758.687-1.124.687-1.124s.179.02.49-.117c.51-.227.822-3.257-.302-3.07-.14.023-.217-.237-.298-.645.104-.593.127-1.2-.012-1.908-.166-.837-.639-1.653-1.372-2.01a1.225 1.225 0 0 0-.959-.208l-.004.001a.98.98 0 0 0-.46-.188c-.308-.045-.55-.232-.844-.313-.41-.112-.889-.082-1.304-.035-.718.082-1.476.364-2.018.856-.128.116-.25.253-.362.4l-.015.02-.038.05c-.168.208-.31.456-.412.758-.114.338-.182.741-.19 1.15-.015.121-.025.24-.021.354.014.426-.017 1.01.109 1.468-.055.17-.117.265-.203.25-1.124-.187-.812 2.843-.302 3.07.311.138.49.117.49.117s.396.366.687 1.125c.562 1.468 1.375 1.25 1.187 2.936-.108.972-5.609 1.678-6.248 2.937-1 1.968-.437 6.623-.437 6.623h17.65s.562-4.655-.438-6.624z"/>
-							</defs><g><g transform="translate(-1240 -36)"><use fill="#fff" xlink:href="#4slqa"/></g></g>
-						</svg>
-						<span class="sign-in__text">Sign in</span>
-					</a>
-					<div class="header__lang lang">
-						<a href="#" class="lang__link active">En</a>
-						<a href="#" class="lang__link">Az</a>
-						<a href="#" class="lang__link">Ru</a>
-					</div>
-				</div>
-				<nav class="header__nav nav">
-					<ul id="top_nav" class="nav-wrapper">
-						<li class="nav__item" data-menuanchor="main">
-							<a href="#main" class="nav__link">Main</a>
-						</li>
-						<li class="nav__item" data-menuanchor="regulations">
-							<a href="#regulations" class="nav__link">Regulations</a>
-						</li>
-						<li class="nav__item" data-menuanchor="participants">
-							<a href="#participants" class="nav__link">Participants</a>
-						</li>
-						<li class="nav__item" data-menuanchor="winner">
-							<a href="#winner" class="nav__link">Winner</a>
-						</li>
-						<li class="nav__item" data-menuanchor="how-it-was">
-							<a href="#how-it-was" class="nav__link">How it was</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</header>
-
-	<div id="fullpage">
-		<div class="main section" data-anchor="main">
-			<div class="container">
-				<div class="left-col"><img class="main__brend-img" src="img/brend.png" alt="Brend"></div>
-				<div class="right-col">
-					<div class="box-wrapper">
-						<div class="box__shadow"></div>
-						<div class="main__box box">
-							<span class="time-left">Time Left <br><small>to Start</small></span>
-							<div id="clock" class="clock"></div>
-							<a href="#" class="main__button button button--size_lg">Registration</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<a href="#regulations" class="mouse-down" data-menuanchor="regulations">
-				<svg width="70" height="70" viewBox="0 0 70 70">
-					<defs><path id="stxia" d="M925 857c0-19.33 15.67-35 35-35s35 15.67 35 35-15.67 35-35 35-35-15.67-35-35z"/><path id="stxic" d="M964.327 861.617l-4.05 2.821a.769.769 0 0 1-.455.136.769.769 0 0 1-.455-.136l-4.05-2.821a.75.75 0 0 1-.182-1.092.75.75 0 0 1 1.092-.182l3.595 2.502 3.595-2.502c.364-.228.865-.182 1.092.182a.75.75 0 0 1-.182 1.092zm-.045 5.96l-4.05 2.822a.769.769 0 0 1-.455.137.769.769 0 0 1-.455-.137l-4.05-2.821a.75.75 0 0 1-.182-1.092.75.75 0 0 1 1.092-.182l3.595 2.502 3.594-2.502c.364-.228.865-.182 1.093.182a.75.75 0 0 1-.182 1.092zm-9.192-13.15a.75.75 0 0 1 1.092-.182l3.595 2.503 3.594-2.503c.364-.227.865-.182 1.093.182.227.364.182.865-.182 1.092l-4.05 2.821a.769.769 0 0 1-.455.137.769.769 0 0 1-.455-.137l-4.05-2.82c-.364-.274-.455-.729-.182-1.093zm3.094-8.373c0-.864.728-1.592 1.593-1.592.864 0 1.592.728 1.592 1.592v3.413c0 .865-.728 1.593-1.592 1.593a1.612 1.612 0 0 1-1.593-1.593zm5.46-8.054h-7.735c-4.414 0-8.009 3.595-8.009 8.009v18.839c0 6.552 5.324 11.876 11.877 11.876 6.552 0 11.876-5.324 11.876-11.876v-18.84c0-4.413-3.595-8.008-8.009-8.008z"/><clipPath id="stxib"><use fill="#fff" xlink:href="#stxia"/></clipPath></defs><g><g transform="translate(-925 -822)"><use fill="#fff" fill-opacity="0" stroke="#ab7f42" stroke-miterlimit="50" stroke-width="2" clip-path="url(&quot;#stxib&quot;)" xlink:href="#stxia"/></g><g transform="translate(-925 -822)"><use fill="#ab7f42" xlink:href="#stxic"/></g></g>
-				</svg>
-			</a>
-		</div>
-
-		<div class="regulations section" data-anchor="regulations">
-			<div class="container">
-				<div class="right-col">
-					<div class="regulations__box-wrapper box-wrapper">
-						<div class="box__shadow"></div>
-						<div class="regulations__box box">
-							<h3 class="box__title title title--size_sm">
-								<svg class="title__icon" width="43" height="42" viewBox="0 0 43 42">
-									<defs>
-										<path id="msu3a" d="M574.776 1339.03c-.633.588-1.395.883-2.287.883-.891 0-1.657-.295-2.295-.884-.639-.589-.958-1.302-.958-2.138 0-.837.32-1.553.958-2.147.638-.594 1.404-.892 2.295-.892.892 0 1.654.298 2.287.892.633.594.95 1.31.95 2.147 0 .836-.317 1.55-.95 2.138zm.24 19.509c-1.09.43-1.96.757-2.61.983-.649.225-1.403.338-2.261.338-1.321 0-2.348-.322-3.08-.966-.732-.644-1.098-1.46-1.098-2.452 0-.385.027-.778.083-1.18.055-.402.143-.856.264-1.363l1.362-4.821c.122-.463.225-.9.307-1.313.083-.413.124-.79.124-1.13 0-.618-.127-1.046-.38-1.289-.254-.242-.74-.363-1.457-.363-.353 0-.715.055-1.085.165-.37.11-.687.214-.952.314l.364-1.487a34.66 34.66 0 0 1 2.562-.933c.815-.258 1.587-.387 2.314-.387 1.312 0 2.323.317 3.034.949.71.633 1.066 1.456 1.066 2.469 0 .209-.025.578-.075 1.106a7.5 7.5 0 0 1-.272 1.453l-1.358 4.806c-.11.385-.21.825-.298 1.32-.088.496-.133.87-.133 1.124 0 .638.143 1.073.429 1.304.286.231.78.347 1.484.347.33 0 .703-.058 1.121-.173.418-.116.72-.217.907-.306zm-4.494-32.52c-11.508 0-20.837 9.329-20.837 20.837s9.329 20.838 20.837 20.838c11.509 0 20.838-9.33 20.838-20.838 0-11.508-9.33-20.838-20.838-20.838z"/>
-									</defs><g><g transform="translate(-549 -1326)"><use fill="#ab7f42" xlink:href="#msu3a"/></g></g>
-								</svg>
-								<span class="title__text">About</span>
-							</h3>
-							<p class="box__text quote">This competition is about replicability and creating a modern classic,” explains judge Pamela Wiznitzer, who also serves as the National President of the United States Bartenders’ Guild. “When you look at the classics we have today such as the Old Cuban or the Penicillin, you can walk into almost you can walk into within 24 hours’ notice today such as the National President you can walk into and make it!</p>
-							<a href="#" class="box__button button">View all</a>
-						</div>
-					</div>
-				</div>
-				<div class="left-col">
-					<div class="regulations__box-wrapper box-wrapper">
-						<div class="box__shadow"></div>
-						<div class="regulations__box box">
-							<h3 class="box__title title title--size_sm">
-								<svg class="title__icon" width="33" height="45" viewBox="0 0 33 45">
-									<defs>
-										<path id="aetya" d="M1160.456 1354.61c-.552.025-1.032.552-1.006 1.104.026.553.552 1.032 1.105 1.006h14.775c.557.008 1.071-.498 1.071-1.055 0-.558-.514-1.063-1.071-1.056h-14.775a1.067 1.067 0 0 0-.099 0zm-3.858-2.82l-4.007 4.435-1.847-1.846c-.39-.402-1.107-.398-1.5 0-.394.397-.39 1.114.016 1.5l2.638 2.638c.407.404 1.154.38 1.534-.05l4.749-5.276c.285-.311.352-.808.164-1.187a1.074 1.074 0 0 0-1.038-.577 1.068 1.068 0 0 0-.71.363zm3.858-6.15c-.552.025-1.032.551-1.006 1.104.026.553.552 1.032 1.105 1.006h14.775c.557.008 1.071-.498 1.071-1.056 0-.557-.514-1.063-1.071-1.055h-14.775a1.067 1.067 0 0 0-.099 0zm-3.15-3.183a1.068 1.068 0 0 0-.708.362l-4.007 4.436-1.847-1.847c-.39-.4-1.107-.398-1.5 0-.394.398-.39 1.115.016 1.5l2.638 2.64c.407.402 1.154.378 1.534-.05l4.749-5.277c.285-.312.352-.808.164-1.187a1.074 1.074 0 0 0-1.038-.577zm2.144-4.683c.026.552.552 1.032 1.105 1.006h14.775c.557.007 1.071-.498 1.071-1.056 0-.557-.514-1.063-1.071-1.055h-14.775a1.067 1.067 0 0 0-.099 0c-.552.026-1.032.552-1.006 1.105zm-2.143-4.288a1.068 1.068 0 0 0-.71.363l-4.006 4.436-1.847-1.847c-.39-.401-1.107-.398-1.5 0-.394.398-.39 1.115.016 1.5l2.638 2.639c.407.403 1.154.379 1.534-.05l4.749-5.276c.285-.312.352-.808.164-1.187a1.074 1.074 0 0 0-1.038-.578zm-4.667-9.481v3.694c0 .552.503 1.055 1.055 1.055h17.94c.554 0 1.056-.503 1.056-1.055v-3.694h6.332v39.575h-32.715v-39.575zm14.51-4.749v2.638h3.43v4.75h-15.83v-4.75h3.43v-2.638z"/></defs><g><g transform="translate(-1146 -1319)"><use fill="#ab7f42" xlink:href="#aetya"/></g></g></svg>
-								<span class="title__text">Regulations</span>
-							</h3>
-							<p class="box__text quote">To participate in the competition, you just need to fill in the application form by presenting a cocktail of your own recipe based on the popular brand Hennessyto the organizers for consideration by the organizer of this event,you just need to fill in the application form by presenting a cocktail of your own recipe based on the popular brand.</p>
-							<a href="#" class="box__button button">View Rules</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="participants section" data-anchor="participants">
-			<div class="container">
-				<div class="participants__left-col left-col">
-					
-				</div>
-				<div class="participants__right-col right-col">
-					
-				</div>
-			</div>
-		</div>
-
-		<div class="winner section" data-anchor="winner">
-			<div class="container">
-				<div class="left-col">
-					<a href="" class="video">
-						<span class="video__title">Barthender iNTRODUCTION</span>
-						<img src="img/video-img.png" alt="video" class="video__img">
-					</a>
-				</div>
-				<div class="right-col">
-					<div class="person">
-						<div class="person__shadow"></div>
-						<div class="person__ava">
-							<img src="img/winner-person.png" class="img-responsive" alt="winner">
-						</div>
-						<span class="person__text">Logan Poul <br> <small>8 Mile</small></span>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="how-it-was section" data-anchor="how-it-was">
-			<h2 class="title title--size_lg">
-				<svg class="title__icon" width="40" height="40" viewBox="0 0 40 40"><defs><path id="ow3xa" d="M844.728 4090.966c.908 0 1.621.714 1.621 1.623 0 .91-.713 1.624-1.62 1.624a1.606 1.606 0 0 1-1.622-1.624c0-.91.713-1.623 1.621-1.623zm0-2.165c-2.076 0-3.783 1.709-3.783 3.788 0 2.08 1.707 3.79 3.783 3.79 2.077 0 3.783-1.71 3.783-3.79s-1.706-3.788-3.783-3.788zm-6.485-2.182h25.941c.618 0 1.081.464 1.081 1.082v16.34l-6.266-6.276a2.59 2.59 0 0 0-1.858-.778c-.631.006-1.24.263-1.74.728-1.976 1.617-4.039 3.35-5.741 4.77l-1.47-1.472a2.59 2.59 0 0 0-1.857-.778c-.64.005-1.255.269-1.757.744-2.565 2.223-5.214 4.584-7.414 6.529v-19.807c.226-.63.537-1.067 1.08-1.082zm9.035-7.527l24.76 6.63c.582.157.916.719.76 1.303l-5.371 20.06v-19.384c0-1.78-1.465-3.247-3.243-3.247h-19.422l1.233-4.635c.344-.683.67-.776 1.283-.727zm-3.36.169l-1.386 5.193h-4.29c-1.777 0-3.242 1.467-3.242 3.247v25.98c0 1.781 1.465 3.248 3.243 3.248h25.941a3.263 3.263 0 0 0 3.243-3.129 3.16 3.16 0 0 0 .828-1.42l6.637-24.797c.456-1.706-.577-3.484-2.28-3.941l-24.776-6.648c-1.707-.38-3.539.977-3.919 2.267z"/></defs><g><g transform="translate(-835 -4077)"><g><use fill="#ab7f42" xlink:href="#ow3xa"/></g></g></g></svg>
-				<span class="title__text">How It Was</span>
-			</h2>
-			<div class="container">
-				<!-- .how-it-was__col*6>a.photo -->
-			</div>
-		</div>
-
-		<div class="partners section" data-anchor="partners">
-			<div class="partners__wrapper">
-				<div class="partners__content">
-					<h2 class="partners__title title title--size_md">
-						<svg class="title__icon" width="54" height="38" viewBox="0 0 54 38">
-							<defs>
-								<path id="c842a" d="M865.997 5025.665c.837 0 1.682.228 2.3.672l4.555 4.173a49.986 49.986 0 0 1 3.953 3.24l4.137 3.844 7.293-8.452-11.335-10.85-2.728 2.678s-.912-.207-1.547-.515l-4.275-2.08c-.52-.253-1.16-.375-1.812-.375-.938 0-1.904.252-2.581.731l-6.613 4.638a2.497 2.497 0 0 0-.565 3.535l.392.529c.537.724 1.417 1.12 2.297 1.12.495 0 .989-.125 1.422-.386l3.138-2.003c.553-.335 1.258-.5 1.97-.5z"/><path id="c842b" d="M858.325 5048.56l-.48-.455a2.55 2.55 0 0 0-1.766-.705 2.55 2.55 0 0 0-1.853.79l-.008-.013a2.568 2.568 0 0 0-.087-3.62l-.478-.455a2.533 2.533 0 0 0-1.755-.7 2.57 2.57 0 0 0-1.77.702l.96-1.005a2.566 2.566 0 0 0-.087-3.62l-.477-.456a2.542 2.542 0 0 0-1.76-.701 2.56 2.56 0 0 0-1.811.745c.8-1.023.72-2.51-.238-3.424l-.476-.455a2.552 2.552 0 0 0-1.768-.704c-.677 0-1.352.264-1.853.79l-4.81 5.041a2.565 2.565 0 0 0 .088 3.62l.477.455c.49.467 1.121.698 1.75.698.581 0 1.162-.196 1.634-.581l-1.267 1.328a2.57 2.57 0 0 0 .086 3.62l.48.455a2.55 2.55 0 0 0 1.766.705c.677 0 1.352-.264 1.853-.79l.99-1.038a2.562 2.562 0 0 0 .165 3.518l.48.456a2.55 2.55 0 0 0 1.765.704c.677 0 1.353-.265 1.854-.791l1.59-1.644a2.567 2.567 0 0 0 .086 3.62l.478.456c.493.471 1.13.705 1.766.705.677 0 1.352-.265 1.854-.791l2.708-2.84a2.57 2.57 0 0 0-.087-3.62z"/><path id="c842c" d="M880.868 5040.007l-6.468-6.009a46.977 46.977 0 0 0-2.585-2.05l-.085-.06-.077-.07-4.46-4.085c-.294-.182-.743-.294-1.196-.294-.4 0-.785.087-1.038.235l-3.115 1.988-.018.012-.02.012a4.523 4.523 0 0 1-2.338.642c-1.477 0-2.869-.687-3.723-1.838l-.392-.529a4.246 4.246 0 0 1-.79-3.226 4.244 4.244 0 0 1 1.762-2.818l2.615-1.835c-1.207-.554-3.167-.578-4.426-.038 0 0-1.397.613-1.845.803-1.04.441-2.495.434-2.495.434l-3.417-3.182-11.763 11.687 5.311 5.342 1.029-1.079a4.356 4.356 0 0 1 3.138-1.34c1.12 0 2.183.424 2.992 1.195l.476.455a4.302 4.302 0 0 1 1.243 2.208c.962.091 1.862.5 2.568 1.173l.474.453a4.303 4.303 0 0 1 1.342 3.035c.006.241-.008.48-.04.714.497.202.955.497 1.353.875l.477.456a4.313 4.313 0 0 1 1.277 2.388 4.303 4.303 0 0 1 2.434 1.157l.483.459a4.34 4.34 0 0 1 .81 5.206l1.312 1.22c1.03.96 2.659.9 3.618-.131l.448-.483a2.556 2.556 0 0 0-.08-3.55l3.318 3.079a2.57 2.57 0 0 0 3.62-.136l.448-.481a2.566 2.566 0 0 0-.118-3.601l.853.794a2.567 2.567 0 0 0 3.618-.135l.45-.482a2.57 2.57 0 0 0-.134-3.62l-.721-.669a2.563 2.563 0 0 0 3.559-.178l.45-.483a2.57 2.57 0 0 0-.134-3.62z"/></defs><g><g transform="translate(-835 -5018)"><g><use fill="#ab7f42" xlink:href="#c842a"/></g><g><use fill="#ab7f42" xlink:href="#c842b"/></g><g><g><use fill="#ab7f42" xlink:href="#c842c"/></g></g></g></g></svg>
-						<span class="title__text">Partners</span>
-					</h2>
-					<div class="partners__container container">
-						<div class="partners__col"><img src="img/partners/partners-1.png" alt="partner-1"></div>
-						<div class="partners__col"><img src="img/partners/partners-2.png" alt="partner-2"></div>
-						<div class="partners__col"><img src="img/partners/partners-3.png" alt="partner-3"></div>
-						<div class="partners__col"><img src="img/partners/partners-4.png" alt="partner-4"></div>
-						<div class="partners__col"><img src="img/partners/partners-5.png" alt="partner-5"></div>
-						<div class="partners__col"><img src="img/partners/partners-6.png" alt="partner-6"></div>
-					</div>
-					<div class="partners__health-harm">
-						<img src="img/health-harm.png" alt="Чрезмерное употребление алкоголем вредит вашему здоровью">
-					</div>
-				</div>
-				<footer class="partners__footer footer">
-					<div class="footer__container container">
-						<div class="footer__info">
-							<a href="#">About Us</a>
-							<a href="#">Privacy Policy</a>
-							<p>&copy; Hennessy 2018 / All rights reserved</p>
-						</div>
-						<a href="#" class="footer__author-logo">
-							<img src="img/author-logo.svg" alt="author-logo">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo logo">
+					<img src="img/logo.png" alt="Logo">
+				</a>
+				<div class="header__right-col">
+					<div class="header__top-side">
+						<a href="#" class="header__sign-in sign-in">
+							<svg class="sign-in__icon" width="18" height="23" viewBox="0 0 18 23">
+								<defs>
+									<path id="4slqa" d="M1257.37 52.12c-.64-1.26-6.14-1.965-6.248-2.937-.188-1.687.625-1.468 1.187-2.937.29-.758.687-1.124.687-1.124s.179.02.49-.117c.51-.227.822-3.257-.302-3.07-.14.023-.217-.237-.298-.645.104-.593.127-1.2-.012-1.908-.166-.837-.639-1.653-1.372-2.01a1.225 1.225 0 0 0-.959-.208l-.004.001a.98.98 0 0 0-.46-.188c-.308-.045-.55-.232-.844-.313-.41-.112-.889-.082-1.304-.035-.718.082-1.476.364-2.018.856-.128.116-.25.253-.362.4l-.015.02-.038.05c-.168.208-.31.456-.412.758-.114.338-.182.741-.19 1.15-.015.121-.025.24-.021.354.014.426-.017 1.01.109 1.468-.055.17-.117.265-.203.25-1.124-.187-.812 2.843-.302 3.07.311.138.49.117.49.117s.396.366.687 1.125c.562 1.468 1.375 1.25 1.187 2.936-.108.972-5.609 1.678-6.248 2.937-1 1.968-.437 6.623-.437 6.623h17.65s.562-4.655-.438-6.624z"/>
+								</defs><g><g transform="translate(-1240 -36)"><use fill="#fff" xlink:href="#4slqa"/></g></g>
+							</svg>
+							<span class="sign-in__text">Sign in</span>
 						</a>
-						<div class="footer__social social">
-							<a href="#" class="social__link">
-								<svg class="facebook" width="13" height="22" viewBox="0 0 13 22">
-									<defs><path id="4vzoa" d="M1409.166 5733.696v-9.827h3.43l.515-3.83h-3.945v-2.446c0-1.11.319-1.865 1.975-1.865h2.109v-3.427a29.733 29.733 0 0 0-3.074-.15c-3.042 0-5.125 1.785-5.125 5.062v2.825h-3.44v3.83h3.44v9.828z"/></defs><g><g transform="translate(-1401 -5712)"><g><use fill="#fff" xlink:href="#4vzoa"/></g></g></g></svg>
-							</a>
-							<a href="#" class="social__link">
-								<svg class="twitter" width="20" height="17" viewBox="0 0 20 17">
-									<defs><path id="s1lwa" d="M1453.766 5717.172a8.174 8.174 0 0 1-2.35.645 4.11 4.11 0 0 0 1.8-2.263 8.253 8.253 0 0 1-2.602.994 4.094 4.094 0 0 0-6.975 3.732 11.622 11.622 0 0 1-8.437-4.277 4.063 4.063 0 0 0-.554 2.057c0 1.42.723 2.674 1.82 3.407a4.094 4.094 0 0 1-1.854-.514v.051a4.098 4.098 0 0 0 3.284 4.014 4.146 4.146 0 0 1-1.079.144c-.264 0-.52-.026-.77-.076a4.096 4.096 0 0 0 3.823 2.843 8.213 8.213 0 0 1-5.084 1.75c-.33 0-.656-.02-.977-.057a11.571 11.571 0 0 0 6.275 1.842c7.53 0 11.647-6.237 11.647-11.647l-.014-.53a8.175 8.175 0 0 0 2.047-2.115z"/></defs><g><g transform="translate(-1434 -5715)"><g><g><use fill="#fff" xlink:href="#s1lwa"/></g></g></g></g></svg>
-							</a>
-							<a href="#" class="social__link">
-								<svg class="instagram" width="19" height="19" viewBox="0 0 19 19">
-									<defs><path id="aae3a" d="M1488.296 5726.97a3.979 3.979 0 0 1-3.974 3.974h-6.813a3.979 3.979 0 0 1-3.974-3.974v-6.814a3.979 3.979 0 0 1 3.974-3.974h6.813a3.979 3.979 0 0 1 3.974 3.974zm-3.974-12.491h-6.813a5.678 5.678 0 0 0-5.678 5.677v6.814a5.678 5.678 0 0 0 5.678 5.677h6.813a5.678 5.678 0 0 0 5.678-5.677v-6.814a5.678 5.678 0 0 0-5.678-5.677z"/><path id="aae3b" d="M1480.916 5726.402a2.843 2.843 0 0 1-2.84-2.839 2.842 2.842 0 0 1 2.84-2.839 2.842 2.842 0 0 1 2.838 2.84 2.843 2.843 0 0 1-2.838 2.838zm0-7.381a4.542 4.542 0 1 0 0 9.085 4.542 4.542 0 0 0 0-9.085z"/><path id="aae3c" d="M1485.193 5718.68a.605.605 0 1 1 1.21 0 .605.605 0 0 1-1.21 0z"/></defs><g><g transform="translate(-1471 -5714)"><g><g><g><use fill="#fff" xlink:href="#aae3a"/></g></g></g><g><g><g><use fill="#fff" xlink:href="#aae3b"/></g></g></g><g><g><g><use fill="#fff" xlink:href="#aae3c"/></g></g></g></g></g></svg>
-							</a>
+						<div class="header__lang lang">
+							<a href="#" class="lang__link active">En</a>
+							<a href="#" class="lang__link">Az</a>
+							<a href="#" class="lang__link">Ru</a>
 						</div>
 					</div>
-				</footer>
+					<nav class="header__nav nav">
+						<ul id="top_nav" class="nav-wrapper">
+							<li class="nav__item" data-menuanchor="main">
+								<a href="#main" class="nav__link">Main</a>
+							</li>
+							<li class="nav__item" data-menuanchor="regulations">
+								<a href="#regulations" class="nav__link">Regulations</a>
+							</li>
+							<li class="nav__item" data-menuanchor="participants">
+								<a href="#participants" class="nav__link">Participants</a>
+							</li>
+							<li class="nav__item" data-menuanchor="winner">
+								<a href="#winner" class="nav__link">Winner</a>
+							</li>
+							<li class="nav__item" data-menuanchor="how-it-was">
+								<a href="#how-it-was" class="nav__link">How it was</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</div>
+		</header>
+		<header class="header-mob">
+			<div class="header-mob__container">
+				<a href="#" class="header-mob__burger burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+				<a href="#" class="header-mob__logo logo">
+					<img src="img/logo.png" alt="logo" class="img-responsive">
+				</a>
+				<div class="header-mob__lang lang">
+					<a href="#" class="lang__link active">En</a>
+					<a href="#" class="lang__link">Az</a>
+					<a href="#" class="lang__link">Ru</a>
+				</div>
+			</div>
+		</header>
+		<sidebar class="sidebar sidebar--left">
+			<a href="#" class="sidebar__sign-in sign-in">
+				<svg class="sign-in__icon" width="18" height="23" viewBox="0 0 18 23">
+								<defs>
+									<path id="4slqa" d="M1257.37 52.12c-.64-1.26-6.14-1.965-6.248-2.937-.188-1.687.625-1.468 1.187-2.937.29-.758.687-1.124.687-1.124s.179.02.49-.117c.51-.227.822-3.257-.302-3.07-.14.023-.217-.237-.298-.645.104-.593.127-1.2-.012-1.908-.166-.837-.639-1.653-1.372-2.01a1.225 1.225 0 0 0-.959-.208l-.004.001a.98.98 0 0 0-.46-.188c-.308-.045-.55-.232-.844-.313-.41-.112-.889-.082-1.304-.035-.718.082-1.476.364-2.018.856-.128.116-.25.253-.362.4l-.015.02-.038.05c-.168.208-.31.456-.412.758-.114.338-.182.741-.19 1.15-.015.121-.025.24-.021.354.014.426-.017 1.01.109 1.468-.055.17-.117.265-.203.25-1.124-.187-.812 2.843-.302 3.07.311.138.49.117.49.117s.396.366.687 1.125c.562 1.468 1.375 1.25 1.187 2.936-.108.972-5.609 1.678-6.248 2.937-1 1.968-.437 6.623-.437 6.623h17.65s.562-4.655-.438-6.624z"/>
+								</defs><g><g transform="translate(-1240 -36)"><use fill="#fff" xlink:href="#4slqa"/></g></g>
+							</svg>
+				<span class="sign-in__text">sign-in</span>
+			</a>
+			<nav class="sidebar__nav nav">
+				<ul class="nav-wrapper">
+					<li class="nav__item"><a href="main" class="nav__link">Main</a></li>
+					<li class="nav__item"><a href="regulations" class="nav__link">Regulations</a></li>
+					<li class="nav__item"><a href="participants" class="nav__link">Participants</a></li>
+					<li class="nav__item"><a href="winner" class="nav__link">Winner</a></li>
+					<li class="nav__item"><a href="how-it-was" class="nav__link">How it was</a></li>
+				</ul>
+			</nav>
+		</sidebar>
+
+		<div id="fullpage">
+			<div class="main section" data-anchor="main">
+				<div class="container">
+					<div class="left-col"><img class="main__brend-img" src="img/brend.png" alt="Brend"></div>
+					<div class="right-col">
+						<div class="box-wrapper">
+							<div class="box__shadow"></div>
+							<div class="main__box box">
+								<span class="time-left">Time Left <br><small>to Start</small></span>
+								<div id="clock" class="clock"></div>
+								<a href="#" class="main__button button">Registration</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#regulations" class="mouse-down" data-menuanchor="regulations">
+					<svg width="70" height="70" viewBox="0 0 70 70">
+						<defs><path id="stxia" d="M925 857c0-19.33 15.67-35 35-35s35 15.67 35 35-15.67 35-35 35-35-15.67-35-35z"/><path id="stxic" d="M964.327 861.617l-4.05 2.821a.769.769 0 0 1-.455.136.769.769 0 0 1-.455-.136l-4.05-2.821a.75.75 0 0 1-.182-1.092.75.75 0 0 1 1.092-.182l3.595 2.502 3.595-2.502c.364-.228.865-.182 1.092.182a.75.75 0 0 1-.182 1.092zm-.045 5.96l-4.05 2.822a.769.769 0 0 1-.455.137.769.769 0 0 1-.455-.137l-4.05-2.821a.75.75 0 0 1-.182-1.092.75.75 0 0 1 1.092-.182l3.595 2.502 3.594-2.502c.364-.228.865-.182 1.093.182a.75.75 0 0 1-.182 1.092zm-9.192-13.15a.75.75 0 0 1 1.092-.182l3.595 2.503 3.594-2.503c.364-.227.865-.182 1.093.182.227.364.182.865-.182 1.092l-4.05 2.821a.769.769 0 0 1-.455.137.769.769 0 0 1-.455-.137l-4.05-2.82c-.364-.274-.455-.729-.182-1.093zm3.094-8.373c0-.864.728-1.592 1.593-1.592.864 0 1.592.728 1.592 1.592v3.413c0 .865-.728 1.593-1.592 1.593a1.612 1.612 0 0 1-1.593-1.593zm5.46-8.054h-7.735c-4.414 0-8.009 3.595-8.009 8.009v18.839c0 6.552 5.324 11.876 11.877 11.876 6.552 0 11.876-5.324 11.876-11.876v-18.84c0-4.413-3.595-8.008-8.009-8.008z"/><clipPath id="stxib"><use fill="#fff" xlink:href="#stxia"/></clipPath></defs><g><g transform="translate(-925 -822)"><use fill="#fff" fill-opacity="0" stroke="#ab7f42" stroke-miterlimit="50" stroke-width="2" clip-path="url(&quot;#stxib&quot;)" xlink:href="#stxia"/></g><g transform="translate(-925 -822)"><use fill="#ab7f42" xlink:href="#stxic"/></g></g>
+					</svg>
+				</a>
+			</div>
+
+			<div class="regulations section" data-anchor="regulations">
+				<div class="container">
+					<div class="left-col">
+						<div class="regulations__box-wrapper box-wrapper">
+							<div class="box__shadow"></div>
+							<div class="regulations__box box">
+								<h3 class="box__title title title--size_sm">
+									<svg class="title__icon" width="43" height="42" viewBox="0 0 43 42">
+										<defs>
+											<path id="msu3a" d="M574.776 1339.03c-.633.588-1.395.883-2.287.883-.891 0-1.657-.295-2.295-.884-.639-.589-.958-1.302-.958-2.138 0-.837.32-1.553.958-2.147.638-.594 1.404-.892 2.295-.892.892 0 1.654.298 2.287.892.633.594.95 1.31.95 2.147 0 .836-.317 1.55-.95 2.138zm.24 19.509c-1.09.43-1.96.757-2.61.983-.649.225-1.403.338-2.261.338-1.321 0-2.348-.322-3.08-.966-.732-.644-1.098-1.46-1.098-2.452 0-.385.027-.778.083-1.18.055-.402.143-.856.264-1.363l1.362-4.821c.122-.463.225-.9.307-1.313.083-.413.124-.79.124-1.13 0-.618-.127-1.046-.38-1.289-.254-.242-.74-.363-1.457-.363-.353 0-.715.055-1.085.165-.37.11-.687.214-.952.314l.364-1.487a34.66 34.66 0 0 1 2.562-.933c.815-.258 1.587-.387 2.314-.387 1.312 0 2.323.317 3.034.949.71.633 1.066 1.456 1.066 2.469 0 .209-.025.578-.075 1.106a7.5 7.5 0 0 1-.272 1.453l-1.358 4.806c-.11.385-.21.825-.298 1.32-.088.496-.133.87-.133 1.124 0 .638.143 1.073.429 1.304.286.231.78.347 1.484.347.33 0 .703-.058 1.121-.173.418-.116.72-.217.907-.306zm-4.494-32.52c-11.508 0-20.837 9.329-20.837 20.837s9.329 20.838 20.837 20.838c11.509 0 20.838-9.33 20.838-20.838 0-11.508-9.33-20.838-20.838-20.838z"/>
+										</defs><g><g transform="translate(-549 -1326)"><use fill="#ab7f42" xlink:href="#msu3a"/></g></g>
+									</svg>
+									<span class="title__text">About</span>
+								</h3>
+								<p class="box__text quote">This competition is about replicability and creating a modern classic,” explains judge Pamela Wiznitzer, who also serves as the National President of the United States Bartenders’ Guild. “When you look at the classics we have today such as the Old Cuban or the Penicillin, you can walk into almost you can walk into within 24 hours’ notice today such as the National President you can walk into and make it!</p>
+								<a href="#" class="box__button button">View all</a>
+							</div>
+						</div>
+					</div>
+					<div class="right-col">
+						<div class="regulations__box-wrapper box-wrapper">
+							<div class="box__shadow"></div>
+							<div class="regulations__box box">
+								<h3 class="box__title title title--size_sm">
+									<svg class="title__icon" width="33" height="45" viewBox="0 0 33 45">
+										<defs>
+											<path id="aetya" d="M1160.456 1354.61c-.552.025-1.032.552-1.006 1.104.026.553.552 1.032 1.105 1.006h14.775c.557.008 1.071-.498 1.071-1.055 0-.558-.514-1.063-1.071-1.056h-14.775a1.067 1.067 0 0 0-.099 0zm-3.858-2.82l-4.007 4.435-1.847-1.846c-.39-.402-1.107-.398-1.5 0-.394.397-.39 1.114.016 1.5l2.638 2.638c.407.404 1.154.38 1.534-.05l4.749-5.276c.285-.311.352-.808.164-1.187a1.074 1.074 0 0 0-1.038-.577 1.068 1.068 0 0 0-.71.363zm3.858-6.15c-.552.025-1.032.551-1.006 1.104.026.553.552 1.032 1.105 1.006h14.775c.557.008 1.071-.498 1.071-1.056 0-.557-.514-1.063-1.071-1.055h-14.775a1.067 1.067 0 0 0-.099 0zm-3.15-3.183a1.068 1.068 0 0 0-.708.362l-4.007 4.436-1.847-1.847c-.39-.4-1.107-.398-1.5 0-.394.398-.39 1.115.016 1.5l2.638 2.64c.407.402 1.154.378 1.534-.05l4.749-5.277c.285-.312.352-.808.164-1.187a1.074 1.074 0 0 0-1.038-.577zm2.144-4.683c.026.552.552 1.032 1.105 1.006h14.775c.557.007 1.071-.498 1.071-1.056 0-.557-.514-1.063-1.071-1.055h-14.775a1.067 1.067 0 0 0-.099 0c-.552.026-1.032.552-1.006 1.105zm-2.143-4.288a1.068 1.068 0 0 0-.71.363l-4.006 4.436-1.847-1.847c-.39-.401-1.107-.398-1.5 0-.394.398-.39 1.115.016 1.5l2.638 2.639c.407.403 1.154.379 1.534-.05l4.749-5.276c.285-.312.352-.808.164-1.187a1.074 1.074 0 0 0-1.038-.578zm-4.667-9.481v3.694c0 .552.503 1.055 1.055 1.055h17.94c.554 0 1.056-.503 1.056-1.055v-3.694h6.332v39.575h-32.715v-39.575zm14.51-4.749v2.638h3.43v4.75h-15.83v-4.75h3.43v-2.638z"/></defs><g><g transform="translate(-1146 -1319)"><use fill="#ab7f42" xlink:href="#aetya"/></g></g></svg>
+									<span class="title__text">Regulations</span>
+								</h3>
+								<p class="box__text quote">To participate in the competition, you just need to fill in the application form by presenting a cocktail of your own recipe based on the popular brand Hennessyto the organizers for consideration by the organizer of this event,you just need to fill in the application form by presenting a cocktail of your own recipe based on the popular brand.</p>
+								<a href="#" class="box__button button">View Rules</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="participants section" data-anchor="participants">
+				<div class="container">
+					<div class="participants__left-col left-col">
+						<div class="participants__profile profile">
+							<div class="profile__img-wrapper">
+								<img class="profile__ava" src="img/ava/ava-1.png">
+							</div>
+							<div class="profile__info">
+								<span class="profile__name">Jack Bauter</span>
+								<span class="profile__problem">99 Problem</span>
+							</div>
+							<a href="#profile-1" class="profile__button button">Profile</a>
+						</div>
+					</div>
+					<div class="participants__right-col right-col">
+						<h2 class="participants__title title title--size_md">
+							<svg class="title__icon" width="61" height="28" viewBox="0 0 61 28"><defs>
+								<path id="3asla" d="M982.637 2181.656c.255-.255.573-.446.892-.637-.637-1.849-2.422-3.187-4.462-3.187h-3.57c-2.358 0-4.335 1.72-4.653 4.016l-.829 5.673c-.128.956.574 1.785 1.53 1.785h8.287l.51-3.634a7.345 7.345 0 0 1 2.295-4.016z"/><path id="3aslb" d="M977.282 2176.43c2.295 0 4.207-1.913 4.207-4.208v-1.402c0-2.295-1.912-4.208-4.207-4.208s-4.207 1.913-4.207 4.208v1.402c0 2.359 1.848 4.207 4.207 4.207z"/><path id="3aslc" d="M1005.585 2181.656c.255-.255.574-.446.893-.637-.638-1.912-2.422-3.187-4.462-3.187h-3.57c-2.04 0-3.825 1.338-4.462 3.187.318.191.573.382.892.637 1.211 1.02 1.976 2.487 2.231 4.016l.51 3.634h5.291l.51-3.634c.191-1.53 1.02-2.932 2.167-4.016z"/><path id="3asld" d="M1000.23 2176.43c2.296 0 4.208-1.913 4.208-4.208v-1.402c0-2.295-1.912-4.208-4.207-4.208s-4.207 1.913-4.207 4.208v1.402a4.203 4.203 0 0 0 4.207 4.207z"/><path id="3asle" d="M1030.51 2187.585l-.828-5.674c-.32-2.294-2.295-4.016-4.654-4.016h-3.57c-2.04 0-3.824 1.34-4.462 3.188.319.191.638.382.893.637 1.21 1.02 1.976 2.486 2.23 4.016l.51 3.634h8.351c.957 0 1.658-.893 1.53-1.785z"/><path id="3aslf" d="M1023.18 2176.43c2.294 0 4.207-1.913 4.207-4.208v-1.402c0-2.295-1.913-4.208-4.208-4.208-2.294 0-4.207 1.913-4.207 4.208v1.402a4.203 4.203 0 0 0 4.207 4.207z"/><path id="3aslg" d="M995.195 2185.991c-.319-2.295-2.295-4.016-4.654-4.016h-3.57c-2.358 0-4.334 1.721-4.653 4.016l-.829 5.674c-.127.956.574 1.785 1.53 1.785h11.475c.956 0 1.657-.83 1.53-1.785z"/><path id="3aslh" d="M988.756 2180.573c2.295 0 4.208-1.913 4.208-4.208v-1.402c0-2.295-1.913-4.207-4.208-4.207-2.294 0-4.207 1.912-4.207 4.207v1.402a4.203 4.203 0 0 0 4.207 4.208z"/><path id="3asli" d="M1018.207 2185.991c-.318-2.295-2.295-4.016-4.653-4.016h-3.57c-2.359 0-4.335 1.721-4.654 4.016l-.828 5.674c-.191.956.51 1.785 1.466 1.785h11.538c.956 0 1.657-.83 1.53-1.785z"/><path id="3aslj" d="M1011.705 2180.573c2.295 0 4.207-1.913 4.207-4.208v-1.402c0-2.295-1.912-4.207-4.207-4.207s-4.207 1.912-4.207 4.207v1.402c0 2.295 1.912 4.208 4.207 4.208z"/></defs><g><g transform="translate(-970 -2166)"><g><use fill="#ab7f42" xlink:href="#3asla"/></g><g><use fill="#ab7f42" xlink:href="#3aslb"/></g><g><use fill="#ab7f42" xlink:href="#3aslc"/></g><g><use fill="#ab7f42" xlink:href="#3asld"/></g><g><use fill="#ab7f42" xlink:href="#3asle"/></g><g><use fill="#ab7f42" xlink:href="#3aslf"/></g><g><use fill="#ab7f42" xlink:href="#3aslg"/></g><g><use fill="#ab7f42" xlink:href="#3aslh"/></g><g><use fill="#ab7f42" xlink:href="#3asli"/></g><g><use fill="#ab7f42" xlink:href="#3aslj"/></g></g></g></svg>
+							<span class="title__text">participants</span>
+						</h2>
+						<div class="row">
+							<div class="participants__col">
+								<a href="#profile-1" class="profile-mini active">
+									<div class="profile-mini__img-wrapper">
+										<img class="profile-mini__ava" src="img/ava/ava-1.png" alt="ava-1">
+									</div>
+									<div class="profile-mini__info">
+										<span class="profile-mini__name">Jack Bauyer</span>
+										<span class="profile-mini__address">N-y city</span>
+									</div>
+								</a>
+							</div>
+							<div class="participants__col">
+								<a href="#profile-2" class="profile-mini">
+									<div class="profile-mini__img-wrapper">
+										<img class="profile-mini__ava" src="img/ava/ava-2.png" alt="ava-2">
+									</div>
+									<div class="profile-mini__info">
+										<span class="profile-mini__name">Miranda Louson</span>
+										<span class="profile-mini__address">N-y city</span>
+									</div>
+								</a>
+							</div>
+							<div class="participants__col">
+								<a href="#profile-3" class="profile-mini">
+									<div class="profile-mini__img-wrapper">
+										<img class="profile-mini__ava" src="img/ava/ava-3.png" alt="ava-3">
+									</div>
+									<div class="profile-mini__info">
+										<span class="profile-mini__name">Gordon Strike</span>
+										<span class="profile-mini__address">N-y city</span>
+									</div>
+								</a>
+							</div>
+							<div class="participants__col">
+								<a href="#profile-4" class="profile-mini">
+									<div class="profile-mini__img-wrapper">
+										<img class="profile-mini__ava" src="img/ava/ava-4.png" alt="ava-4">
+									</div>
+									<div class="profile-mini__info">
+										<span class="profile-mini__name">IDris Krisol</span>
+										<span class="profile-mini__address">N-y city</span>
+									</div>
+								</a>
+							</div>
+							<div class="participants__col">
+								<a href="#profile-5" class="profile-mini">
+									<div class="profile-mini__img-wrapper">
+										<img class="profile-mini__ava" src="img/ava/ava-5.png" alt="ava-5">
+									</div>
+									<div class="profile-mini__info">
+										<span class="profile-mini__name">Logan Poul</span>
+										<span class="profile-mini__address">N-y city</span>
+									</div>
+								</a></div>
+							<div class="participants__col">
+								<a href="#profile-6" class="profile-mini">
+									<div class="profile-mini__img-wrapper">
+										<img class="profile-mini__ava" src="img/ava/ava-6.png" alt="ava-6">
+									</div>
+									<div class="profile-mini__info">
+										<span class="profile-mini__name">Braun Strouman</span>
+										<span class="profile-mini__address">N-y city</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="winner section" data-anchor="winner">
+				<h2 class="winner__title title title--size_lg">
+					<svg class="title__icon" width="34" height="43" viewBox="0 0 34 43"><defs><path id="lg91a" d="M844.447 3102.865h-.372v-1.51h.372zm-.743 0l-2.411 1.007v-3.525l.595.25 1.816.757zm1.114-1.51l1.824-.763.587-.245v3.525l-2.411-1.007zm-.987 13.26h.86v14.522a2.294 2.294 0 1 0 4.588 0v-22.576c.226.38.48.765.77 1.15a12.71 12.71 0 0 0 2.46 2.466c.23-.758.499-1.516.782-2.313l.245-.695c-1.099-1.025-1.754-2.114-2.24-3.143-.424-.917-.683-1.78-.95-2.547-.136-.386-.268-.75-.483-1.132-.11-.191-.243-.391-.439-.59a2.136 2.136 0 0 0-.793-.516 1.5 1.5 0 0 0-.199-.056 1.424 1.424 0 0 0-.586-.126h-7.169c-.069 0-.136.006-.202.016-.023-.001-.046-.004-.069-.004-1.473.025-2.703.76-3.678 1.716-.955.973-1.708 2.244-1.728 3.764-.002.641.16 1.323.52 1.93.444.755 1.15 1.348 2.038 1.775.364-1.179.736-2.286.982-2.84-.263-.17-.39-.32-.462-.441a.799.799 0 0 1-.11-.424c-.02-.393.3-1.12.861-1.667.13-.135.271-.255.415-.36v2.263c.291-.082.632-.108.922-.108.865 0 2.381.244 2.596 1.156a1.852 1.852 0 1 1 1.016 3.345c-.275.202-.605.33-.965.354a170.63 170.63 0 0 1-.172 5.081c-.075 1.503-.164 2.669-.248 2.928-.238.734-2.045.815-2.818.815h-.006c-.087 0-.198-.001-.326-.005v10.784a2.294 2.294 0 1 0 4.588 0z"/><path id="lg91b" d="M843.03 3097.706a4.173 4.173 0 1 1 1.894-8.129 4.173 4.173 0 0 1-1.893 8.13z"/><path id="lg91c" d="M842.82 3109.163c.32-.03.612-.162.84-.363a1.483 1.483 0 0 0-.857-2.593c.022.353.03.9.03 1.568 0 .42-.005.89-.013 1.388z"/><path id="lg91d" d="M842.222 3106.196zm-.652-.028zm.325 2.986l.186.006-.186-.006zm-2.353-3.31l-.04-.013.04.013zm.191.051l-.07-.018.07.018zm.124.03l.08.02-.08-.02zm.297.065l.108.02a7.06 7.06 0 0 1-.108-.02zm.36.063zm.117.018zm.347.044zm.507.047zm-1.45 2.82zm.782.1c-.091-.009-.18-.02-.269-.03.09.01.178.021.27.03zm.481.04c.065.005.132.009.198.012l-.198-.011zm.742 8.307c.074-.228.158-1.351.232-2.814.078-1.531.145-3.435.177-5.077l.007-.37v-.002c.01-.582.015-1.124.014-1.593a21.398 21.398 0 0 0-.034-1.372v-.001a2.059 2.059 0 0 0-.034-.276.546.546 0 0 0-.032-.095c-.328-.751-2.363-.934-3.127-.654a.569.569 0 0 0-.24.147 1.36 1.36 0 0 0-.14.273c-.209.487-.57 1.538-.964 2.814-.947 3.068-2.08 7.444-1.724 8.436.275.766 1.694 1.093 3.068 1.137 1.362.043 2.68-.191 2.797-.553z"/><path id="lg91e" d="M852.168 3114.566v15.561c0 .618.487 1.118 1.088 1.118h6.467a.562.562 0 0 1 .037-.315c.113-.274.438-.555.774-.667.051-.017.119-.034.2-.053.356-.085 1.03-.247 1.723-1.07v-9.141a17.097 17.097 0 0 0-.622-.818c-.461-.584-1.093-1.382-1.935-2.623-1.767-2.608-.248-8.32.283-10.077a.86.86 0 0 1 .144-.395c-.076-.23-.152-.465-.227-.706-.782-2.52-1.002-7.38-1.063-9.915.15-.015.27-.155.27-.33 0-.178-.126-.322-.285-.33-.006-.378-.009-.662-.01-.821h.264c0-.564-.253-1.02-.817-1.02h-2.294c-.563 0-.815.456-.816 1.02h.264c-.002.158-.004.443-.011.82-.157.009-.283.153-.283.331 0 .175.118.315.27.33-.062 2.536-.283 7.395-1.064 9.915-.227.73-.46 1.407-.69 2.055-.368 1.045-.722 2.012-1.009 2.978-.391 1.317-.658 2.634-.658 4.153z"/><path id="lg91f" d="M860.518 3106.657c-.42 1.408-1.997 7.205-.31 9.692 1.05 1.551 1.763 2.394 2.25 3.024.141.184.264.35.37.51.184.276.318.534.418.837.396 1.212 1.075 6.19-.037 8.005a5.486 5.486 0 0 1-.38.547 4.326 4.326 0 0 1-.372.413c-.805.787-1.55.845-1.805.93-.335.112-.63.446-.556.594h8.369c.074-.148-.223-.482-.556-.594-.334-.111-1.508-.173-2.557-1.89-1.112-1.815-.434-6.793-.037-8.005.355-1.082 1.15-1.586 3.039-4.37 1.731-2.557.019-8.61-.344-9.8a.493.493 0 0 0-.493-.479h-6.473a.487.487 0 0 0-.297.102.493.493 0 0 0-.196.377c-.01.032-.02.069-.033.107z"/></defs><g><g transform="translate(-835 -3089)"><g><use fill="#ab7f42" xlink:href="#lg91a"/></g><g><use fill="#ab7f42" xlink:href="#lg91b"/></g><g><use fill="#ab7f42" xlink:href="#lg91c"/></g><g><use fill="#ab7f42" xlink:href="#lg91d"/></g><g><use fill="#ab7f42" xlink:href="#lg91e"/></g><g><use fill="#ab7f42" xlink:href="#lg91f"/></g></g></g></svg>
+					<span class="title__text">Winner</span>
+				</h2>
+				<div class="winner__container container">
+					<div class="left-col">
+						<!-- <a href="https://www.youtube.com/watch?v=JAyAzJLehho" class="video">
+							<span class="video__title">Barthender iNTRODUCTION</span>
+							<img src="img/video-img.png" alt="video" class="video__img">
+						</a> -->
+						<iframe class="winner__iframe" width="90%" height="300" src="https://www.youtube.com/embed/JAyAzJLehho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="right-col">
+						<div class="person">
+							<div class="person__shadow"></div>
+							<div class="person__ava">
+								<img src="img/winner-person.png" class="img-responsive" alt="winner">
+							</div>
+							<span class="person__text">Logan Poul <br> <small>8 Mile</small></span>
+						</div>
+					</div>
+				</div>
+				<a href="https://www.youtube.com/watch?v=JAyAzJLehho" class="winner__button-icon button-icon js-open-iframe">
+				<span class="button-icon__text">Watch Video</span>
+				<span class="button-icon__icon"><svg width="21" height="23" viewBox="0 0 21 23"><defs><path id="9d74a" d="M866.436 392.588l-8.665-5.46c-.256-.152-.575-.126-.815-.126-.96 0-.956.742-.956.93v11.159c0 .159-.005.93.956.93.24 0 .559.025.815-.128l8.665-5.46c.711-.422.589-.922.589-.922s.123-.5-.589-.923z"/><mask id="9d74c" width="2" height="2" x="-1" y="-1"><path fill="#fff" d="M856 387h12v14h-12z"/><use xlink:href="#9d74a"/></mask><filter id="9d74b" width="47" height="49" x="837" y="371" filterUnits="userSpaceOnUse"><feOffset dx="-3" dy="3" in="SourceGraphic" result="FeOffset1043Out"/><feGaussianBlur in="FeOffset1043Out" result="FeGaussianBlur1044Out" stdDeviation="2.4 2.4"/></filter></defs><g><g transform="translate(-848 -385)"><g filter="url(#9d74b)"><use fill="none" stroke-opacity=".3" stroke-width="0" mask="url(&quot;#9d74c&quot;)" xlink:href="#9d74a"/><use fill-opacity=".3" xlink:href="#9d74a"/></g><use fill="#fff" xlink:href="#9d74a"/></g></g></svg></span>
+			</a>
+			</div>
+
+			<div class="how-it-was section" data-anchor="how-it-was">
+				<div class="how-it-was__container container">
+					<h2 class="how-it-was__title title title--size_lg">
+						<svg class="title__icon" width="40" height="40" viewBox="0 0 40 40"><defs><path id="ow3xa" d="M844.728 4090.966c.908 0 1.621.714 1.621 1.623 0 .91-.713 1.624-1.62 1.624a1.606 1.606 0 0 1-1.622-1.624c0-.91.713-1.623 1.621-1.623zm0-2.165c-2.076 0-3.783 1.709-3.783 3.788 0 2.08 1.707 3.79 3.783 3.79 2.077 0 3.783-1.71 3.783-3.79s-1.706-3.788-3.783-3.788zm-6.485-2.182h25.941c.618 0 1.081.464 1.081 1.082v16.34l-6.266-6.276a2.59 2.59 0 0 0-1.858-.778c-.631.006-1.24.263-1.74.728-1.976 1.617-4.039 3.35-5.741 4.77l-1.47-1.472a2.59 2.59 0 0 0-1.857-.778c-.64.005-1.255.269-1.757.744-2.565 2.223-5.214 4.584-7.414 6.529v-19.807c.226-.63.537-1.067 1.08-1.082zm9.035-7.527l24.76 6.63c.582.157.916.719.76 1.303l-5.371 20.06v-19.384c0-1.78-1.465-3.247-3.243-3.247h-19.422l1.233-4.635c.344-.683.67-.776 1.283-.727zm-3.36.169l-1.386 5.193h-4.29c-1.777 0-3.242 1.467-3.242 3.247v25.98c0 1.781 1.465 3.248 3.243 3.248h25.941a3.263 3.263 0 0 0 3.243-3.129 3.16 3.16 0 0 0 .828-1.42l6.637-24.797c.456-1.706-.577-3.484-2.28-3.941l-24.776-6.648c-1.707-.38-3.539.977-3.919 2.267z"/></defs><g><g transform="translate(-835 -4077)"><g><use fill="#ab7f42" xlink:href="#ow3xa"/></g></g></g></svg>
+						<span class="title__text">How It Was</span>
+					</h2>
+					<div class="row">
+						<div class="how-it-was__col">
+							<div class="how-it-was__photo photo">
+								<a href="img/photoes/photo-1.jpg" class="photo__full-open"><svg class="full-open__icon" width="13" height="13" viewBox="0 0 13 13"><defs><path id="gy9fa" d="M815.446 4231.675c.361 0 .655-.294.655-.654v-3.1a.656.656 0 0 0-.655-.654h-3.099a.656.656 0 0 0 0 1.31h1.51l-4.101 4.1-4.088-4.087h1.51a.656.656 0 0 0 0-1.31h-3.113a.656.656 0 0 0-.654.655v3.1a.656.656 0 0 0 1.309 0v-1.51l4.1 4.087-4.087 4.088v-1.496a.656.656 0 0 0-1.309 0v3.099c0 .36.294.654.655.654h3.099a.656.656 0 0 0 0-1.309h-1.51l4.088-4.1 4.087 4.087h-1.496a.656.656 0 0 0 0 1.309h3.1c.36 0 .654-.294.654-.655v-3.085a.656.656 0 0 0-1.31 0v1.51l-4.1-4.102 4.088-4.087v1.51c0 .346.293.64.667.64z"/></defs><g><g transform="translate(-803 -4227)"><use fill="#fff" xlink:href="#gy9fa"/></g></g></svg></a>
+								<img class="img-responsive" src="img/photoes/photo-1-min.png" alt="photo-1">
+								<div class="photo__info">
+									<p>Lawsuit WeWork Assault at Company Events</p>
+								</div>
+							</div>
+						</div>
+						<div class="how-it-was__col">
+							<div class="how-it-was__photo photo">
+								<a href="img/photoes/photo-2.jpg" class="photo__full-open"><svg class="full-open__icon" width="13" height="13" viewBox="0 0 13 13"><defs><path id="gy9fa" d="M815.446 4231.675c.361 0 .655-.294.655-.654v-3.1a.656.656 0 0 0-.655-.654h-3.099a.656.656 0 0 0 0 1.31h1.51l-4.101 4.1-4.088-4.087h1.51a.656.656 0 0 0 0-1.31h-3.113a.656.656 0 0 0-.654.655v3.1a.656.656 0 0 0 1.309 0v-1.51l4.1 4.087-4.087 4.088v-1.496a.656.656 0 0 0-1.309 0v3.099c0 .36.294.654.655.654h3.099a.656.656 0 0 0 0-1.309h-1.51l4.088-4.1 4.087 4.087h-1.496a.656.656 0 0 0 0 1.309h3.1c.36 0 .654-.294.654-.655v-3.085a.656.656 0 0 0-1.31 0v1.51l-4.1-4.102 4.088-4.087v1.51c0 .346.293.64.667.64z"/></defs><g><g transform="translate(-803 -4227)"><use fill="#fff" xlink:href="#gy9fa"/></g></g></svg></a>
+								<img class="img-responsive" src="img/photoes/photo-2-min.png" alt="photo-2">
+								<div class="photo__info">
+									<p>Lawsuit WeWork Assault at Company Events</p>
+								</div>
+							</div>
+						</div>
+						<div class="how-it-was__col">
+							<div class="how-it-was__photo photo">
+								<a href="img/photoes/photo-3.png" class="photo__full-open"><svg class="full-open__icon" width="13" height="13" viewBox="0 0 13 13"><defs><path id="gy9fa" d="M815.446 4231.675c.361 0 .655-.294.655-.654v-3.1a.656.656 0 0 0-.655-.654h-3.099a.656.656 0 0 0 0 1.31h1.51l-4.101 4.1-4.088-4.087h1.51a.656.656 0 0 0 0-1.31h-3.113a.656.656 0 0 0-.654.655v3.1a.656.656 0 0 0 1.309 0v-1.51l4.1 4.087-4.087 4.088v-1.496a.656.656 0 0 0-1.309 0v3.099c0 .36.294.654.655.654h3.099a.656.656 0 0 0 0-1.309h-1.51l4.088-4.1 4.087 4.087h-1.496a.656.656 0 0 0 0 1.309h3.1c.36 0 .654-.294.654-.655v-3.085a.656.656 0 0 0-1.31 0v1.51l-4.1-4.102 4.088-4.087v1.51c0 .346.293.64.667.64z"/></defs><g><g transform="translate(-803 -4227)"><use fill="#fff" xlink:href="#gy9fa"/></g></g></svg></a>
+								<img class="img-responsive" src="img/photoes/photo-3-min.png" alt="photo-3">
+								<div class="photo__info">
+									<p>Lawsuit WeWork Assault at Company Events</p>
+								</div>
+							</div>
+						</div>
+						<div class="how-it-was__col">
+							<div class="how-it-was__photo photo">
+								<a href="img/photoes/photo-4.png" class="photo__full-open"><svg class="full-open__icon" width="13" height="13" viewBox="0 0 13 13"><defs><path id="gy9fa" d="M815.446 4231.675c.361 0 .655-.294.655-.654v-3.1a.656.656 0 0 0-.655-.654h-3.099a.656.656 0 0 0 0 1.31h1.51l-4.101 4.1-4.088-4.087h1.51a.656.656 0 0 0 0-1.31h-3.113a.656.656 0 0 0-.654.655v3.1a.656.656 0 0 0 1.309 0v-1.51l4.1 4.087-4.087 4.088v-1.496a.656.656 0 0 0-1.309 0v3.099c0 .36.294.654.655.654h3.099a.656.656 0 0 0 0-1.309h-1.51l4.088-4.1 4.087 4.087h-1.496a.656.656 0 0 0 0 1.309h3.1c.36 0 .654-.294.654-.655v-3.085a.656.656 0 0 0-1.31 0v1.51l-4.1-4.102 4.088-4.087v1.51c0 .346.293.64.667.64z"/></defs><g><g transform="translate(-803 -4227)"><use fill="#fff" xlink:href="#gy9fa"/></g></g></svg></a>
+								<img class="img-responsive" src="img/photoes/photo-4-min.png" alt="photo-4">
+								<div class="photo__info">
+									<p>Lawsuit WeWork Assault at Company Events</p>
+								</div>
+							</div>
+						</div>
+						<div class="how-it-was__col">
+							<div class="how-it-was__photo photo">
+								<a href="img/photoes/photo-5.jpg" class="photo__full-open"><svg class="full-open__icon" width="13" height="13" viewBox="0 0 13 13"><defs><path id="gy9fa" d="M815.446 4231.675c.361 0 .655-.294.655-.654v-3.1a.656.656 0 0 0-.655-.654h-3.099a.656.656 0 0 0 0 1.31h1.51l-4.101 4.1-4.088-4.087h1.51a.656.656 0 0 0 0-1.31h-3.113a.656.656 0 0 0-.654.655v3.1a.656.656 0 0 0 1.309 0v-1.51l4.1 4.087-4.087 4.088v-1.496a.656.656 0 0 0-1.309 0v3.099c0 .36.294.654.655.654h3.099a.656.656 0 0 0 0-1.309h-1.51l4.088-4.1 4.087 4.087h-1.496a.656.656 0 0 0 0 1.309h3.1c.36 0 .654-.294.654-.655v-3.085a.656.656 0 0 0-1.31 0v1.51l-4.1-4.102 4.088-4.087v1.51c0 .346.293.64.667.64z"/></defs><g><g transform="translate(-803 -4227)"><use fill="#fff" xlink:href="#gy9fa"/></g></g></svg></a>
+								<img class="img-responsive" src="img/photoes/photo-5-min.png" alt="photo-5">
+								<div class="photo__info">
+									<p>Lawsuit WeWork Assault at Company Events</p>
+								</div>
+							</div>
+						</div>
+						<div class="how-it-was__col">
+							<div class="how-it-was__photo photo">
+								<a href="img/photoes/photo-6.png" class="photo__full-open"><svg class="full-open__icon" width="13" height="13" viewBox="0 0 13 13"><defs><path id="gy9fa" d="M815.446 4231.675c.361 0 .655-.294.655-.654v-3.1a.656.656 0 0 0-.655-.654h-3.099a.656.656 0 0 0 0 1.31h1.51l-4.101 4.1-4.088-4.087h1.51a.656.656 0 0 0 0-1.31h-3.113a.656.656 0 0 0-.654.655v3.1a.656.656 0 0 0 1.309 0v-1.51l4.1 4.087-4.087 4.088v-1.496a.656.656 0 0 0-1.309 0v3.099c0 .36.294.654.655.654h3.099a.656.656 0 0 0 0-1.309h-1.51l4.088-4.1 4.087 4.087h-1.496a.656.656 0 0 0 0 1.309h3.1c.36 0 .654-.294.654-.655v-3.085a.656.656 0 0 0-1.31 0v1.51l-4.1-4.102 4.088-4.087v1.51c0 .346.293.64.667.64z"/></defs><g><g transform="translate(-803 -4227)"><use fill="#fff" xlink:href="#gy9fa"/></g></g></svg></a>
+								<img class="img-responsive" src="img/photoes/photo-6-min.png" alt="photo-6">
+								<div class="photo__info">
+									<p>Lawsuit WeWork Assault at Company Events</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="partners section" data-anchor="partners">
+				<div class="partners__wrapper">
+					<div class="partners__content">
+						<h2 class="partners__title title title--size_md">
+							<svg class="title__icon" width="54" height="38" viewBox="0 0 54 38">
+								<defs>
+									<path id="c842a" d="M865.997 5025.665c.837 0 1.682.228 2.3.672l4.555 4.173a49.986 49.986 0 0 1 3.953 3.24l4.137 3.844 7.293-8.452-11.335-10.85-2.728 2.678s-.912-.207-1.547-.515l-4.275-2.08c-.52-.253-1.16-.375-1.812-.375-.938 0-1.904.252-2.581.731l-6.613 4.638a2.497 2.497 0 0 0-.565 3.535l.392.529c.537.724 1.417 1.12 2.297 1.12.495 0 .989-.125 1.422-.386l3.138-2.003c.553-.335 1.258-.5 1.97-.5z"/><path id="c842b" d="M858.325 5048.56l-.48-.455a2.55 2.55 0 0 0-1.766-.705 2.55 2.55 0 0 0-1.853.79l-.008-.013a2.568 2.568 0 0 0-.087-3.62l-.478-.455a2.533 2.533 0 0 0-1.755-.7 2.57 2.57 0 0 0-1.77.702l.96-1.005a2.566 2.566 0 0 0-.087-3.62l-.477-.456a2.542 2.542 0 0 0-1.76-.701 2.56 2.56 0 0 0-1.811.745c.8-1.023.72-2.51-.238-3.424l-.476-.455a2.552 2.552 0 0 0-1.768-.704c-.677 0-1.352.264-1.853.79l-4.81 5.041a2.565 2.565 0 0 0 .088 3.62l.477.455c.49.467 1.121.698 1.75.698.581 0 1.162-.196 1.634-.581l-1.267 1.328a2.57 2.57 0 0 0 .086 3.62l.48.455a2.55 2.55 0 0 0 1.766.705c.677 0 1.352-.264 1.853-.79l.99-1.038a2.562 2.562 0 0 0 .165 3.518l.48.456a2.55 2.55 0 0 0 1.765.704c.677 0 1.353-.265 1.854-.791l1.59-1.644a2.567 2.567 0 0 0 .086 3.62l.478.456c.493.471 1.13.705 1.766.705.677 0 1.352-.265 1.854-.791l2.708-2.84a2.57 2.57 0 0 0-.087-3.62z"/><path id="c842c" d="M880.868 5040.007l-6.468-6.009a46.977 46.977 0 0 0-2.585-2.05l-.085-.06-.077-.07-4.46-4.085c-.294-.182-.743-.294-1.196-.294-.4 0-.785.087-1.038.235l-3.115 1.988-.018.012-.02.012a4.523 4.523 0 0 1-2.338.642c-1.477 0-2.869-.687-3.723-1.838l-.392-.529a4.246 4.246 0 0 1-.79-3.226 4.244 4.244 0 0 1 1.762-2.818l2.615-1.835c-1.207-.554-3.167-.578-4.426-.038 0 0-1.397.613-1.845.803-1.04.441-2.495.434-2.495.434l-3.417-3.182-11.763 11.687 5.311 5.342 1.029-1.079a4.356 4.356 0 0 1 3.138-1.34c1.12 0 2.183.424 2.992 1.195l.476.455a4.302 4.302 0 0 1 1.243 2.208c.962.091 1.862.5 2.568 1.173l.474.453a4.303 4.303 0 0 1 1.342 3.035c.006.241-.008.48-.04.714.497.202.955.497 1.353.875l.477.456a4.313 4.313 0 0 1 1.277 2.388 4.303 4.303 0 0 1 2.434 1.157l.483.459a4.34 4.34 0 0 1 .81 5.206l1.312 1.22c1.03.96 2.659.9 3.618-.131l.448-.483a2.556 2.556 0 0 0-.08-3.55l3.318 3.079a2.57 2.57 0 0 0 3.62-.136l.448-.481a2.566 2.566 0 0 0-.118-3.601l.853.794a2.567 2.567 0 0 0 3.618-.135l.45-.482a2.57 2.57 0 0 0-.134-3.62l-.721-.669a2.563 2.563 0 0 0 3.559-.178l.45-.483a2.57 2.57 0 0 0-.134-3.62z"/></defs><g><g transform="translate(-835 -5018)"><g><use fill="#ab7f42" xlink:href="#c842a"/></g><g><use fill="#ab7f42" xlink:href="#c842b"/></g><g><g><use fill="#ab7f42" xlink:href="#c842c"/></g></g></g></g></svg>
+							<span class="title__text">Partners</span>
+						</h2>
+						<div class="partners__container container">
+							<div class="partners__col"><img src="img/partners/partners-1.png" alt="partner-1"></div>
+							<div class="partners__col"><img src="img/partners/partners-2.png" alt="partner-2"></div>
+							<div class="partners__col"><img src="img/partners/partners-3.png" alt="partner-3"></div>
+							<div class="partners__col"><img src="img/partners/partners-4.png" alt="partner-4"></div>
+							<div class="partners__col"><img src="img/partners/partners-5.png" alt="partner-5"></div>
+							<div class="partners__col"><img src="img/partners/partners-6.png" alt="partner-6"></div>
+						</div>
+						<div class="partners__health-harm">
+							<img src="img/health-harm.png" alt="Чрезмерное употребление алкоголем вредит вашему здоровью">
+						</div>
+					</div>
+					<footer class="partners__footer footer">
+						<div class="footer__container container">
+							<div class="footer__info">
+								<a href="#">About Us</a>
+								<a href="#">Privacy Policy</a>
+								<p>&copy; Hennessy 2018 / All rights reserved</p>
+							</div>
+							<a href="#" class="footer__author-logo">
+								<img src="img/author-logo.svg" alt="author-logo">
+							</a>
+							<div class="footer__social social">
+								<a href="#" class="social__link">
+									<svg class="facebook" width="13" height="22" viewBox="0 0 13 22">
+										<defs><path id="4vzoa" d="M1409.166 5733.696v-9.827h3.43l.515-3.83h-3.945v-2.446c0-1.11.319-1.865 1.975-1.865h2.109v-3.427a29.733 29.733 0 0 0-3.074-.15c-3.042 0-5.125 1.785-5.125 5.062v2.825h-3.44v3.83h3.44v9.828z"/></defs><g><g transform="translate(-1401 -5712)"><g><use fill="#fff" xlink:href="#4vzoa"/></g></g></g></svg>
+								</a>
+								<a href="#" class="social__link">
+									<svg class="twitter" width="20" height="17" viewBox="0 0 20 17">
+										<defs><path id="s1lwa" d="M1453.766 5717.172a8.174 8.174 0 0 1-2.35.645 4.11 4.11 0 0 0 1.8-2.263 8.253 8.253 0 0 1-2.602.994 4.094 4.094 0 0 0-6.975 3.732 11.622 11.622 0 0 1-8.437-4.277 4.063 4.063 0 0 0-.554 2.057c0 1.42.723 2.674 1.82 3.407a4.094 4.094 0 0 1-1.854-.514v.051a4.098 4.098 0 0 0 3.284 4.014 4.146 4.146 0 0 1-1.079.144c-.264 0-.52-.026-.77-.076a4.096 4.096 0 0 0 3.823 2.843 8.213 8.213 0 0 1-5.084 1.75c-.33 0-.656-.02-.977-.057a11.571 11.571 0 0 0 6.275 1.842c7.53 0 11.647-6.237 11.647-11.647l-.014-.53a8.175 8.175 0 0 0 2.047-2.115z"/></defs><g><g transform="translate(-1434 -5715)"><g><g><use fill="#fff" xlink:href="#s1lwa"/></g></g></g></g></svg>
+								</a>
+								<a href="#" class="social__link">
+									<svg class="instagram" width="19" height="19" viewBox="0 0 19 19">
+										<defs><path id="aae3a" d="M1488.296 5726.97a3.979 3.979 0 0 1-3.974 3.974h-6.813a3.979 3.979 0 0 1-3.974-3.974v-6.814a3.979 3.979 0 0 1 3.974-3.974h6.813a3.979 3.979 0 0 1 3.974 3.974zm-3.974-12.491h-6.813a5.678 5.678 0 0 0-5.678 5.677v6.814a5.678 5.678 0 0 0 5.678 5.677h6.813a5.678 5.678 0 0 0 5.678-5.677v-6.814a5.678 5.678 0 0 0-5.678-5.677z"/><path id="aae3b" d="M1480.916 5726.402a2.843 2.843 0 0 1-2.84-2.839 2.842 2.842 0 0 1 2.84-2.839 2.842 2.842 0 0 1 2.838 2.84 2.843 2.843 0 0 1-2.838 2.838zm0-7.381a4.542 4.542 0 1 0 0 9.085 4.542 4.542 0 0 0 0-9.085z"/><path id="aae3c" d="M1485.193 5718.68a.605.605 0 1 1 1.21 0 .605.605 0 0 1-1.21 0z"/></defs><g><g transform="translate(-1471 -5714)"><g><g><g><use fill="#fff" xlink:href="#aae3a"/></g></g></g><g><g><g><use fill="#fff" xlink:href="#aae3b"/></g></g></g><g><g><g><use fill="#fff" xlink:href="#aae3c"/></g></g></g></g></g></svg>
+								</a>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+
 		</div>
 
-	</div>
+		<script src="js/scripts.min.js"></script>
 
-	<script src="js/scripts.min.js"></script>
-
-</body>
+	</body>
 </html>
