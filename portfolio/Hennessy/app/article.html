@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="UTF-8">
+
+		<title>Hennessey</title>
+		<meta name="description" content="">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		
+		<!-- Template Basic Images Start -->
+		<meta property="og:image" content="path/to/image.jpg">
+		<link rel="icon" href="img/favicon/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+		<!-- Template Basic Images End -->
+		
+		<!-- Custom Browsers Color Start -->
+		<meta name="theme-color" content="#000">
+		<!-- Custom Browsers Color End -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
+		<link rel="stylesheet" href="css/main.min.css">
+
+	</head>
+
+	<body class="page article-page">
+
+		<header class="article__header header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo logo">
+					<img src="img/logo.png" alt="Logo">
+				</a>
+				<div class="header__right-col">
+					<div class="header__top-side">
+						<a href="#" class="header__login login">
+							<div class="login__ava">
+								<img src="img/login-ava.png" alt="Login ava" class="img-responsive">
+							</div>
+							<div class="login__info">
+								<div class="login__name">Dark</div>
+								<div class="login__surname">Admin</div>
+							</div>
+						</a>
+						<div class="sign-in__wrapper">		
+							<span class="header__sign-in sign-in">
+								<svg class="sign-in__icon" width="18" height="23" viewBox="0 0 18 23">
+									<defs>
+										<path id="4slqa" d="M1257.37 52.12c-.64-1.26-6.14-1.965-6.248-2.937-.188-1.687.625-1.468 1.187-2.937.29-.758.687-1.124.687-1.124s.179.02.49-.117c.51-.227.822-3.257-.302-3.07-.14.023-.217-.237-.298-.645.104-.593.127-1.2-.012-1.908-.166-.837-.639-1.653-1.372-2.01a1.225 1.225 0 0 0-.959-.208l-.004.001a.98.98 0 0 0-.46-.188c-.308-.045-.55-.232-.844-.313-.41-.112-.889-.082-1.304-.035-.718.082-1.476.364-2.018.856-.128.116-.25.253-.362.4l-.015.02-.038.05c-.168.208-.31.456-.412.758-.114.338-.182.741-.19 1.15-.015.121-.025.24-.021.354.014.426-.017 1.01.109 1.468-.055.17-.117.265-.203.25-1.124-.187-.812 2.843-.302 3.07.311.138.49.117.49.117s.396.366.687 1.125c.562 1.468 1.375 1.25 1.187 2.936-.108.972-5.609 1.678-6.248 2.937-1 1.968-.437 6.623-.437 6.623h17.65s.562-4.655-.438-6.624z"/>
+									</defs><g><g transform="translate(-1240 -36)"><use fill="#fff" xlink:href="#4slqa"/></g></g>
+								</svg>
+								<span class="sign-in__text">Sign in</span>
+							</span>
+							<div class="sign-in__dropdown dropdown">
+								<div class="dropdown__content">
+									<a href="#" class="dropdown__close">&times;</a>
+									<h4 class="sign-in__title">Войти</h4>
+									<a href="#" class="soc-enter enter-facebook">
+										<span>Войти через Facebook</span>
+									</a>
+									<a href="#" class="soc-enter enter-vk">
+										<span>Войти через Вконтакте</span>
+									</a>
+									<div class="sign-in__warning">Авторизируясь на сайте через социальные сервисы вы даете разрешение на использование ваших персональных данных на нашем сайте</div>
+								</div>
+							</div>
+						</div>
+						<div class="header__lang lang">
+							<a href="#" class="lang__link active">En</a>
+							<a href="#" class="lang__link">Az</a>
+							<a href="#" class="lang__link">Ru</a>
+						</div>
+					</div>
+					<nav class="header__nav nav">
+						<ul id="top_nav" class="nav-wrapper">
+							<li class="nav__item" data-menuanchor="main">
+								<a href="index.html" class="nav__link">Main</a>
+							</li>
+							<li class="nav__item" data-menuanchor="regulations">
+								<a href="index.html" class="nav__link">Regulations</a>
+							</li>
+							<li class="nav__item" data-menuanchor="participants">
+								<a href="index.html" class="nav__link">Participants</a>
+							</li>
+							<li class="nav__item" data-menuanchor="winner">
+								<a href="index.html" class="nav__link">Winner</a>
+							</li>
+							<li class="nav__item" data-menuanchor="how-it-was">
+								<a href="index.html" class="nav__link">How it was</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<header class="header-mob">
+			<div class="header-mob__container">
+				<a href="#" class="header-mob__burger burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+				<a href="#" class="header-mob__logo logo">
+					<img src="img/logo.png" alt="logo" class="img-responsive">
+				</a>
+				<div class="header-mob__lang lang">
+					<a href="#" class="lang__link active">En</a>
+					<a href="#" class="lang__link">Az</a>
+					<a href="#" class="lang__link">Ru</a>
+				</div>
+			</div>
+		</header>
+		<sidebar class="sidebar sidebar--left">
+			<span class="sidebar__sign-in sign-in">
+				<svg class="sign-in__icon" width="18" height="23" viewBox="0 0 18 23">
+								<defs>
+									<path id="4slqa" d="M1257.37 52.12c-.64-1.26-6.14-1.965-6.248-2.937-.188-1.687.625-1.468 1.187-2.937.29-.758.687-1.124.687-1.124s.179.02.49-.117c.51-.227.822-3.257-.302-3.07-.14.023-.217-.237-.298-.645.104-.593.127-1.2-.012-1.908-.166-.837-.639-1.653-1.372-2.01a1.225 1.225 0 0 0-.959-.208l-.004.001a.98.98 0 0 0-.46-.188c-.308-.045-.55-.232-.844-.313-.41-.112-.889-.082-1.304-.035-.718.082-1.476.364-2.018.856-.128.116-.25.253-.362.4l-.015.02-.038.05c-.168.208-.31.456-.412.758-.114.338-.182.741-.19 1.15-.015.121-.025.24-.021.354.014.426-.017 1.01.109 1.468-.055.17-.117.265-.203.25-1.124-.187-.812 2.843-.302 3.07.311.138.49.117.49.117s.396.366.687 1.125c.562 1.468 1.375 1.25 1.187 2.936-.108.972-5.609 1.678-6.248 2.937-1 1.968-.437 6.623-.437 6.623h17.65s.562-4.655-.438-6.624z"/>
+								</defs><g><g transform="translate(-1240 -36)"><use fill="#fff" xlink:href="#4slqa"/></g></g>
+							</svg>
+				<span class="sign-in__text">sign-in</span>
+			</span>
+			<div class="sign-in__dropdown dropdown">
+				<div class="dropdown__content">
+					<a href="#" class="dropdown__close">&times;</a>
+					<h4 class="sign-in__title">Войти</h4>
+					<a href="#" class="soc-enter enter-facebook">
+						<span>Войти через Facebook</span>
+					</a>
+					<a href="#" class="soc-enter enter-vk">
+						<span>Войти через Вконтакте</span>
+					</a>
+					<div class="sign-in__warning">Авторизируясь на сайте через социальные сервисы вы даете разрешение на использование ваших персональных данных на нашем сайте</div>
+				</div>
+			</div>
+			<a href="#" class="header-mob__login login">
+				<div class="login__ava">
+					<img src="img/login-ava.png" alt="Login ava" class="img-responsive">
+				</div>
+				<div class="login__info">
+					<div class="login__name">Dark</div>
+					<div class="login__surname">Admin</div>
+				</div>
+			</a>
+			<nav class="sidebar__nav nav">
+				<ul class="nav-wrapper">
+					<li class="nav__item"><a href="index.html" class="nav__link">Main</a></li>
+					<li class="nav__item"><a href="index.html" class="nav__link">Regulations</a></li>
+					<li class="nav__item"><a href="index.html" class="nav__link">Participants</a></li>
+					<li class="nav__item"><a href="index.html" class="nav__link">Winner</a></li>
+					<li class="nav__item"><a href="index.html" class="nav__link">How it was</a></li>
+				</ul>
+			</nav>
+		</sidebar>
+		<div class="modal js-modal-form">
+			<div class="modal__overlay">
+				<div class="modal__content" data-mcs-theme="dark">
+					<a href="#" class="modal__close">&times;</a>
+					<div class="modal__form form-wrapper">
+						<h2 class="title title--size_sm">
+							<svg class="title__icon" width="36" height="36" viewBox="0 0 36 36"><defs><path id="gohfa" d="M427.111 44.165l-15.57 14.374a1.21 1.21 0 0 1-.366.233l-2.996 1.222 1.45-2.883c.065-.13.154-.246.26-.345l15.571-14.374a1.218 1.218 0 0 1 1.716.065c.456.49.427 1.254-.065 1.708z"/><path id="gohfb" d="M398.976 39.714H392.5l8.095-8.095v6.476c0 .89-.729 1.62-1.619 1.62z"/><path id="gohfc" d="M401.204 60.056h-4.668c-.743 0-1.346-.587-1.346-1.312 0-.725.603-1.312 1.346-1.312h6.02zm-4.668-7.875h9.819l-1.13 1.017a6.509 6.509 0 0 0-1.282 1.608h-7.407c-.743 0-1.346-.587-1.346-1.312 0-.725.603-1.313 1.346-1.313zm0-5.25h15.648l-2.915 2.626h-12.733c-.743 0-1.346-.588-1.346-1.313s.603-1.312 1.346-1.312zm14.75 14.74l-5.515 2.196c-1.535.611-3.025-.962-2.28-2.406l2.68-5.2a3.88 3.88 0 0 1 .88-1.133L419.405 44V33.37c0-.967-.803-1.75-1.794-1.75h-11.659c-.99 0-1.793.783-1.793 1.75v7.874c0 .967-.803 1.75-1.794 1.75h-8.071c-.99 0-1.794.784-1.794 1.75V64.87c0 .967.803 1.75 1.794 1.75h23.317c.99 0 1.794-.783 1.794-1.75V54.711l-6.887 6.204a4.05 4.05 0 0 1-1.232.757z"/></defs><g><g transform="translate(-392 -31)"><g><use fill="#ab7f42" xlink:href="#gohfa"/></g><g><use fill="#ab7f42" xlink:href="#gohfb"/></g><g><use fill="#ab7f42" xlink:href="#gohfc"/></g></g></g></svg>
+							<span class="title__text">Form</span>
+						</h2>
+						<form action="POST" class="form">
+							<div class="form__row-top">
+								<div class="form__left-col">
+									<div class="form__photo">
+										<img src="img/form-ava-default.png" class="img-responsive" alt="Ava">
+									</div>
+									<div class="form__input-file input-file">
+										<input type="file" class="input-file__input" id="upload-ava">
+										<label for="upload-ava" class="input-file__label">
+											<svg class="input-file__icon" width="21" height="20" viewBox="0 0 21 20">
+												<defs><path id="tniqa" d="M103.009 289.062c.454 0 .81.357.81.812a.803.803 0 0 1-.81.812.803.803 0 0 1-.81-.812c0-.455.356-.812.81-.812zm0-1.082a1.901 1.901 0 0 0-1.892 1.894c0 1.04.854 1.895 1.892 1.895a1.901 1.901 0 0 0 1.892-1.895c0-1.04-.854-1.894-1.892-1.894zm9.728-1.091c.309 0 .54.232.54.541v8.17l-3.132-3.138a1.295 1.295 0 0 0-.93-.389c-.315.003-.62.132-.869.364-.989.809-2.02 1.675-2.871 2.385l-.735-.736a1.295 1.295 0 0 0-.929-.39c-.32.004-.627.136-.878.373-1.283 1.112-2.607 2.292-3.707 3.265v-9.904c.113-.315.268-.534.54-.541zm-8.453-3.764l12.38 3.316c.291.078.458.359.38.65l-2.685 10.031v-9.692c0-.89-.733-1.624-1.622-1.624h-9.711l.616-2.317c.172-.342.336-.388.642-.364zm-1.68.085l-.693 2.596h-2.145c-.889 0-1.621.734-1.621 1.624v12.99c0 .89.732 1.624 1.621 1.624h12.971c.87 0 1.59-.7 1.622-1.564a1.58 1.58 0 0 0 .413-.71l3.319-12.399a1.619 1.619 0 0 0-1.14-1.97l-12.388-3.324c-.853-.19-1.77.488-1.96 1.133z"/></defs><g><g transform="translate(-98 -282)"><use fill="#fff" xlink:href="#tniqa"/></g></g></svg>
+											<span class="input-file__text">Upload</span>
+										</label>
+									</div>
+								</div>
+								<div class="form__right-col">
+									<div class="form__col-3">
+										<label class="form__input-group input-group">
+											<span class="input-group__text">First Name</span>
+											<input type="text" name="name" class="input-group__input">
+										</label>
+									</div>
+									<div class="form__col-3">
+										<label class="form__input-group input-group">
+											<span class="input-group__text">Second Name</span>
+											<input type="text" name="second-name" class="input-group__input">
+										</label>
+									</div>
+									<div class="form__col-3">
+										<label class="form__input-group input-group">
+											<span class="input-group__text">Date of birth</span>
+											<input type="text" name="date" class="input-group__input js-form-date">
+										</label>
+									</div>
+									<div class="form__col-3">
+										<label class="form__input-group input-group">
+											<span class="input-group__text">place of work</span>
+											<input type="text" name="work" class="input-group__input">
+										</label>
+									</div>
+									<div class="form__col-3">
+										<label class="form__input-group input-group">
+											<span class="input-group__text">phone</span>
+											<input type="tel" placeholder="+(994)" name="phone" class="input-group__input">
+										</label>
+									</div>
+									<div class="form__col-3">
+										<label class="form__input-group input-group">
+											<span class="input-group__text">e-mail</span>
+											<input type="email" name="email" class="input-group__input">
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form__row-bottom">
+								<div class="form__left-col">
+									<div class="form__photo">
+										<img src="img/drink-default.png" class="img-responsive" alt="Drink">
+									</div>
+									<div class="form__input-file input-file">
+										<input type="file" class="input-file__input" id="upload-drink">
+										<label for="upload-drink" class="input-file__label">
+											<svg class="input-file__icon" width="21" height="20" viewBox="0 0 21 20">
+												<defs><path id="tniqa" d="M103.009 289.062c.454 0 .81.357.81.812a.803.803 0 0 1-.81.812.803.803 0 0 1-.81-.812c0-.455.356-.812.81-.812zm0-1.082a1.901 1.901 0 0 0-1.892 1.894c0 1.04.854 1.895 1.892 1.895a1.901 1.901 0 0 0 1.892-1.895c0-1.04-.854-1.894-1.892-1.894zm9.728-1.091c.309 0 .54.232.54.541v8.17l-3.132-3.138a1.295 1.295 0 0 0-.93-.389c-.315.003-.62.132-.869.364-.989.809-2.02 1.675-2.871 2.385l-.735-.736a1.295 1.295 0 0 0-.929-.39c-.32.004-.627.136-.878.373-1.283 1.112-2.607 2.292-3.707 3.265v-9.904c.113-.315.268-.534.54-.541zm-8.453-3.764l12.38 3.316c.291.078.458.359.38.65l-2.685 10.031v-9.692c0-.89-.733-1.624-1.622-1.624h-9.711l.616-2.317c.172-.342.336-.388.642-.364zm-1.68.085l-.693 2.596h-2.145c-.889 0-1.621.734-1.621 1.624v12.99c0 .89.732 1.624 1.621 1.624h12.971c.87 0 1.59-.7 1.622-1.564a1.58 1.58 0 0 0 .413-.71l3.319-12.399a1.619 1.619 0 0 0-1.14-1.97l-12.388-3.324c-.853-.19-1.77.488-1.96 1.133z"/></defs><g><g transform="translate(-98 -282)"><use fill="#fff" xlink:href="#tniqa"/></g></g></svg>
+											<span class="input-file__text">Upload</span>
+										</label>
+									</div>
+								</div>
+								<div class="form__right-col">
+									<div class="form__col-2">
+										<label class="form__input-group input-group">
+											<span class="input-group__text">cocktail recipe:</span>
+											<textarea name="recipe" class="input-group__textarea"></textarea>
+										</label>
+									</div>
+									<div class="form__col-2">
+										<label class="form__input-group input-group">
+											<span class="input-group__text">decoration:</span>
+											<textarea name="decoration" class="input-group__textarea"></textarea>
+										</label>
+									</div>
+									<div class="form__col-2">
+										<label class="form__input-group input-group">
+											<span class="input-group__text">cooking Way:</span>
+											<textarea name="way" class="input-group__textarea"></textarea>
+										</label>
+									</div>
+									<div class="form__col-2">
+										<label class="form__input-group input-group">
+											<span class="input-group__text">wineglass:</span>
+											<textarea name="wineglass:" class="input-group__textarea"></textarea>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form__submit-side">
+								<label class="form__input-checkbox input-checkbox">
+									<input type="checkbox" class="input-checkbox__input" id="agree">
+									<label for="agree" class="input-checkbox__text">I agree with the rules of participation of the forum</label>
+								</label>
+								<button class="form__button button" type="submit">Send</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal js-modal-rules">
+			<div class="modal__overlay">
+				<div class="modal__content" data-mcs-theme="inset-2">
+					<a href="#" class="modal__close">&times;</a>
+					<div class="modal__rules rules">
+						<h2 class="box__title title title--size_sm">
+							<svg class="title__icon" width="33" height="45" viewBox="0 0 33 45">
+								<defs>
+									<path id="aetya" d="M1160.456 1354.61c-.552.025-1.032.552-1.006 1.104.026.553.552 1.032 1.105 1.006h14.775c.557.008 1.071-.498 1.071-1.055 0-.558-.514-1.063-1.071-1.056h-14.775a1.067 1.067 0 0 0-.099 0zm-3.858-2.82l-4.007 4.435-1.847-1.846c-.39-.402-1.107-.398-1.5 0-.394.397-.39 1.114.016 1.5l2.638 2.638c.407.404 1.154.38 1.534-.05l4.749-5.276c.285-.311.352-.808.164-1.187a1.074 1.074 0 0 0-1.038-.577 1.068 1.068 0 0 0-.71.363zm3.858-6.15c-.552.025-1.032.551-1.006 1.104.026.553.552 1.032 1.105 1.006h14.775c.557.008 1.071-.498 1.071-1.056 0-.557-.514-1.063-1.071-1.055h-14.775a1.067 1.067 0 0 0-.099 0zm-3.15-3.183a1.068 1.068 0 0 0-.708.362l-4.007 4.436-1.847-1.847c-.39-.4-1.107-.398-1.5 0-.394.398-.39 1.115.016 1.5l2.638 2.64c.407.402 1.154.378 1.534-.05l4.749-5.277c.285-.312.352-.808.164-1.187a1.074 1.074 0 0 0-1.038-.577zm2.144-4.683c.026.552.552 1.032 1.105 1.006h14.775c.557.007 1.071-.498 1.071-1.056 0-.557-.514-1.063-1.071-1.055h-14.775a1.067 1.067 0 0 0-.099 0c-.552.026-1.032.552-1.006 1.105zm-2.143-4.288a1.068 1.068 0 0 0-.71.363l-4.006 4.436-1.847-1.847c-.39-.401-1.107-.398-1.5 0-.394.398-.39 1.115.016 1.5l2.638 2.639c.407.403 1.154.379 1.534-.05l4.749-5.276c.285-.312.352-.808.164-1.187a1.074 1.074 0 0 0-1.038-.578zm-4.667-9.481v3.694c0 .552.503 1.055 1.055 1.055h17.94c.554 0 1.056-.503 1.056-1.055v-3.694h6.332v39.575h-32.715v-39.575zm14.51-4.749v2.638h3.43v4.75h-15.83v-4.75h3.43v-2.638z"/></defs><g><g transform="translate(-1146 -1319)"><use fill="#ab7f42" xlink:href="#aetya"/></g></g></svg>
+							<span class="title__text">Regulations</span>
+						</h2>
+						<h2 class="rules-title rules-title--size_lg">ОБЩИЕ ПРАВИЛА И ПОЛОЖЕНИЯ:</h2>
+						<h2 class="rules-subtitle"><strong>“Hennessy Very Special Bartenders Competition 2018”</strong> проводится для барменов согласно описанным в данных правилах условиям.</h2>
+						<p>К участию в профессиональном Конкурсе допускаются бармены – граждане Азербайджана, либо 
+								бармены-иностранцы, постоянно проживающие и официально трудоустроенные на территории 
+								страны, достигшие возраста <strong>18</strong> лет и имеющие опыта работы не менее <strong>1</strong> год; Участвовать могут 
+								бармены имеющие статус членства ассоциации так и бармены, не имеющие статус членства 
+								ассоциации.
+								Конкурсант должен обладать профессиональными знаниями и навыками, необходимыми для 
+								приготовления алкогольных коктейлей, также обладать умением устно презентовать свой коктейль.</p>
+													<p>Целями проведения конкурса являются:</p>
+													<ul>
+														<li>повышение уровня коктейльной культуры в Азербайджане</li>
+														<li>выявление наиболее талантливых барменов-миксологов страны и их поощрение</li>
+														<li>популяризация современных и классических коктейлей на основе коньяка Hennessy V.S.</li>
+													</ul>
+													<h2 class="rules-title">ФОРМАТ ПРОВЕДЕНИЯ КОНКУРСА:</h2>
+													<p>Конкурс проводится в <strong>2</strong> (два) этапа:</p><br>
+													<ul>
+														<li><strong>1</strong> этап: приём заявок (онлайн – регистрация) участников и отбор <strong>6</strong> лучших конкурсантов <strong>TOP 6</strong></li>
+														<li><strong>2</strong> этап Гранд Финал выступление 6 лучших конкурсантов.</li>
+													</ul>
+													<p>Любой Участник, подтверждая свое участие в Конкурсе, соглашается с нижеперечисленными 
+								Правилами и обязан соблюдать их. Любое нарушение Правил может привести к дисквалификации 
+								Участника.</p>
+													<p>Информация о Правилах Конкурса, дате и месте проведения Гранд Финала, результатах 
+								Отборочного тура и прочая информация публикуется в следующих источниках:</p>
+													<p>
+														<ul>
+															<li>онлайн страница: <a href="#">www.beat.az</a></li>
+															<li>Фейсбук-страница: <a href="#">https://www.facebook.com/groups/AzerbaijanBarAssociation/</a><a href="#">https://www.facebook.com/BEATGroupBaku/</a></li>
+														</ul>
+													</p>
+													<h2 class="rules-title">ПРИЁМ ЗАЯВОК УЧАСТНИКОВ:</h2>
+													<p>Срок окончания приёма заявок до  <strong>15.12.2018</strong></p>
+													<p>В течение выделенного срока <strong>29.11.2018 – 15.12.2018</strong> участникам необходимо придумать авторские 
+								коктейли, и заполнить заявку:</p>
+													<ul>
+														<li>собственное фото за барной стойкой (формат <strong>JPG, BMP</strong>, объемом до 1Мб)</li>
+														<li>заполненную анкету-заявку с рецептурами коктейлей</li>
+														<li>фотографии приготовленных коктейлей (формат <strong>JPG, BMP</strong>, объемом до 1Мб)</li>
+													</ul>
+													<p>Основным компонентом подаваемых на регистрацию коктейлей должен быть коньяк <strong>Hennessy 
+								V.S. и гранатовый сок</strong></p>
+													<p>По истечению срока регистрации, жюри определяет Участников, заявки которых отвечают 
+								требованиям данных Правил. Жюри <strong>[гиперссылка на раздел Жюри]</strong> приёма заявок является 
+								компания <strong>HENNESSY</strong> и официальный дистрибьютор <strong>Armada</strong>
+								Участники, успешно прошедшие регистрацию, <strong>17.12.2018 г.</strong> оповещаются (по указанным в Заявке 
+								контактному номеру телефона и/или e-mail адресу) о приглашении в Гранд финал.</p>
+													<p><strong>Внимание:</strong> если зарегистрированный Участник не может принять участие в Гранд Финале, он 
+								обязан сообщить об этом организаторам не позднее, чем за <strong>15 (Пятнадцать)</strong> дней до его начала.</p>
+													<p>На конкурсе <strong>запрещено</strong> использование конкурирующих торговых марок.</p>
+													<h2 class="rules-title">ГРАНД ФИНАЛ</h2>
+													<p>По итогам отборочного тура <strong>6</strong> лучших (шесть) барменов принимают участие в Гранд Финале.</p>
+													<p><strong>Целью Финала является определение ПОБЕДИТЕЛЕЙ всех номинаций, в том числе 1 (одной) 
+								путёвки во Францию в провинцию Коньяк.</strong></p>
+													<ul>
+														<li>Лучшая техника</li>
+														<li>Лучший вкус</li>
+														<li>Лучшая презентация бренда</li>
+														<li>Онлайн симпатия</li>
+														<li>Лучшая продажа</li>
+														<li>Лучшая история или легенда</li>
+													</ul>
+													<p><strong>Номинации ПОБЕДИТЕЛЕЙ:</strong></p>
+													<p>
+														<ul>
+															<li>Победитель за онлайн симпатию.
+																<ul>
+																	<li>В этой номинации набравший максимальное балов согласно онлайн голосованию побеждает.</li>
+																</ul>
+															</li>
+															<li>Победитель за лучшую презентацию Бренда.
+																<ul>
+																	<li>Оценивается креатив и лучшая презентации бренда. Участникам необходимо включить свою 
+								фантазию, чтобы выделиться среди других.</li>
+																</ul>
+															</li>
+															<li>Победитель за лучшую продажу. 
+																<ul>
+																	<li>По итогам общее проданных коктейлей участник выигрывает эту номинацию. По системе 
+								компании «Armada» вычисляются продажи.</li>
+																</ul>
+															</li>
+														</ul>
+													</p>
+													<p>
+														<ul>
+															<li>Победитель за лучшую Технику.
+																<ul>
+																	<li>В этой номинации оценивается Техника. Участник набравший наибольшее количество балов по 
+								итогам оценочного листа является победителем этой номинации.
+								Победитель за лучший вкус коктейля.</li>
+																</ul>
+															</li>
+															<li>Победитель за лучший вкус коктейля.
+																<ul>
+																	<li>В этой номинации оценивается Оттенок, Баланс Послевкусие напитка</li>
+																	<li>Оттенок \ кислый, сухой, сладкий \</li>
+																	<li>Баланс \ кислый – сладкий \</li>
+																	<li>Послевкусие \ Приятное, негативное, желающее большей продолжительности \</li>
+																</ul>
+															</li>
+															<li>Победитель за лучшую историю или устную презентацию.
+																<ul>
+																	<li>В этой номинации Участник презентовав или рассказав правдивую историю \легенду\ к коктейлю 
+								объявляется победителем данной номинации.</li>
+																</ul>
+															</li>
+															<li>
+																Победитель главного приза путёвки во Францию в провинцию Коньяк.
+															</li>
+														</ul>
+													</p>
+													<p><strong>Порядок выступления участников будет определяться путём составления реверсивного 
+								(обратного) списка согласно порядку мест, занятых в Техническом пробеге.</strong></p>
+													<p><ul>
+														<li>Технический отбор – Участникам необходимо приготовить 4 (четыре) коктейля не превышая 6 
+								минут. Номер выступления участника зависит от результата времени и тех. оценки.</li>
+													</ul></p>
+													<p>
+								Участники должны приготовить каждый из заявленных авторских коктейлей категорий в 4 
+								(четырёх) экземплярах. Рецептура должна строго соответствовать указанной при подаче Заявки на 
+								участие в Конкурсе.</p>
+													<p>
+														<ul>
+															<li>Время подготовки: <strong>10</strong> (десять) минут</li>
+														</ul>
+													</p>
+													<p>
+														<ul>
+															<li>Время выступления: <strong>10</strong> (пятнадцать) минут, </li>
+														</ul>
+													</p>
+													<p>
+														<ul>
+															<li>Участники выступают по <strong>1 (одному)</strong> человеку.</li>
+														</ul>
+													</p>
+													<p>
+														<ul>
+															<li>Выступление происходит за барной стойкой.</li>
+														</ul>
+													</p>
+													<p>В Гранд Финале Жюри оценивает как сами конкурсные коктейли, так и характер и технику 
+								выступления Финалистов по следующим комплексным критериям согласно нижеприведенным:</p>
+													<h2 class="rules-title">ДЕГУСТАЦИЯ</h2>
+													<p>Вкус коктейля<br>
+								Аромат Коктейля<br>
+								Гарнир коктейля<br>
+								Послевкусие коктейля<br>
+								Вкус кислого и сладкого<br>
+								Внешний вид коктейля<br>
+								Подача коктейля<br>
+								Бонусное очко за устную презентацию<br>
+								Бонусный бал от продажи Коктейлей</p>
+													<h2 class="rules-title">ТЕХНИКА И ВНЕШНИЙ ВИД УЧАСТНИКА</h2>
+													<p><strong>Внешний вид участника:</strong></p>
+													<p>Стильность во внешнем виде (оценивается стильность и элегантность одежды, общий внешний вид, 
+								прическа и т.д.)
+								Наличие и качество собственных профессиональных барменских аксессуаров и инструментов у 
+								участника.
+								Профессиональные манеры и индивидуальный стиль в технике работы (оценивается поведение, жесты, 
+								стиль и профессионализм в технике работы)</p>
+													<p><strong>Техника:</strong></p>
+													<p>Подготовка к выступлению<br>
+								Обращение со льдом, стеклом, ингредиентами<br>
+								Технология приготовления<br>
+								Соблюдение рецептуры<br>
+								Налив и украшение коктейля<br>
+								Презентация коктейля и окончание работы<br>
+								Превышение лимита времени</p>
+													<p>Победитель путёвки во Францию, определяет Жюри по факту максимальной суммы набранных баллов.</p>
+													<p>Результаты Гранд финала и оценочные листы публикуются в онлайн источниках Конкурса в срок не 
+								более <strong>5</strong> (пять) дней после завершения Конкурса.</p>
+													<h2 class="rules-title">ТРЕБОВАНИЯ, ОГРАНИЧЕНИЯ И РЕКОМЕНДАЦИИ</h2>
+													<p>Конкурсанты имеют право использовать любой тип посуды, за исключением бокалов с 
+								логотипами иных брендов. Наличие посуды, барменского инструмента (инвентаря) для 
+								выступлений, а также ингредиентов для приготовления коктейлей Участники обеспечивают 
+								самостоятельно. <br>
+								Организаторы предоставляют всем участникам следующую продукцию компании 
+								<strong>HENNESSY</strong>: <br>
+								- коньяк <strong>Hennessy V.S.</strong></p>
+													<p>На конкурсе строго запрещено использование конкурирующих торговых марок.</p>
+													<p>Во время выступления участникам запрещается использовать открытый огонь (за 
+								исключением специального барменского инвентаря – зажигалок и т.п.) и какую-либо 
+								пиротехнику.</p>
+													<p>Запрещено выбрасывать что-либо (в том числе лед, салфетки) в зрительный зал.</p>
+													<p><strong>Требования к коктейлю: </strong></p>
+													<p>Коктейль должен быть авторским.
+								В рецепте коктейля должно содержаться не менее 40 мл коньяка Hennessy
+								Разрешается использовать - свежие фрукты, травы, специи, коренья, ягоды, битеры, сиропы, 
+								натуральные соки.</p>
+													<p><strong>Подсказка участникам:</strong></p>
+													<p>Во время выступления Участникам рекомендуется устно презентовать свой коктейль, озвучивая Жюри 
+								их «легенду или историю коктейля», а также обосновывая свой авторский взгляд на выбранную 
+								рецептуру. Каждый участник получает соответствующие Бонусные очки за легенду или историю к 
+								своим коктейлям.</p>
+													<p><strong>Рекомендации к выступлению:</strong></p>
+													<p>Будьте оригинальными – покажите свой собственный стиль работы, выразите себя и свое видение 
+								идеального коктейля. <br>
+								Выступайте спокойно и гармонично, чтобы было приятно наблюдать за вашей работой
+								Будьте креативными - старайтесь удивлять судей, также зрителей. <br>
+								Будьте зрелищными, постарайтесь использовать музыкальное, визуальное, гастрономическое 
+								сопровождение, не выходящие за рамки Правил и Требований. <br>
+								Во время выступления Участникам разрешается задействовать своих помощников.</p>
+													<a href="#" class="button button-close js-close-modal"><svg class="button__icon" width="15" height="15" viewBox="0 0 15 15"><defs><path id="km81a" d="M909 5708.7l1.7-1.7 5.8 5.8a699.822 699.822 0 0 0 5.8-5.8l1.7 1.7a700.288 700.288 0 0 1-5.8 5.8l5.8 5.8-1.7 1.7-5.8-5.8a700.288 700.288 0 0 1-5.8 5.8l-1.7-1.7a699.822 699.822 0 0 0 5.8-5.8l-5.8-5.8z"/></defs><g><g transform="translate(-909 -5707)"><use fill="#fff" xlink:href="#km81a"/></g></g></svg><span class="button__text">Close</span></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="article__content">
+			<div class="article__container">
+				<div class="article__heading">
+					<h2 class="article__title">ENERJI CLUB</h2>
+					<h3 class="article__subtitle">HENNESSY BE VERY SPECIAL BARTENDERS COMPETITION 2016</h3>
+					<div class="article__share share">
+						<a href="#" class="share__to-share">
+							<svg width="15" height="14" viewBox="0 0 15 14"><defs><path id="5eg4a" d="M436.511 297.29a2.57 2.57 0 0 0-2.566 2.566c0 .835.405 1.578 1.027 2.047l-2.475 4.142a2.57 2.57 0 0 0-3.544 2.373 2.57 2.57 0 0 0 2.566 2.566 2.57 2.57 0 0 0 2.539-2.223h4.858a2.57 2.57 0 0 0 2.54 2.223 2.57 2.57 0 0 0 2.565-2.565 2.57 2.57 0 0 0-2.566-2.566c-1.297 0-2.37.971-2.539 2.224h-4.853a2.568 2.568 0 0 0-.973-1.69l2.48-4.147c.293.116.608.181.941.181a2.57 2.57 0 0 0 2.566-2.565 2.57 2.57 0 0 0-2.566-2.566z"/></defs><g><g opacity=".6" transform="translate(-429 -297)"><use fill="#fff" xlink:href="#5eg4a"/></g></g></svg><span>Share</span>
+						</a>
+						<div class="share__social">
+							<a href="#"><svg width="9" height="15" viewBox="0 0 9 15"><defs><path id="pr7aa" d="M518.818 311v-6.773h2.364l.355-2.64h-2.719V299.9c0-.764.22-1.285 1.361-1.285h1.453v-2.362a20.493 20.493 0 0 0-2.118-.103c-2.096 0-3.532 1.23-3.532 3.489v1.947h-2.371v2.64h2.371V311z"/></defs><g><g opacity=".6" transform="translate(-513 -296)"><use fill="#fff" xlink:href="#pr7aa"/></g></g></svg></a>
+							<a href="#"><svg width="14" height="12" viewBox="0 0 14 12"><defs><path id="uluoa" d="M549.557 299.612a5.634 5.634 0 0 1-1.62.444 2.833 2.833 0 0 0 1.24-1.56 5.688 5.688 0 0 1-1.792.685 2.821 2.821 0 0 0-4.808 2.572 8.01 8.01 0 0 1-5.815-2.947 2.82 2.82 0 0 0 .873 3.766 2.822 2.822 0 0 1-1.278-.354v.035c0 1.366.973 2.507 2.263 2.766a2.858 2.858 0 0 1-.743.1c-.182 0-.358-.019-.531-.053a2.823 2.823 0 0 0 2.635 1.96 5.66 5.66 0 0 1-3.504 1.205c-.228 0-.452-.014-.673-.039a7.975 7.975 0 0 0 4.325 1.27c5.19 0 8.027-4.3 8.027-8.027l-.01-.366a5.634 5.634 0 0 0 1.411-1.457z"/></defs><g><g opacity=".6" transform="translate(-536 -298)"><use fill="#fff" xlink:href="#uluoa"/></g></g></svg></a>
+							<a href="#"><svg width="13" height="14" viewBox="0 0 13 14"><defs><path id="4hjea" d="M573.356 306.364c0 1.51-1.229 2.74-2.74 2.74h-4.695a2.742 2.742 0 0 1-2.74-2.74v-4.696c0-1.51 1.23-2.739 2.74-2.739h4.696c1.51 0 2.74 1.229 2.74 2.74zm-2.74-8.609h-4.695a3.914 3.914 0 0 0-3.913 3.913v4.696a3.914 3.914 0 0 0 3.913 3.913h4.696a3.914 3.914 0 0 0 3.913-3.913v-4.696a3.914 3.914 0 0 0-3.913-3.913z"/><path id="4hjeb" d="M568.269 305.973a1.96 1.96 0 0 1-1.957-1.957c0-1.079.879-1.956 1.957-1.956s1.957.877 1.957 1.956a1.96 1.96 0 0 1-1.957 1.957zm0-5.087a3.13 3.13 0 1 0 0 6.261 3.13 3.13 0 0 0 0-6.261z"/><path id="4hjec" d="M571.217 300.651a.417.417 0 1 1 .834 0 .417.417 0 0 1-.834 0z"/></defs><g><g opacity=".6" transform="translate(-562 -297)"><use fill="#fff" xlink:href="#4hjea"/></g><g opacity=".6" transform="translate(-562 -297)"><use fill="#fff" xlink:href="#4hjeb"/></g><g opacity=".6" transform="translate(-562 -297)"><use fill="#fff" xlink:href="#4hjec"/></g></g></svg></a>
+						</div>
+					</div>
+					<p>4 сентября 2016 года в Баку в Клубе Энержи прошёл финал  конкурса барменов  Hennessy "Be Very Special" Cocktail. На 
+					протяжении 3 месяцев онлайн публика, на сайте buro247, имела возможность наблюдать за инновационным в своём роде, проекте 
+					Хеннесси  "Be Very Special"  Cocktail. С 3 по 26 июня все желающие поучаствовать, присылали рецепты своих фирменных 
+					коктейлей на основе коньяка Хеннесси VS, после чего Домом были отобраны конкурсанты-победители отборочного тура. Зрители 
+					были ознакомлены с каждым финалистом конкурса, а также с историей Дома, его наследием и коллекцией. Слоган конкурса - Быть 
+					особенным. Своим взглядом на этот аспект с онлайн публикой поделились и уважаемые гости проекта-Мурад Дадашов, Нигяр 
+					Джамал и Наргиз Джалилова. Все финалисты конкурса уже отличились перед домом Хеннесси оригинальностью своих рецептов, 
+					желанием сотрудничать с компанией и уже являются победителями. На Гала финале конкурсанты продемонстрировали свое 
+					мастерство и  профессиональное жюри в лице Менеджера по Развитию продаж Кавказкого региона Теа Тварадзе, Бренд Амбассадора  
+					Моет Хеннесси по странам СНГ Ивана Бачурина, Президента барменской ассоциации Украины Сергея Кодатского , популярного певца 
+					Мири Юсифа и известной телеведущей Уснией Магерамовой отобрали лучших в следующих категориях:</p>
+					<p>Победитель за онлайн симпатию <br>
+					Победитель за лучшую презентацию Бренда <br>
+					Победитель за креативный гарнир. <br>
+					Победитель за лучшую Технику. <br>
+					Победитель за лучший вкус коктейля. <br>
+					Победитель за лучшую историю или устную презентацию. <br>
+					Победитель за лучший стиль работы Бармена. <br>
+					а также главного победителя, который отправиться  в город Коньяк, в дом Хеннесии. Им стал бармен Орхан Салахов! Поздравляем 
+					ещё раз всех финалистов конкурса барменов и главного призёра с победой! <br>
+					Будьте  Особенными!</p>
+					<p>Конкурс проходил при технической поддержке Ассоциации Барменов Азербайджана</p>	
+
+					<!-- МЕСТО ДЛЯ СЛАЙДЕРА  -->
+					
+					<div class="article__gallery-big-container">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="https://picsum.photos/760/460?random" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="https://picsum.photos/760/460?random" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="https://picsum.photos/760/460?random" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="article__gallery-small-container">
+						 <div class="article__gallery-button article__gallery-button-prev"></div>
+						 <div class="article__gallery-button article__gallery-button-next"></div>
+
+						 <div class="swiper-container">
+							 <div class="swiper-wrapper">
+								<div class="swiper-slide active">
+									<img src="img/gallery-thumbnail_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/gallery-thumbnail_2.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/gallery-thumbnail_3.jpg" alt="">
+								</div>
+
+								<div class="swiper-slide">
+									<img src="img/gallery-thumbnail_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/gallery-thumbnail_2.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/gallery-thumbnail_3.jpg" alt="">
+								</div>
+
+								<div class="swiper-slide">
+									<img src="img/gallery-thumbnail_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/gallery-thumbnail_2.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/gallery-thumbnail_3.jpg" alt="">
+								</div>
+
+								<div class="swiper-slide">
+									<img src="img/gallery-thumbnail_1.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/gallery-thumbnail_2.jpg" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="img/gallery-thumbnail_3.jpg" alt="">
+								</div>
+							 </div>
+						 </div>
+					</div>
+
+					<!-- МЕСТО ДЛЯ СЛАЙДЕРА  -->
+					<h2 class="article__title article__others">Другие события:</h2>
+					<div class="how-it-was__row">
+						<div class="how-it-was__col-3">
+							<a href="#" class="how-it-was__link">
+								<img src="img/photo-event.png" alt="Event" class="img-responsive">
+								<div class="how-it-was__info">
+									<h4 class="how-it-was__heading">Beat Group</h4>
+									<p class="how-it-was__description">Hennessy Bartenders competition 2018</p>
+								</div>
+							</a>
+						</div>
+						<div class="how-it-was__col-3">
+							<a href="#" class="how-it-was__link">
+								<img src="img/photo-event.png" alt="Event" class="img-responsive">
+								<div class="how-it-was__info">
+									<h4 class="how-it-was__heading">Beat Group</h4>
+									<p class="how-it-was__description">Hennessy Bartenders competition 2018</p>
+								</div>
+							</a>
+						</div>
+						<div class="how-it-was__col-3">
+							<a href="#" class="how-it-was__link">
+								<img src="img/photo-event.png" alt="Event" class="img-responsive">
+								<div class="how-it-was__info">
+									<h4 class="how-it-was__heading">Beat Group</h4>
+									<p class="how-it-was__description">Hennessy Bartenders competition 2018</p>
+								</div>
+							</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<footer class="article__footer footer">
+				<div class="footer__container container">
+					<div class="footer__info">
+						<a href="#">About Us</a>
+						<a href="#">Privacy Policy</a>
+						<p>&copy; Hennessy 2018 / All rights reserved</p>
+					</div>
+					<a href="#" class="footer__author-logo">
+						<img src="img/author-logo.svg" alt="author-logo">
+					</a>
+					<div class="footer__social social">
+						<a href="#" class="social__link">
+							<svg class="facebook" width="13" height="22" viewBox="0 0 13 22">
+								<defs><path id="4vzoa" d="M1409.166 5733.696v-9.827h3.43l.515-3.83h-3.945v-2.446c0-1.11.319-1.865 1.975-1.865h2.109v-3.427a29.733 29.733 0 0 0-3.074-.15c-3.042 0-5.125 1.785-5.125 5.062v2.825h-3.44v3.83h3.44v9.828z"/></defs><g><g transform="translate(-1401 -5712)"><g><use fill="#fff" xlink:href="#4vzoa"/></g></g></g></svg>
+						</a>
+						<a href="#" class="social__link">
+							<svg class="twitter" width="20" height="17" viewBox="0 0 20 17">
+								<defs><path id="s1lwa" d="M1453.766 5717.172a8.174 8.174 0 0 1-2.35.645 4.11 4.11 0 0 0 1.8-2.263 8.253 8.253 0 0 1-2.602.994 4.094 4.094 0 0 0-6.975 3.732 11.622 11.622 0 0 1-8.437-4.277 4.063 4.063 0 0 0-.554 2.057c0 1.42.723 2.674 1.82 3.407a4.094 4.094 0 0 1-1.854-.514v.051a4.098 4.098 0 0 0 3.284 4.014 4.146 4.146 0 0 1-1.079.144c-.264 0-.52-.026-.77-.076a4.096 4.096 0 0 0 3.823 2.843 8.213 8.213 0 0 1-5.084 1.75c-.33 0-.656-.02-.977-.057a11.571 11.571 0 0 0 6.275 1.842c7.53 0 11.647-6.237 11.647-11.647l-.014-.53a8.175 8.175 0 0 0 2.047-2.115z"/></defs><g><g transform="translate(-1434 -5715)"><g><g><use fill="#fff" xlink:href="#s1lwa"/></g></g></g></g></svg>
+						</a>
+						<a href="#" class="social__link">
+							<svg class="instagram" width="19" height="19" viewBox="0 0 19 19">
+								<defs><path id="aae3a" d="M1488.296 5726.97a3.979 3.979 0 0 1-3.974 3.974h-6.813a3.979 3.979 0 0 1-3.974-3.974v-6.814a3.979 3.979 0 0 1 3.974-3.974h6.813a3.979 3.979 0 0 1 3.974 3.974zm-3.974-12.491h-6.813a5.678 5.678 0 0 0-5.678 5.677v6.814a5.678 5.678 0 0 0 5.678 5.677h6.813a5.678 5.678 0 0 0 5.678-5.677v-6.814a5.678 5.678 0 0 0-5.678-5.677z"/><path id="aae3b" d="M1480.916 5726.402a2.843 2.843 0 0 1-2.84-2.839 2.842 2.842 0 0 1 2.84-2.839 2.842 2.842 0 0 1 2.838 2.84 2.843 2.843 0 0 1-2.838 2.838zm0-7.381a4.542 4.542 0 1 0 0 9.085 4.542 4.542 0 0 0 0-9.085z"/><path id="aae3c" d="M1485.193 5718.68a.605.605 0 1 1 1.21 0 .605.605 0 0 1-1.21 0z"/></defs><g><g transform="translate(-1471 -5714)"><g><g><g><use fill="#fff" xlink:href="#aae3a"/></g></g></g><g><g><g><use fill="#fff" xlink:href="#aae3b"/></g></g></g><g><g><g><use fill="#fff" xlink:href="#aae3c"/></g></g></g></g></g></svg>
+						</a>
+					</div>
+				</div>
+		</footer>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+		<script src="js/scripts.min.js"></script>
+		<script src="js/gallery.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+
+	</body>
+</html>

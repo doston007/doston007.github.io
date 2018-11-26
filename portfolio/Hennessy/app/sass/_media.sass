@@ -1,0 +1,294 @@
+@import "vars"
+@import "_mixins/breakpoints"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++lg-block()
+	.nav__link
+		font-size: 12px
+
+// ≥992px
++md-block()
+	.article__content
+		padding-top: 100px
+	.sidebar
+		display: flex
+	.container
+		margin-top: 0
+	.section
+		padding: 30px 0
+	.header
+		display: none
+	.header-mob
+		display: block
+	.left-col,
+	.right-col
+		width: 100%
+		margin-top: 80px
+	.winner
+		padding-bottom: 80px
+		&__title
+			margin-top: 0
+			margin-bottom: 0
+	.mouse-down
+		display: none
+	.how-it-was
+		padding: 0
+		&__col
+			width: 50%
+	.partners
+		&__col
+			width: 50%
+			align-items: flex-end
+		&__health-harm
+			margin-bottom: 100px
+			margin-top: 50px
+
+	#fp-nav
+		ul
+			display: none
+	.main
+		padding-bottom: 0 
+		padding-top: 80px
+		.left-col,
+		.right-col
+			width: 100%
+			padding: 15px 15px
+			margin-top: 0
+		&__brend-img
+			width: 100%
+			height: auto
+		&__brend-wrapper
+			width: 50%
+		&__box
+			width: 100%
+			padding: 50px 30px
+		.box-wrapper
+			width: 50%
+	.regulations,
+	.participants
+		padding-top: 0 
+	.partners__col
+		margin-bottom: 35px
+		padding: 0 20px
+		align-items: center
+	.form
+		&__col-3
+			width: 50%
+		&__left-col
+			margin: 0
+			width: 25%
+	.modal
+		&__content
+			width: 768px
+	.sign-in__dropdown
+		top: 60px
+		left: 85px
+	.how-it-was
+		&__col-3
+			width: 400px
+			margin-bottom: 40px
+
+// ≥768px
++sm-block()
+	.rules
+		padding: 20px
+	.main
+		padding: 0
+		padding-top: 20px
+	.winner
+		&__button-icon
+			display: inline-flex
+		&__iframe,
+		&__video
+			display: none
+		.right-col
+			margin-top: 0
+	.participants
+		padding: 0
+		&__profile
+			display: none
+		&__left-col
+			display: none
+	.regulations
+		.right-col
+			margin-top: 180px
+	.partners__health-harm
+		margin-bottom: 250px
+		width: 90%
+		margin-left: auto
+		margin-right: auto
+		img
+			width: 100%
+			height: auto
+	.how-it-was
+		&__title
+			margin-bottom: 20px
+		&__col
+			padding: 15px
+	.footer
+		&__container
+			flex-flow: column nowrap
+			align-items: center
+			justify-content: center
+		&__info
+			align-items: center
+			order: 1
+		&__author-logo
+			margin: 20px 0
+			order: 3
+		&__social
+			order: 2
+			border-bottom: 1px solid #fff
+			padding: 15px 0
+	.participants__right-col
+		margin-top: 40px
+	.sidebar
+		width: 50%
+	// Profile-page
+	.profile-page
+		&__wrapper
+			margin-top: 80px
+			margin-bottom: 80px
+			&:after
+				display: none
+		&__row
+			margin: 50px 0
+			flex-flow: column nowrap
+	.main
+		padding-top: 80px
+		.box-wrapper
+			width: 70%
+		&__brend-wrapper
+			width: 70%
+	// Form
+	.form
+		&__left-col,
+		&__right-col
+			width: 100%
+		&__photo
+			width: 40%
+			margin: 0 auto
+		&-wrapper
+			padding-left: 10px
+			padding-right: 10px
+	.modal
+		&__content
+			width: 576px
+
+// ≥576px
++xs-block()
+	.box__text
+		font-size: 12px
+	.partners__health-harm
+		margin-top: 5px
+		margin-bottom: 220px
+	.participants__col
+		width: 50%
+	.how-it-was__col
+		width: 100%
+	.video
+		width: 90%
+		margin: 0 auto
+		align-items: center
+		img
+			width: 100%
+			height: auto
+	#fp-nav
+		display: none
+	.header-mob__logo
+		width: 120px
+	.partners 
+		img
+			width: 100%
+			height: auto
+		&__col
+			padding: 0 10px
+	.person
+		&__ava
+			width: 200px
+			height: 200px
+			margin: 0 auto
+			border-width: 10px
+		&__text
+			top: 120%
+			right: 0
+			left: 0
+			font-size: 16px
+			small
+				font-size: 14px
+	.lang
+		&__link
+			padding: 0 5px
+			font-size: 8px
+	.profile__img-wrapper
+		width: 200px
+		height: 200px
+	.regulations__box
+		padding: 30px
+		overflow: hidden
+	.section
+		padding: 50px 0
+	.sidebar
+		top: 72px
+		width: 70%
+	.main
+		padding: 0
+		padding-top: 40px
+		.box-wrapper
+			width: 90%
+		&__brend-wrapper
+			width: 90%
+		&__box
+			width: 100%
+			padding: 20px 15px
+			border-radius: 20px
+		.time-left
+			font-size: 20px
+			small
+				font-size: 11px
+		.clock
+			font-size: 28px
+		&__button
+			font-size: 16px
+			border-radius: 5px
+			margin-top: 10px
+	// Profile-page
+	.profile-page
+		&__logo
+			max-width: 250px
+		&__description
+			width: 90%
+			&:after,
+			&:before
+				display: none
+		&__ava-wrapper
+			max-width: 230px
+			max-height: 230px
+	// Form
+	.form
+		&__col-3,
+		&__col-2
+			width: 100%
+			margin-top: 20px
+	.input-group__text
+		text-align: center
+	.modal
+		&__content
+			width: 320px
+	// title
+	.title
+		&--size_md
+			font-size: 22px
+	.how-it-was
+		&__col-3
+			width: 305px
+			padding: 0
+			margin-bottom: 40px
+
+
+@media screen and (min-height: 750px)
+	.partners__health-harm
+		margin-top: 10%

@@ -1,0 +1,43 @@
+.title
+	display: inline-flex
+	align-items: flex-end
+	&__text
+		font-weight: bold
+		color: $color-gold
+		position: relative
+		margin-left: 10px
+		text-transform: uppercase
+		&:after,
+		&:before
+			content: ''
+			position: absolute
+			width: 55%
+		&:before
+			bottom: 0
+			left: 0
+		&:after
+			right: 0
+	&--size_sm
+		font-size: 20px
+		.title__text
+			&:after,
+			&:before
+				border-bottom: 3px solid $color-gold
+			&:after
+				bottom: -4px
+	&--size_md
+		font-size: 24px
+		.title__text
+			&:after,
+			&:before
+				border-bottom: 4px solid $color-gold
+			&:after
+				bottom: -5px
+	&--size_lg
+		font-size: 32px
+		.title__text
+			&:after,
+			&:before
+				border-bottom: 5px solid $color-gold
+			&:after
+				bottom: -6px

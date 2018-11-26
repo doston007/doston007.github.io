@@ -1,0 +1,59 @@
+#fp-nav
+	ul
+		position: relative
+		li
+			width: 31px
+			height: 30px
+		li:nth-child(1)>a span:last-child:after
+			content: '1'
+		li:nth-child(2)>a span:last-child:after
+			content: '2'
+		li:nth-child(3)>a span:last-child:after
+			content: '3'
+		li:nth-child(4)>a span:last-child:after
+			content: '4'
+		li:nth-child(5)>a span:last-child:after
+			content: '5'
+		li:last-child>a 
+			background-image: url(../img/fp-nav-icon.svg)
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: center center
+			transition: 0s
+			&:hover,
+			&.active
+				border: none
+				background-image: url(../img/fp-nav-icon-hovered.svg)
+		a
+			transition: .2s
+			border-radius: 50%
+			&.active,
+			&:hover
+				border: 1px solid $color-gold
+				span:last-child:after
+					color: $color-gold
+			span
+				height: 100%
+				width: 100%
+				background: transparent !important
+				display: flex
+				justify-content: center
+				align-items: center
+				&:last-child:after
+					color: #fff
+					font-size: 22px
+					font-family: $second-font
+		&:after,
+		&:before
+			content: ''
+			position: absolute
+			width: 3px
+			height: 80px
+			display: block
+			background-color: #fff
+		&:before
+			top: -50%
+			left: 50%
+		&:after
+			bottom: -50%
+			left: 50%

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="dist/css/common.css">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<a href="index.html" class="logo">
+					<img src="img/logo.png" alt="Logo" class="img-responsive">
+				</a>
+				<nav>
+					<a href="#pricing">Услуги</a>
+					<a href="#scheme">Схема работы</a>
+					<a href="#causes">Преимущества</a>
+					<a href="#testimonials">Отзывы</a>
+					<a href="#contacts">Контакты</a>
+				</nav>
+				<a href="#" class="button button-order hide-sm">Проектировщикам<br> и Строителям</a>
+				<a href="#" class="nav-btn show-sm">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+		</div>
+	</header>
+	
+	<section class="hero">
+		<div class="container">
+			<div class="address hide-sm">Нижний Новгород<br>и ВСЯ область<br><span>8 (831) 413-99-95</span></div>
+			<h1>ГАЗОВОЕ ОТОПЛЕНИЕ <br>ЧАСТНОГО ДОМА<br>«под ключ»</h1>
+			<div class="form-wrapper hero-form">
+				<h3>БЕСПЛАТНО за 1 час <span>Расчитаем стоимость работ</span></h3>
+				<form action="/mail.php" method="POST" class="js-form" id="#main-form">
+					<label><span>Имя</span><input type="text" name="name" class="js-field-name"><label class="error error-name">Введите свое имя</label></label>
+					<label><span>+ 7</span><input type="tel" name="phone" class="phone js-field-phone"><label class="error error-phone">Введите свой номер телефона</label></label>
+					<button type="submit" class="button button-submit"><span>Заказать рассчет</span></button>
+				</form>
+			</div>
+			<div class="price">
+				<div class="price-since">от 780 р./кв.м</div>
+				<span>с гарантией на 5 лет!</span>
+			</div>
+
+			
+		</div>
+	</section>
+
+	<section class="gift">
+		<div class="container">
+			<h2><span class="red">В ПОДАРОК</span> СИСТЕМА КОНТРОЛЯ «УМНОЕ ОТОПЛЕНИЕ»</h2>
+			<p class="subtitle">при заказе монтажа газового отопления дома «под ключ» до 31 декабря 2018 г.</p>
+			<div class="gift-row">
+				<div class="step">
+					<img src="img/devices.png" alt="Devices">
+					<p>обеспечивает экономичный расход топлива</p>
+				</div>
+				<div class="step">
+					<img src="img/wifi.png" alt="Wi-fi">
+					<p>позволяет удаленно устанавливать температуру в доме</p>
+				</div>
+				<div class="step">
+					<img src="img/house.png" alt="House">
+					<p>контролирует на расстоянии исправность работы отопительного котла</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="pricing" id="pricing">
+		<div class="container">
+			<h2>Мы делаем тепло</h2>
+			<div class="row">
+				<div class="card">
+					<img src="img/Котел.png" alt="Кател" class="img-responsive">
+					<h3>Монтаж котлов (обвязка)</h3>
+					<p>- Установка котла</p>
+					<p>- Монтаж группы безопасности</p>
+					<p>- Подключение труб и узлов</p>
+					<p>- Пусконаладка оборудования</p>
+					<div class="card-price">от 4900 р.</div>
+					<a href="#hero" class="button button-buy">Заказать</a>
+				</div>
+				<div class="card">
+					<img src="img/Радиатор.png" alt="Радиатор" class="img-responsive">
+					<h3>Монтаж радиаторов</h3>
+					<p>- Монтаж радиатора с подключением к регулирующей арматуре</p>
+					<p>- Установка циркуляционного насоса</p>
+					<p>- Подключение подводящих и отводящих труб</p>
+					<p>- Пусконаладка системы отопления</p>
+					<div class="card-price">от 980 р.</div>
+					<a href="#hero" class="button button-buy">Заказать</a>
+				</div>
+				<div class="card">
+					<img src="img/Теплый_пол.png" alt="Теплый пол" class="img-responsive">
+					<h3>Монтаж</h3>
+					<p>- Укладка теплоизоляции и теплоотражателя</p>
+					<p>- Монтаж системы трубопроводов</p>
+					<p>- Установка коллектора</p>
+					<p>- Обвязка котельного оборудования</p>
+					<div class="card-price">от 185 р.</div>
+					<a href="#hero" class="button button-buy">Заказать</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="scheme" id="scheme">
+		<h2 class="red">Работать с нами просто</h2>
+		<div class="content">
+			<div class="container">
+				<p class="subtitle">Слаженная схема работы = снижение срока выполнения работ</p>
+				<div class="scheme-row">
+					<div class="step">
+						<div class="img-wrapper">
+							<img src="img/step-1.png" alt="step-1" class="img-responsive">
+						</div>
+						<p>Заявка, консультация и расчет за 1 час</p>
+					</div>
+					<div class="step">
+						<div class="img-wrapper">
+							<img src="img/step-2.png" alt="step-2" class="img-responsive">
+						</div>
+						<p>Выезд инженера на замер</p>
+					</div>
+					<div class="step">
+						<div class="img-wrapper">
+							<img src="img/step-3.png" alt="step-3" class="img-responsive">
+						</div>
+						<p>Проект / Смета Договор</p>
+					</div>
+					<div class="step">
+						<div class="img-wrapper">
+							<img src="img/step-4.png" alt="step-4" class="img-responsive">
+						</div>
+						<p>Доставка материалов и монтаж</p>
+					</div>
+					<div class="step">
+						<div class="img-wrapper">
+							<img src="img/step-5.png" alt="step-5" class="img-responsive">
+						</div>
+						<p>Пуско-наладка, ГАРАНТИЯ на систему и котел</p>
+					</div>
+					<div class="step">
+						<div class="img-wrapper">
+							<img src="img/step-6.png" alt="step-6" class="img-responsive">
+						</div>
+						<p>Уборка помещения после окончания работ</p>
+					</div>
+				</div>
+				<form action="/mail.php" method="POST" class="js-form form-with-shadow">
+					<label><span>Имя</span><input type="text" name="name" class="js-field-name"><label class="error error-name">Введите свое имя</label></label>
+					<label><span>+ 7</span><input type="tel" name="phone" class="phone js-field-phone"><label class="error error-phone">Введите свой номер телефона</label></label>
+					<button type="submit" class="button button-submit"><span>Заказать рассчет</span></button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section class="causes" id="causes">
+		<div class="container">
+			<div class="col">
+				<div class="five">5</div>
+				<div class="text">
+					<h2>ПРИЧИН ВЫБРАТЬ НАС</h2>
+					<p class="white">Главная выгода при работе с нами это гарантировано теплый дом в минимальные сроки и по оптимальной цене.</p>
+				</div>
+			</div>
+			<div class="col">
+				<ul>
+					<li>
+						<h3>БЕСПЛАТНАЯ ДОСТАВКА</h3>
+						<p>Укомплектуем и доставим все сами</p>
+					</li>
+					<li>
+						<h3>СИСТЕМА СКИДОК</h3>
+						<p>Предложим варианты дисконтно<br> программы</p>
+					</li>
+					<li>
+						<h3>СЕРВИСНОЕ и ГАРАНТИЙНОЕ ОБСЛУЖИВАНИЕ</h3>
+						<p>Ваша система отопления останется под<br> надежным присмотром даже после пусконаладных работ</p>
+					</li>
+					<li>
+						<h3>ГРАМОТНЫЙ ПОДБОР ОБОРУДОВАНИЯ</h3>
+						<p>Сэкономим ваш бюджет уже на этапе<br> выбора оборудования, исходя из задач проекта</p>
+					</li>
+					<li>
+						<h3>УСЛУГИ ПО ЭЛЕКТРИКЕ и САНТЕХНИКЕ</h3>
+						<p>Выполним смежные работы по установке<br> бутовой техники и монтажу сантехники</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	
+	<section class="testimonials" id="testimonials">
+		<div class="container">
+			<h2>РЕАЛИЗОВАННЫЕ ПРОЕКТЫ и ОТЗЫВЫ</h2>
+			<div class="slider js-slider">
+				<div class="frame js_frame">
+					<ul class="slides js_slides">
+						<li class="js_slide">
+							<div class="left-col">
+								<a href="img/1/main-img.jpg"" class="main-img">
+									<img src="img/1/main-img.jpg" alt="House-2" class="img-responsive">
+								</a>
+								<div class="gallery">
+									<a href="img/1/1.JPG" class="photo"><img src="img/1/1-min.jpg" alt="house-2" class="img-responsive"></a>
+									<a href="img/1/3.jpg" class="photo"><img src="img/1/3-min.jpg" alt="house-2" class="img-responsive"></a>
+									<a href="img/1/4.jpg" class="photo"><img src="img/1/4-min.jpg" alt="house-2" class="img-responsive"></a>
+									<a href="img/1/5.JPG" class="photo"><img src="img/1/5-min.jpg" alt="house-2" class="img-responsive"></a>
+								</div>
+							</div>
+							<div class="right-col">
+								<h3>Коттедж 175 м2 </h3>
+								<strong>Местоположение:</strong>
+								<p>Кстовский р-н</p>
+								<strong>Котельная:</strong>
+								<p>Напольный котел, с чугунным теплообменником, ViessmannVitogas 48 кВт, погодозависимая автоматика, Бойлер Vitocell 200 л (с линией рециркуляции ГВС), Насосное оборудование Willo.</p>
+								<strong>Система:</strong>
+								<p>двухтрубная, алюминиевые радиаторы Fondital, внутрипольные конвекторы Varmann, водяной теплый пол Compipe, отопление в гараже теплыми полами. </p>
+								<strong>Пуско-наладочные работы, гарантия 5 лет.</strong>
+							</div>
+						</li>
+						<li class="js_slide">
+							<div class="left-col">
+								<a href="img/2/main-img.jpg" class="main-img">
+									<img src="img/2/main-img.jpg" alt="House-2" class="img-responsive">
+								</a>
+								<div class="gallery">
+									<a href="img/2/1.jpg" class="photo"><img src="img/2/1-min.jpg" alt="house-2" class="img-responsive"></a>
+									<a href="img/2/2.JPG" class="photo"><img src="img/2/2-min.jpg" alt="house-2" class="img-responsive"></a>
+									<a href="img/2/3.JPG" class="photo"><img src="img/2/3-min.jpg" alt="house-2" class="img-responsive"></a>
+									<a href="img/2/4.JPG" class="photo"><img src="img/2/4-min.jpg" alt="house-2" class="img-responsive"></a>
+								</div>
+							</div>
+							<div class="right-col">
+								<h3>Коттедж 120 м2</h3>
+								<strong>Местоположение:</strong>
+								<p>Московская обл.</p>
+								<strong>Котельная:</strong>
+								<p>Напольный котел, с чугунным теплообменником, BuderusLogano 234 WS 38 кВт, погодозависимая автоматика, Бойлер БойлерBuderusLogolux S200/5E объем 200 л (с линией рециркуляции ГВС), Насосное оборудование Willo.</p>
+								<strong>Система:</strong>
+								<p>двухтрубная, Скрытый монтаж трубопроводов, алюминиевые радиаторы Vostok, внутрипольные конвекторы Varmann, водяной теплый пол Compipe.</p>
+								<strong>Пуско-наладочные работы, гарантия 5 лет.</strong>
+							</div>
+						</li>
+						<li class="js_slide">
+							<div class="left-col">
+								<a href="img/3/main-img.jpg" class="main-img">
+									<img src="img/3/main-img.jpg" alt="House-2" class="img-responsive">
+								</a>
+								<div class="gallery">
+									<a href="img/3/1.jpg" class="photo"><img src="img/3/1-min.jpg" alt="house-2" class="img-responsive"></a>
+									<a href="img/3/2.jpg" class="photo"><img src="img/3/2-min.jpg" alt="house-2" class="img-responsive"></a>
+									<a href="img/3/3.jpg" class="photo"><img src="img/3/3-min.jpg" alt="house-2" class="img-responsive"></a>
+									<a href="img/3/4.jpg" class="photo"><img src="img/3/4-min.jpg" alt="house-2" class="img-responsive"></a>
+								</div>
+							</div>
+							<div class="right-col">
+								<h3>Горнолыжный комплекс</h3>
+								<strong>Центральное здание, 5 домов для отдыхающих</strong>
+								<strong>Местоположение:</strong>
+								<p>Кстовский р-н</p>
+								<strong>Котельная</strong>
+								<p>Напольный котел, с чугунным теплообменником, BaxiSlim 49 кВт, погодозависимая автоматика, Бойлер Drazice 500 л (с линией рециркуляции ГВС), насосное оборудование Grundfoss.</p>
+								<strong>Система:</strong>
+								<p>двухтрубная, алюминиевые радиаторы Fondital, водяная тепловая завеса, водяной теплый пол Compipe. Зональное регулирование комнатными термостатами.</p>
+								<strong>Пуско-наладочные работы, гарантия 5 лет.</strong>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<span class="js_prev prev">
+					<svg version="1.1"mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 95" xml:space="preserve"><polyline points="30,0 30,95 0,47.5 "/></svg>
+				</span>
+                <span class="js_next next">
+                	<svg version="1.1"mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 95" xml:space="preserve"><polyline points="0,0 0,95 30,47.5 "/></svg>
+                </span>
+			</div>
+			<p class="thanks">Спасибо, за душевные отзывы!</p>
+
+
+			<div class="slider videos-slider js-slider">
+				<div class="frame js_frame">
+					<ul class="slides js_slides">
+						<li class="js_slide">
+							<div class="left-col">
+								<a href="https://www.youtube.com/watch?v=TDP2Jgg0Yio" class="main-video video-1">
+									<img src="https://img.youtube.com/vi/TDP2Jgg0Yio/hqdefault.jpg" class="img-responsive" alt="video">
+								</a>
+							</div>
+						</li>
+						<li class="js_slide">
+							<div class="left-col">
+								<a href="https://www.youtube.com/watch?v=rbs891aRKNw" class="main-video video-2">
+									<img src="https://img.youtube.com/vi/rbs891aRKNw/hqdefault.jpg" class="img-responsive" alt="video">
+								</a>
+							</div>
+						</li>
+						<li class="js_slide">
+							<div class="left-col">
+								<a href="https://www.youtube.com/watch?v=hEfV22pEiZI" class="main-video  video-3">
+									<img src="https://img.youtube.com/vi/hEfV22pEiZI/hqdefault.jpg" class="img-responsive" alt="video">
+								</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<span class="js_prev prev">
+					<svg version="1.1"mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 95" xml:space="preserve"><polyline points="30,0 30,95 0,47.5 "/></svg>
+				</span>
+                <span class="js_next next">
+                	<svg version="1.1"mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 95" xml:space="preserve"><polyline points="0,0 0,95 30,47.5 "/></svg>
+                </span>
+			</div>
+
+		</div>
+		<div class="form-wrapper testimonials-form form-with-shadow">
+				<h3>Я ТОЖЕ ХОЧУ <span>ОТОПЛЕНИЕ БЕЗ ПРОБЛЕМ</span></h3>
+				<form action="/mail.php" method="POST" class="js-form">
+					<label><span>Имя</span><input type="text" name="name" class="js-field-name"><label class="error error-name">Введите свое имя</label></label>
+					<label><span>+ 7</span><input type="tel" name="phone" class="phone js-field-phone"><label class="error error-phone">Введите свой номер телефона</label></label>
+					<button type="submit" class="button button-submit"><span>Заказать рассчет</span></button>
+				</form>
+			</div>
+	</section>
+
+	<section class="spec-offer">
+		<div class="container">
+			<div class="spec-offer-text">
+				<div class="spec-offer-title">
+					<h2>СПЕЦПРЕДЛОЖЕНИЕ <span>«Профи»</span></h2>
+					<h3>ДЛЯ ПРОЕКТИРОВЩИКОВ, ЗАСТРОЙЩИКОВ и ПРОРАБОВ</h3>
+				</div>
+				<p>Мы предлагаем свои услуги в качестве подрядной организации по всему комплексу услуг в инженерном обеспечении зданий.</p>
+				<p>Основные виды нашей деятельности: разработка проектов документации, поставка оборудования и материалов, монтаж инженерных систем,а также их сервисное обслуживание и ремонт.</p>
+				<p>Работаем с объектами любой котегории сложности: жилые дома, промышленные и административные здания, спортивные, торговые и развлекательные центры и иные сооружения.</p>
+			</div>
+			<div class="spec-offer-row">
+				<ul>
+					<h4>С НАС:</h4>
+					<li>- качественная работа</li>
+					<li>- соблюдение сроков</li>
+					<li>- гарантийные обязательства</li>
+					<li>- выгодные финансовые условия</li>
+				</ul>
+				<div class="form-wrapper spec-offer-form">
+				<h3>ИЩУ НАДЕЖНОГО ПОДРЯДЧИКА</h3>
+				<form action="https://sms.ru/sms/send?api_id=B38A4605-25AA-1F4D-68E3-7BB677BF1D6B&to=79535575568&json=1" method="GET" class="js-form js-form-get-spec-offer">
+					<label><span>Имя</span><input type="text" name="text" class="js-field-name"><label class="error error-name">Введите свое имя</label></label>
+					<label><span>+ 7</span><input type="tel" name="msg" class="phone js-field-phone"><label class="error error-phone">Введите свой номер телефона</label></label>
+					<button type="submit" class="button button-submit"><span>Получить спецпредложение</span></button>
+				</form>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="contacts">
+		<div class="footer-main">
+			<div class="container">
+				<div class="footer-logo">
+					<a href="index.html">
+						<img src="img/footer-logo.png" alt="Logo">
+					</a>
+					<p class="footer-logo-text">Компания основана в 2012 г. <strong>Нижний Новгород и область</strong></p>
+				</div>
+				<div class="footer-info">
+					<p>Ответим на ваши вопросы по телефонам:<br><a href="tel:+78314239995" class="red">+7 (831) 423-99-95,</a><a href="tel:+79290539995" class="red"> +7 (929) 053-99-95</a></p>
+					<p>Пишите письма: <a href="mailto:teplo@ecc-nn.ru" class="red">teplo@ecc-nn.ru</a></p>
+					<p class="social">Дружите с нами в соцсетях:
+						<a href="https://www.instagram.com/otoplenie.ecc/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+						<a href="https://www.viber.com/invite/ba4e2f8cbe28060fe6b394ff9c8a43abd34171da2ad25e1af04ca464f9fbd639/11" target="_blank"><img src="img/viber.png" alt="Viber"></a>
+						<a href="https://www.youtube.com/channel/UC469Tp5dQhqUOtxGR6mNm2A" target="_blank"><img src="img/youtube.png" alt="YouTube"></a>
+					</p>
+					<p>Наш офис: <span class="red">г. Кстово, ул. Магистральная, д. 8</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="subfooter">
+			<div class="container">
+				<p>&copy; Единая Сервисная Служба, 2018 г.</p>
+				<p>Все права защищены</p>
+				<a href="#">Политика конфидециальности</a>
+			</div>
+		</div>
+	</footer>
+
+	<div id="notify-popup" class="white-popup mfp-with-anim mfp-hide js-notify-popup">
+		<h3>Ваша заявка принята</h3>
+		<p class="js-notify-popup-text"></p>
+	</div>
+<script type="text/javascript" src="dist/js/common.js"></script>
+</body>
+</html>

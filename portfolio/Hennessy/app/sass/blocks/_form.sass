@@ -1,0 +1,72 @@
+.form
+	width: 100%
+	padding-top: 30px
+	&-wrapper
+		width: 100%
+		// background-image: url(../img/profile-page-bg.png)
+		// background-size: cover
+		// background-position: center center
+		// background-repeat: no-repeat
+		// Меняю на серый цвет
+		background-color: $color-grey
+		padding: 30px
+		display: flex
+		flex-flow: column nowrap
+		align-items: center
+		justify-content: center
+	&__row-top
+		display: flex
+		flex-flow: row wrap
+		width: 100%
+		padding-bottom: 40px
+		position: relative
+		&:after
+			content: ''
+			width: 60%
+			border-bottom: 5px solid $color-gold
+			position: absolute
+			bottom: 0
+			left: 0
+	&__row-bottom
+		display: flex
+		flex-flow: row wrap
+		width: 100%
+		padding-top: 40px
+		position: relative
+		margin-top: 50px
+		&:before
+			content: ''
+			width: 60%
+			border-bottom: 5px solid $color-gold
+			position: absolute
+			top: 0
+			right: 0
+	&__left-col
+		width: 20%
+		margin-right: 5%
+		text-align: center
+	&__right-col
+		width: 75%
+		display: flex
+		flex-flow: row wrap
+	&__col-3
+		width: 33.333%
+		padding-left: 15px
+	&__col-2
+		width: 50%
+		padding-left: 15px
+	&__submit-side
+		margin-top: 45px
+		display: flex
+		flex-flow: column nowrap
+		justify-content: center
+		align-items: center
+	&__button
+		padding: 15px 40px !important
+		font-family: $third-font
+	&__input-checkbox
+		align-self: flex-end
+		margin-bottom: 20px
+	&__input-file
+		margin-top: 10px
+		

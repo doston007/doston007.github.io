@@ -1,0 +1,93 @@
+@import 'grid';
+@import 'fonts';
+@import 'vars';
+
+
+::placeholder{
+	color: #666;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 16px;
+	min-width: 1200px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	color: $text;
+	input, textarea{
+		border: #666 1px solid;
+		outline: none;
+		&:focus:required:invalid{
+			border-color: red;
+		}
+		&:required:valid{
+			border-color: green;
+		}
+	}
+}
+
+.img-responsive{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.white{
+	color: #fff;
+}
+
+.red{
+	color: $blood-red;
+	text-decoration: none;
+}
+
+.show-sm{
+	display: none;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.container{
+	@include wrapper();
+}
+
+.row{
+	@include row-flex();
+}
+
+.white-popup {
+	position: relative;
+	background: #FFF;
+	padding: 25px;
+	width:auto;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close{
+	cursor: pointer;
+}
+
+// BLOCKS
+@import 'blocks/buttons';
+@import 'blocks/forms';
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/gift';
+@import 'blocks/pricing';
+@import 'blocks/scheme';
+@import 'blocks/causes';
+@import 'blocks/slider';
+@import 'blocks/testimonials';
+@import 'blocks/spec-offer';
+@import 'blocks/footer';
+
+
+@import 'media';

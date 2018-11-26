@@ -1,0 +1,41 @@
+.profile-mini
+	display: flex
+	flex-flow: column nowrap
+	text-decoration: none
+	align-items: center
+	&__img-wrapper
+		width: 125px
+		height: 125px
+		display: flex
+		padding: 10px
+		justify-content: center
+		align-items: center
+		background-image: url('../img/profile-page-bg.png')
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center center
+		border-radius: 50%
+		overflow: hidden
+		transition: all .2s
+	&__ava
+		width: 100%
+		height: auto
+		border-radius: 50%
+	&__info
+		display: flex
+		flex-flow: column nowrap
+		margin-top: 20px
+		color: #fff
+		justify-content: center
+		font-family: $third-font
+		font-size: 14px
+		text-align: center
+	&__name
+		color: $color-gold
+	&__address
+		color: #62615F
+	&:hover,
+	&.active
+		.profile-mini__img-wrapper
+			background: $color-gold
+			box-shadow: 0 0 70px 10px $color-gold

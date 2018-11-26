@@ -1,0 +1,42 @@
+.profile
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-content: center
+	align-items: center
+	&__wrapper
+		position: relative
+	&__img-wrapper
+		max-width: 280px
+		max-height: 280px
+		display: flex
+		align-items: center
+		justify-content: center
+		overflow: hidden
+		border-radius: 30px
+		transform: rotate(45deg)
+	&__shadow
+		position: absolute
+		top: 40px
+		left: 40px
+		bottom: 40px
+		right: 40px
+		box-shadow: 0 0 90px 40px $color-gold
+	&__ava
+		width: 135%
+		transform: rotate(-45deg)
+	&__info
+		display: flex
+		flex-flow: column wrap
+		align-items: center
+		justify-content: center
+		margin-top: 70px
+		font-family: $third-font
+	&__name
+		font-size: 20px
+		color: $color-gold
+	&__problem
+		font-size: 16px
+		color: #62615F
+	&__button
+		margin-top: 20px

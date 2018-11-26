@@ -1,0 +1,74 @@
+.article__gallery
+	&-big-container
+		position: relative
+		width: 100%
+		max-width: 760px
+		margin: 70px auto 70px auto
+		// background-color: #ab7f42
+		box-shadow: 0 0 30px 0 #ab7f42
+		&::after
+			content: ''
+			position: absolute
+			z-index: 2
+			top: 13px
+			left: 18px
+			display: block
+			width: 21px
+			height: 21px
+			background: url('../img/fullscreen-icon.svg') center no-repeat
+			background-size: contain
+			cursor: pointer
+		//  ПрАВКИ ДЛЯ ГАЛЕРЕИ ОТСЮДА
+		img
+			// position: absolute
+			// top: 50%
+			// left: 0
+			display: block
+			width: 100%
+			// box-shadow: 0 0 30px 0 #ab7f42
+		// ДО СЮДА
+	
+	&-small-container
+		position: relative
+		padding: 0 10%
+		.swiper-container
+			padding: 10px
+		.swiper-slide
+			// overflow: hidden
+			cursor: pointer
+			transition: .3s
+			&::before
+				content: ''
+				position: static
+				display: block
+				width: 100%
+				padding-top: 100%
+			img
+				position: absolute
+				top: 0
+				left: 0
+				height: auto
+				width: 100%
+			&.active, &:hover
+				box-shadow: 0 0 10px 0 #ab7f42        
+		img
+			display: block
+	&-button
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		display: block
+		width: 5.56%
+		padding-top: 5.56%
+		// width: 60px
+		// height: 60px
+		border-radius: 60px
+		background: url('../img/button-prev.svg') center no-repeat
+		background-size: contain
+		cursor: pointer
+		outline: none
+		&-prev
+			left: 3%
+		&-next
+			right: 3%
+			transform: scaleX(-1) translateY(-50%)

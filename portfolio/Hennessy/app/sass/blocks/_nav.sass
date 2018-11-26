@@ -1,0 +1,39 @@
+.nav
+	border-top: 1px solid rgba(#fff, .45);
+	&-wrapper
+		list-style: none
+		display: flex
+		justify-content: space-between
+	&__item
+		display: flex
+	&__link
+		text-transform: uppercase
+		color: rgba(#fff, .6)
+		text-decoration: none
+		padding: 5px 0
+		transition: .2s
+		position: relative
+		font-size: 16px
+		&:after,
+		&:before
+			opacity: 0
+			transition: .2s
+			content: ''
+			position: absolute
+			width: 55%
+			border-bottom: 3px solid $color-gold
+		&:before
+			bottom: 0
+			left: 0
+		&:after
+			bottom: -5px
+			right: 0
+	&__item.active a,
+	&__link:hover
+		color: $color-gold
+		opacity: 1
+	&__item.active a:after,
+	&__item.active a:before,
+	&__link:hover:after,
+	&__link:hover:before
+		opacity: 1

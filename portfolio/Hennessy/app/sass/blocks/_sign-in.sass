@@ -1,0 +1,74 @@
+.sign-in
+	text-decoration: none
+	position: relative
+	&__title
+		color: $color-gold
+		font-weight: normal
+		padding: 5px 5px 5px 25px
+		background-image: url(../img/sign-in-title.png)
+		background-repeat: no-repeat
+		background-position: 2px center
+		display: inline-block
+		border-bottom: 1px solid $color-gold
+	&__warning
+		font-size: 10px
+		font-family: $second-font
+		border-top: 1px solid rgba($color-gold,.4)
+		padding-top: 3px
+	&__wrapper
+		position: relative
+	&__dropdown
+		position: absolute
+		top: 45px
+	&__text
+		font-size: 14px
+		text-transform: uppercase
+		font-weight: 700
+		color: #fff
+		text-decoration: none
+		margin-left: 3px
+		position: relative
+		padding: 4px 0
+		&:after,
+		&:before
+			transition: .4s
+			content: ''
+			position: absolute
+			width: 55%
+			border-bottom: 2px solid #fff
+		&:before
+			bottom: 0
+			left: 0
+		&:after
+			bottom: -3px
+			right: 0
+	&:active
+		.sign-in__text
+			&:after
+				bottom: 0
+				right: 35px
+			&:before
+				bottom: -3px
+				left: 35px
+	&:hover
+		cursor: pointer				
+
+.soc-enter
+	display: block
+	font-size: 12px
+	color: #fff
+	text-decoration: none
+	font-family: $second-font
+	padding: 5px 5px 5px 23px
+	background-repeat: no-repeat
+	background-position: 6px center
+	margin: 10px 0
+	span
+		padding-left: 5px
+		border-left: 1px solid rgba(#fff, .4)
+.enter-facebook
+	background-image: url(../img/fb.png)
+	background-color: #4D6FA9
+.enter-vk
+	background-image: url(../img/vk.png)
+	background-color: #4D76A1

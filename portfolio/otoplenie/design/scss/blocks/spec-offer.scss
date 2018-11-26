@@ -1,0 +1,60 @@
+.spec-offer{
+	padding: 55px 0;
+	padding-top: 320px;
+	background-image: url(../../img/spec-offer-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	h2{
+		font-size: 40px;
+		line-height: 1;
+		color: $blood-red;
+	}
+	p{
+		font-size: 25px;
+	}
+	h3{
+		font-size: 28px;
+		line-height: 1.4;
+	}
+	&-title{
+		margin-bottom: 30px;
+		text-indent: 0;
+	}
+	&-text{
+		@include col();
+		@include size(11);
+		margin: 0 auto;
+		text-indent: 1.5em;
+		font-size: 22px;
+		line-height: 1.2;
+	}
+	&-form{
+		margin-top: 35px;
+		h3{
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+	}
+	&-row{
+		@include size(10);
+		margin: 0 auto;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+	}
+	ul{
+		margin-top: 60px;
+		list-style: none;
+	}
+	h4{
+		font-size: 24px;
+		font-weight: normal;
+		color: $orange-red;
+		line-height: 1;
+	}
+	li{
+		font-size: 22px;
+		line-height: 1.2;
+	}
+
+}

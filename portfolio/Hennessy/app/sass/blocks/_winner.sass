@@ -1,0 +1,49 @@
+.winner
+	text-align: center
+	&__container
+		margin-top: 0
+	&__title
+		text-align: center
+		margin-bottom: 70px
+		margin-top: 50px
+	&__button-icon
+		margin-top: 100px
+		display: none
+.person
+	position: relative
+	&__ava
+		transform: rotate(45deg)
+		display: flex
+		align-items: center
+		justify-content: center
+		overflow: hidden
+		max-width: 320px
+		max-height: 320px
+		border: 15px solid $color-gold
+		border-radius: 40px
+	&__img
+		width: 135%
+		transform: rotate(-45deg)
+	&__text
+		position: absolute
+		top: -75px
+		right: -95px
+		text-align: center
+		font-size: 26px
+		color: $color-gold
+		display: inline-block
+		line-height: 1.4
+		font-family: $third-font
+		small
+			color: #6D6B69
+	&__shadow
+		position: absolute
+		width: 60%
+		height: 60%
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		box-shadow: 0 0 80px 60px $color-gold
+
+	
+

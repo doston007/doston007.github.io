@@ -1,0 +1,23 @@
+.mouse-down
+	display: flex
+	position: absolute
+	bottom: 30px
+	left: 50%
+	transform: translate(-50%, 0)
+	width: 70px
+	height: 70px
+	justify-content: center
+	align-items: center
+	border: 1px solid $color-gold
+	border-radius: 50%
+	transition: .1s
+	&__icon
+		fill: $color-gold
+		transition: .1s
+		animation: mouse 1s infinite linear
+
+@keyframes mouse 
+	from
+		transform: translate(0, -5px)
+	to
+		transform: translate(0, 5px)
