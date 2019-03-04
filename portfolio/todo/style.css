@@ -9,7 +9,7 @@ body{
 
 .wrapper{
 	margin: 5% auto;
-	width: 40%;
+	max-width: 500px;
 }
 
 header{

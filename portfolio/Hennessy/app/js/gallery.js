@@ -24,7 +24,8 @@ var smallGallery = new Swiper('.article__gallery-small-container .swiper-contain
 var bigGallery = new Swiper('.article__gallery-big-container .swiper-container', {
   slidesPerView: 1,
   allowTouchMove: false,  
-  centeredSlides: true
+  centeredSlides: true,
+  autoHeight: true
 })
 
 Array.from(document.querySelectorAll('.article__gallery-small-container .swiper-slide'))

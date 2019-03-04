@@ -32,6 +32,16 @@
 		&__title
 			margin-top: 0
 			margin-bottom: 0
+		&__container
+			justify-content: space-around
+		&__col
+			width: 250px
+	.person
+		&--pos_bottom
+			transform: translate(0, 0)
+		&__img-wrapper
+			width: 250px
+			height: 250px
 	.mouse-down
 		display: none
 	.how-it-was
@@ -90,6 +100,14 @@
 		&__col-3
 			width: 400px
 			margin-bottom: 40px
+	.profile-page
+		&__wrapper
+			margin-left: 0
+			margin-right: 0
+		&__row
+			justify-content: space-between
+		&__button-back
+			top: 100px
 
 // ≥768px
 +sm-block()
@@ -137,8 +155,9 @@
 			align-items: center
 			order: 1
 		&__author-logo
-			margin: 20px 0
+			padding-top: 20px
 			order: 3
+			position: static
 		&__social
 			order: 2
 			border-bottom: 1px solid #fff
@@ -177,6 +196,18 @@
 	.modal
 		&__content
 			width: 576px
+	.profile-page
+		&__container
+			padding-top: 50px
+	.winner
+		&__col
+			width: 100%
+		&__person
+			margin-top: 80px
+	.person
+		&__img-wrapper
+			width: 250px
+			height: 250px
 
 // ≥576px
 +xs-block()
@@ -193,9 +224,15 @@
 		width: 90%
 		margin: 0 auto
 		align-items: center
+		&:after
+			width: 55px
+			height: 55px
 		img
 			width: 100%
 			height: auto
+	.article
+		&__video
+			margin-top: 40px
 	#fp-nav
 		display: none
 	.header-mob__logo
@@ -206,19 +243,19 @@
 			height: auto
 		&__col
 			padding: 0 10px
-	.person
-		&__ava
-			width: 200px
-			height: 200px
-			margin: 0 auto
-			border-width: 10px
-		&__text
-			top: 120%
-			right: 0
-			left: 0
-			font-size: 16px
-			small
-				font-size: 14px
+	// .person
+	// 	&__ava
+	// 		width: 200px
+	// 		height: 200px
+	// 		margin: 0 auto
+	// 		border-width: 10px
+	// 	&__text
+	// 		top: 120%
+	// 		right: 0
+	// 		left: 0
+	// 		font-size: 16px
+	// 		small
+	// 			font-size: 14px
 	.lang
 		&__link
 			padding: 0 5px
@@ -236,7 +273,7 @@
 		width: 70%
 	.main
 		padding: 0
-		padding-top: 40px
+		padding-top: 70px
 		.box-wrapper
 			width: 90%
 		&__brend-wrapper
@@ -265,8 +302,11 @@
 			&:before
 				display: none
 		&__ava-wrapper
-			max-width: 230px
-			max-height: 230px
+			max-width: 225px
+			max-height: 225px
+		&__button-back
+			top: 180px
+			left: 0
 	// Form
 	.form
 		&__col-3,
@@ -287,7 +327,9 @@
 			width: 305px
 			padding: 0
 			margin-bottom: 40px
-
+	.person__img-wrapper
+		width: 225px
+		height: 225px
 
 @media screen and (min-height: 750px)
 	.partners__health-harm

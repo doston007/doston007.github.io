@@ -2,29 +2,40 @@
 	&-big-container
 		position: relative
 		width: 100%
-		max-width: 760px
-		margin: 70px auto 70px auto
+		max-width: 820px
+		margin: 30px auto
 		// background-color: #ab7f42
-		box-shadow: 0 0 30px 0 #ab7f42
-		&::after
-			content: ''
-			position: absolute
-			z-index: 2
-			top: 13px
-			left: 18px
-			display: block
-			width: 21px
-			height: 21px
-			background: url('../img/fullscreen-icon.svg') center no-repeat
-			background-size: contain
-			cursor: pointer
+		.swiper-wrapper
+			display: flex
+			align-items: center
+		.swiper-slide
+			padding: 30px
+			display: flex
+			align-items: center
+			justify-content: center
+			// ОБЕРТКА КАРТИНОК
+			&__img-wrapper
+				position: relative
+				&::after
+					content: ''
+					position: absolute
+					z-index: 2
+					top: 10px
+					left: 10px
+					display: block
+					width: 20px
+					height: 20px
+					background: url('../img/fullscreen-icon.svg') center no-repeat
+					background-size: contain
+					cursor: pointer
 		//  ПрАВКИ ДЛЯ ГАЛЕРЕИ ОТСЮДА
 		img
+			box-shadow: 0 0 30px 0 #ab7f42
 			// position: absolute
 			// top: 50%
 			// left: 0
 			display: block
-			width: 100%
+			max-width: 100%
 			// box-shadow: 0 0 30px 0 #ab7f42
 		// ДО СЮДА
 	

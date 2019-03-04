@@ -40,3 +40,34 @@
 			align-items: center
 			justify-content: center
 			padding: 15px
+			svg
+				fill: #fff
+		&.clicked
+			border: 1px solid #000
+			background: transparent
+			.button-icon
+				&__text
+					color: $color-gold
+					border-right: 1px solid #000
+				&__icon svg
+					fill: $color-gold !important
+	&-back
+		display: flex
+		flex-flow: row nowrap
+		align-items: stretch
+		border: 1px solid #fff
+		border-radius: 50px
+		text-decoration: none
+		color: #fff
+		&__icon
+			display: flex
+			align-items: center
+			justify-content: center
+			padding-left: 15px
+			padding-right: 15px
+		&__text
+			display: flex
+			align-items: center
+			justify-content: center
+			padding: 10px 15px
+			border-left: 1px solid #fff

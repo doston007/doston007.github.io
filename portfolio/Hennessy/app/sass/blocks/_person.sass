@@ -1,0 +1,53 @@
+.person
+	width: 100%
+	display: flex
+	flex-flow: column nowrap
+	justify-content: center
+	align-items: center
+	&--pos_bottom
+		transform: translate(0, 50px)
+	&__wrapper
+		position: relative
+		display: flex
+		align-items: center
+		justify-content: center
+	&__img-wrapper
+		max-width: 300px
+		max-height: 300px
+		display: flex
+		align-items: center
+		justify-content: center
+		overflow: hidden
+		border-radius: 30px
+		transform: rotate(45deg)
+		border: 15px solid $color-gold
+	&__ava
+		width: 135%
+		transform: rotate(-45deg)
+	&__info
+		display: flex
+		position: relative
+		flex-flow: column nowrap
+		align-items: center
+		justify-content: center
+		font-family: $second-font
+		margin-top: 50px
+		padding-top: 12px
+		line-height: 1.4
+	&__name
+		color: $color-gold
+		font-weight: bold
+		font-size: 24px
+	&__bar
+		color: #fff
+		font-weight: bold
+		font-size: 20px
+	&__year
+		position: absolute
+		color: #fff
+		font-size: 120px
+		font-weight: bold
+		opacity: 0.1
+		left: 50%
+		top: 50px
+		transform: translate(-50%, -55%)
