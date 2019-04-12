@@ -1,0 +1,222 @@
+@import "vars"
+@import "_mixins/breakpoints"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++lg-block()
+	.hero
+		height: auto
+	.to-start
+		&__row
+			flex-wrap: wrap
+
+	.services
+		&__row
+			flex-wrap: wrap
+
+	.slick-prev
+		left: 200px
+	.slick-next
+		right: 200px
+
+// ≥992px
++md-block()
+	.container
+		max-width: 960px
+	.header
+		background-color: rgba(0,0,0,.6)
+		padding-top: 15px
+		padding-bottom: 15px
+		box-shadow: 0 2px 4px -1px rgba(0,0,0,0.06), 0 4px 5px 0 rgba(0,0,0,0.06), 0 1px 10px 0 rgba(0,0,0,0.08)
+		.nav__link
+			color: $white-color
+
+	.hero
+		text-align: center
+		&__col-right
+			width: 58%
+		.form-box
+			margin-left: auto
+			margin-right: auto
+		.social
+			margin-top: 20px
+			margin-left: auto
+			margin-right: auto
+		.container
+			position: relative
+			z-index: 1
+		&::before //overlay
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			top: 0
+			bottom: 0
+			right: 0
+			background-color: rgba(255,255,255,.7)
+	.why-we
+		&__row
+			flex-wrap: wrap
+			margin-top: 10px
+		&__col
+			width: 50%
+			margin-top: 160px
+		.box
+			img
+				width: 100%
+	.to-start
+		&__col
+			width: 50%
+			margin-top: 20px
+
+	.services
+		&__col
+			width: 50%
+			margin-top: 20px	
+
+	.slick-prev
+		left: 20px
+	.slick-next
+		right: 20px
+
+// ≥768px
++sm-block()
+	.container
+		max-width: 720px
+	.hero
+		&__row
+			flex-wrap: wrap
+		&__col-right
+			width: 100%
+
+	.features
+		&__row
+			flex-wrap: wrap
+			justify-content: flex-start
+		&__col
+			width: 100%
+			justify-content: flex-start
+
+	.why-we
+		&__col
+			width: 50%
+			margin-top: 100px
+
+	.videos
+		&__row
+			flex-wrap: wrap
+		&__col
+			width: 100%
+			margin-top: 50px
+	.video-box
+		img
+			width: 100%
+
+	.nav
+		display: none
+		position: fixed
+		width: 100%
+		left: 0
+		top: 65px
+		z-index: 999
+		background-color: rgba(0,0,0,.6)
+		&__wrapper
+			display: block
+		&__item
+			margin-right: 0
+			padding-left: 20px
+			padding-right: 20px
+		&__btn
+			display: flex
+
+	.work-box
+		&__gallery-main
+			width: 50%
+		&__description
+			width: 50%
+
+// ≥576px
++xs-block()
+	.container
+		max-width: 540px
+	.hero
+		background-image: none
+	.why-we
+		&__row
+			flex-direction: column
+			align-items: center
+		&__col
+			width: 100%
+			margin-top: 200px
+
+	.to-start
+		&__col
+			width: 100%
+
+	.work-box
+		flex-direction: column
+		&__gallery-main
+			width: 100%
+		&__description
+			width: 100%
+			margin-top: 20px
+		&__wrapper
+			padding: 10px
+
+	.slick-prev
+		left: 5px
+	.slick-next
+		right: 10px
+
+	.services
+		&__col
+			width: 100%
+
+	.contacts
+		&__row
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+		&__info
+			margin-top: 20px
+
+	.form-order
+		flex-direction: column
+		padding-left: 15px
+		padding-right: 15px
+		.button
+			margin-top: 20px
+
+// ≥450px
++xss-block()
+	.hero
+		padding-top: 20px
+	.why-we
+		&__row
+			margin-top: 20px
+		&__col
+			width: 100%
+			margin-top: 120px
+
+	.heading--lg
+		font-size: 36px
+
+
+// ==========================
+
+
+// ≤1600
++xl-block()
+	.container
+		max-width: 1400px
+	.page
+		font-size: 16px
+
+// ≤1900
++xll-block
+	.container
+		max-width: 1600px
+	.page
+		font-size: 18px

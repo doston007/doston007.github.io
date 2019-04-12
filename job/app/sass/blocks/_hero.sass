@@ -1,0 +1,38 @@
+.hero
+	background-image: url('../img/hero-bg.png')
+	background-size: cover
+	background-position: center center
+	position: relative
+	height: 95vh
+	&__container
+		height: 100%
+	&__row
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		height: 90%
+		padding-bottom: 80px
+		margin-top: 20px
+	&__col-right
+		width: 50%
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+	&__price
+		display: block
+		font-size: 34px
+		color: $accent
+		line-height: 1.1
+		margin: 30px 0
+	&::after
+		content: ''
+		position: absolute
+		left: calc(50% - 100px)
+		top: 100%
+		display: block
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 30px 100px 0 100px
+		border-color: $white-color transparent transparent transparent

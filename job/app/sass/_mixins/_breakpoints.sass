@@ -1,0 +1,37 @@
+$break_xll: 1900px
+$break_xl: 1600px
+$break_lg: 1200px
+$break_md: 992px
+$break_sm: 768px
+$break_xs: 576px
+$break_xss: 450px
+
+// < 1200
+=lg-block()
+	@media screen and (max-width: $break_lg)
+		@content
+
+=md-block()
+	@media screen and (max-width: $break_md)
+		@content
+
+=sm-block()
+	@media screen and (max-width: $break_sm)
+		@content
+
+=xs-block()
+	@media screen and (max-width: $break_xs)
+		@content
+
+=xss-block()
+	@media screen and (max-width: $break_xss)
+		@content
+
+// > 1200
+=xl-block()
+	@media screen and (min-width: $break_xl)
+		@content
+
+=xll-block()
+	@media screen and (min-width: $break_xll)
+		@content

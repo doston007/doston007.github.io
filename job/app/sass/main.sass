@@ -1,0 +1,60 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "grid"
+
+
+// Basic styles
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+::placeholder
+	color: #b3b3b3
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+a
+	text-decoration: none
+// ---
+
+
+// Blocks
+@import "blocks/page"
+@import "blocks/header"
+@import "blocks/nav"
+@import "blocks/heading"
+@import "blocks/subheading"
+@import "blocks/button"
+@import "blocks/tel-number"
+@import "blocks/hero"
+@import "blocks/social"
+@import "blocks/form"
+@import "blocks/features"
+@import "blocks/why-we"
+@import "blocks/box"
+@import "blocks/works"
+@import "blocks/work-box"
+@import "blocks/slider-styles"
+@import "blocks/to-start"
+@import "blocks/step"
+@import "blocks/videos"
+@import "blocks/video-box"
+@import "blocks/services"
+@import "blocks/service-box"
+@import "blocks/contacts"
+// ---
+
+
+@import "media" // Always at the end

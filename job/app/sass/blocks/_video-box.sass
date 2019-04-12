@@ -1,0 +1,23 @@
+.video-box
+	display: block
+	&__img-wrapper
+		margin-bottom: 20px
+		overflow: hidden
+		border-radius: 15px
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			top: calc(50% - 20px)
+			left: calc(50% - 15px)
+			display: inline-block
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 20px 0 20px 30px
+			transition: .2s
+			border-color: transparent transparent transparent $accent
+	&__text
+		color: $white-color
+	&:hover &__img-wrapper::after
+		transform: scale(1.2)

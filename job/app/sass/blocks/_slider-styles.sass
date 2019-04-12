@@ -1,0 +1,29 @@
+.slick-list
+	overflow-y: auto !important
+.slick-arrow
+	position: absolute
+	z-index: 9
+	width: 45px
+	height: 45px
+	border: none
+	background-color: $dark-color
+	border-radius: 50%
+	display: flex
+	justify-content: center
+	align-items: center
+	top: calc(50% - 40px)
+	&::after
+		content: ''
+		display: block
+		width: 10px
+		height: 10px
+		border-right: 2px solid $white-color
+		border-bottom: 2px solid $white-color
+.slick-prev
+	left: 270px
+	&::after
+		transform: rotate(135deg)
+.slick-next
+	right: 270px
+	&::after
+		transform: rotate(-45deg)
