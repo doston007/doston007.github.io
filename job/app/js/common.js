@@ -9,13 +9,15 @@ $(function() {
 		}
 	});
 
-	// Navigation
-	$('.nav__link').click(function(event) {
-		event.preventDefault();
-		$('html, body').animate({
-			scrollTop: $($(this).attr('href')).offset().top - 80
-		}, 1000)
-	});
+	// Navigation in the main page
+	if ($('body').hasClass('main-page')) {
+		$('.nav__link').click(function(event) {
+			event.preventDefault();
+			$('html, body').animate({
+				scrollTop: $($(this).attr('href')).offset().top - 80
+			}, 1000)
+		});
+	}
 
 	// Menu toggle
 	$('.js-nav-btn').click(function(event) {

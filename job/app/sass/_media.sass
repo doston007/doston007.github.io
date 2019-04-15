@@ -47,7 +47,7 @@
 		.container
 			position: relative
 			z-index: 1
-		&::before //overlay
+		&::before //OVERLAY
 			content: ''
 			display: block
 			position: absolute
@@ -83,6 +83,24 @@
 		left: 20px
 	.slick-next
 		right: 20px
+
+	.header-full
+		background: linear-gradient(to right, #2B2B2B 80%, #353535 80%)
+		.tel-number
+			display: none
+		&__left-side
+			width: 80%
+		&__right-side
+			width: 20%
+	.social
+		.tel-number--mobile
+			display: block
+	.card
+		&__right-side
+			padding-left: 30px
+	.footer
+		.tel-number
+			display: none
 
 // ≥768px
 +sm-block()
@@ -140,6 +158,39 @@
 		&__description
 			width: 50%
 
+	.page-card
+		padding-top: 60px
+	
+	.header-full
+		background: linear-gradient(to right, #2B2B2B 70%, #353535 70%)
+		padding: 17px 0
+		position: fixed
+		width: 100%
+		top: 0
+		left: 0
+		z-index: 99
+		&__logo
+			order: 2
+			margin-right: 0
+		&__btn-menu
+			margin-right: 30px
+	.card
+		&__gallery
+			&--bottom
+				flex-direction: column
+			&--left
+				margin-right: 0
+				margin-bottom: 5px
+		&__form-order
+			flex-direction: column
+			.button
+				margin-top: 15px
+
+	.footer
+		&__col
+			width: 20%
+			&--center
+				width: 60%
 // ≥576px
 +xs-block()
 	.container
@@ -191,6 +242,38 @@
 		padding-right: 15px
 		.button
 			margin-top: 20px
+
+	.card
+		&__content
+			flex-direction: column
+		&__left-side
+			width: 100%
+			order: 2
+		&__right-side
+			width: 100%
+			padding-left: 0
+			margin-bottom: 40px
+		&__form-order
+			padding-left: 0
+			padding-right: 0
+		&__gallery
+			&--bottom
+				flex-direction: row
+				justify-content: space-between
+			&--left
+				margin-bottom: 0
+				margin-right: 5px
+
+	.footer
+		&__row
+			flex-direction: column
+			justify-content: center
+		&__col
+			width: 100%
+			justify-content: center
+			margin-top: 20px
+			&:first-child
+				margin-top: 0
 
 // ≥450px
 +xss-block()
