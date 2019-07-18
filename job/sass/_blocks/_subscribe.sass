@@ -1,0 +1,33 @@
+.subscribe
+	margin-top: 60px
+	&__box
+		display: flex
+		align-items: center
+		justify-content: space-between
+		position: relative
+		width: 100%
+		padding: 60px
+		border-radius: 20px
+		overflow: hidden
+		background-color: #297BFB
+		background-image: linear-gradient(left, #297BFB, #8651FD)
+		&::before // Overlay
+			content: ''
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			background-image: url('../img/subscribe-bg.svg')
+			background-size: 240% 240%
+			background-repeat: no-repeat
+			background-position: 60% 25%
+
+	&__info
+		width: 60%
+		z-index: 1
+		position: relative
+	&__text
+		color: #fff
+		margin-top: 35px
+		font-size: $_20px
