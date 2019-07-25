@@ -1,0 +1,50 @@
+.other-article-card
+	background-color: #fff
+	box-shadow: 0 0 40px 0 rgba(0,0,0,0.05)
+	border-radius: 15px
+	overflow: hidden
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+	flex-grow: 1
+	box-shadow: 0 0 30px 0 rgba(0,0,0,.1)
+	&--useful
+		background-color: #F07661
+		.other-article-card__title, .other-article-card__text
+			color: #fff
+		.other-article-card__content
+			padding-left: 65px
+			padding-right: 65px
+			padding-top: 60px
+			padding-bottom: 35px
+	&__img-wrapper
+		display: flex
+		align-items: center
+		justify-content: center
+		overflow: hidden
+		img
+			max-width: 100%
+			height: auto
+			transition: transform .2s
+		&:hover img
+			transform: scale(1.05)
+	&__content
+		padding: 35px
+		padding-top: 20px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: flex-start
+		width: 65%
+	&__title
+		font-size: $_20px
+		margin-bottom: 12px
+	a
+		text-decoration: none
+	&__text
+		font-size: $_13px
+		margin-bottom: 15px
+	&__lesson-num
+		color: $light-text
+		font-size: $_13px
+		margin-bottom: 10px

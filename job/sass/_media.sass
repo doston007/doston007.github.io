@@ -1,0 +1,302 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.nav ul li
+	    margin-left: 10px
+	    margin-right: 10px
+
+// ≥992px
++media-breakpoint-down(md)
+	// header
+	.header
+		position: relative
+		&__row
+			justify-content: space-between
+	
+	// other article
+	.other-articles
+		&__col
+			padding-top: 40px
+			&:first-child
+				padding-top: 0
+	
+	// updates
+	.updates
+		&__left-col
+			display: none
+		&__right-col
+			width: 100%
+	
+	// update-card
+	.update-card
+		&__date
+			display: block
+		&__desc
+			margin-top: 20px
+			margin-bottom: 20px
+		&::after
+			display: none
+
+	// nav
+	.nav
+		position: absolute
+		top: 59px
+		right: 0
+		left: 0
+		z-index: 999
+		background-color: rgba(#F3F4F5, .8)
+		flex-direction: column
+		width: 100%
+		justify-content: center
+		ul
+			flex-direction: column
+			text-align: center
+			li
+				padding: 10px
+		.auth-box
+			margin-top: 20px
+			margin-bottom: 20px
+
+	// home-card
+	.home-card
+		&--main
+			flex-direction: column 
+			.home-card__content
+				width: 100%
+				padding-top: 45px
+				padding-left: 30px
+				padding-right: 30px
+				padding-bottom: 45px
+
+	// subscribe
+	.subscribe
+		&__box
+			flex-direction: column
+			padding-top: 45px
+			padding-left: 30px
+			padding-right: 30px
+			padding-bottom: 45px
+			align-items: flex-start
+		&__info
+			width: 100%
+		&__swiper-button
+			margin-top: 35px
+
+	// qa-block
+	.qa-block
+		&__question
+			padding: 20px 25px
+		&__answer
+			padding: 20px
+			width: calc(100% - 60px)
+			transform: translateX(60px)
+			margin-top: 20px
+			margin-bottom: 0
+			&:after
+				display: none
+			&:before
+				left: -60px
+
+// ≥768px
++media-breakpoint-down(sm)
+	// Global font size
+	.page
+		font-size: 14px
+
+	// header
+	.header
+		padding-top: 25px
+		padding-bottom: 25px
+
+	// home-card
+	.home-card
+		&__content
+			padding-top: 35px
+			padding-left: 20px
+			padding-right: 20px
+			padding-bottom: 35px
+		&--main
+			.home-card__content
+				padding-top: 35px
+				padding-left: 20px
+				padding-right: 20px
+				padding-bottom: 35px
+
+	// subscribe
+	.subscribe
+		&__box
+			padding-top: 35px
+			padding-left: 20px
+			padding-right: 20px
+			padding-bottom: 35px
+
+	// footer
+	.footer
+		&-top
+			text-align: center
+			padding-top: 25px
+			padding-bottom: 25px
+			&__row
+				flex-direction: column
+				align-items: center
+			&__left-col
+				width: 100%
+				padding-right: 0
+				order: 1
+				margin-top: 35px
+			&__right-col
+				width: 100%
+				padding-left: 0
+				order: 0
+				flex-direction: column
+			&__col
+				padding-top: 0
+				padding-left: 0
+				border-bottom: 1px solid $light-text
+		&__description
+			max-width: 100%
+		&__logo
+			margin-left: auto
+			margin-right: auto
+		&__socials
+			.socials__links
+				justify-content: center
+		&__nav
+			li
+				padding: 10px
+			&.hide
+				display: none
+			&-title
+				padding-top: 20px
+				padding-bottom: 20px
+				padding-right: 20px
+				padding-left: 20px
+				&-icon
+					display: block
+
+	// basic-course-banner
+	.basic-course-banner
+		padding-top: 30px
+		padding-bottom: 30px
+		background-image: none
+
+	// other-article-card
+	.other-article-card
+		flex-direction: column
+		&--useful
+			.other-article-card__content
+				padding: 20px
+				padding-top: 30px
+				padding-bottom: 30px
+		&__content
+			width: 100%
+			padding: 20px
+			padding-top: 30px
+			padding-bottom: 30px
+
+	// form
+	.form
+		&__error
+			position: static
+			max-width: 100%
+			text-align: center
+			margin-top: 5px
+			justify-content: center
+			img
+				position: absolute
+				top: 36px
+				right: 5px
+
+	// features
+	.features
+		&__item
+			width: 100%
+
+	// update-card
+	.update-card
+		flex-direction: column
+		padding: 20px
+		&__content
+			width: 100%
+			padding: 0
+			padding-top: 25px
+
+
+// ≥576px
++media-breakpoint-down(xs)
+	// article
+	.article
+		&__content
+			p
+				margin-top: 20px
+				margin-bottom: 20px
+			blockquote
+				padding-left: 20px
+				margin-bottom: 20px
+				margin-top: 20px
+			h1
+				margin-bottom: 20px
+				margin-top: 20px
+			h2
+				margin-top: 20px
+				margin-bottom: 20px
+			h3
+				margin-top: 20px
+				margin-bottom: 20px
+			ul
+				padding-left: 25px
+				margin-top: 20px
+				margin-bottom: 20px
+			.wp-block-image
+				margin-top: 20px
+				margin-bottom: 20px
+		&__footer
+			flex-direction: column
+		&__share
+			margin-top: 20px
+		&__info
+			border-top: 1px solid #E9EAEB
+			border-bottom: 1px solid #E9EAEB
+	// share
+	.share
+		flex-direction: column
+		&__socials
+			margin-top: 15px
+
+	// other-article-card
+	.other-article-card
+		&__content
+			padding: 20px
+
+	// auth
+	.auth
+		padding-top: 50px
+		&__footer
+			padding-top: 20px
+			padding-bottom: 30px
+		&__features
+			padding-left: 0
+			padding-right: 0
+		&__question
+			margin-top: 25px
+			margin-bottom: 25px
+	
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

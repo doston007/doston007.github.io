@@ -1,0 +1,47 @@
+.update-card
+	display: flex
+	flex-direction: row
+	flex-wrap: nowrap
+	padding: 30px
+	background-color: #fff
+	border-radius: 20px
+	position: relative
+	transition: box-shadow .2s
+	&:hover
+		box-shadow: 0 0 30px 0 rgba(#000, .1)
+	&::after
+		content: ''
+		position: absolute
+		left: -10px
+		top: 30px
+		display: inline-block
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 7.5px 10px 7.5px 0
+		border-color: transparent #fff transparent transparent
+
+	&__img-wrapper
+		display: flex
+		justify-content: center
+		align-items: center
+		overflow: hidden
+		border-radius: 10px
+		img
+			max-width: 100%
+			height: auto
+	&__content
+		padding-top: 20px
+		padding-left: 40px
+		padding-bottom: 20px
+		padding-right: 20px
+		width: 55%
+	&__desc
+		font-size: $_15px
+		margin-top: 30px
+		margin-bottom: 30px
+	&__date
+		color: #898d99
+		font-size: $_12px
+		margin-top: 20px
+		display: none
