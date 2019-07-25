@@ -1,5 +1,36 @@
 $(function() {
 
+	// Responsive menu
+	(function(){
+		var menu = $('#js-top-nav'),
+			menuBtn = $('#js-top-nav-btn');
+
+		$(window).on('resize', toggleMenu);
+
+		menuBtn.on('click', function(event) {
+			event.preventDefault();
+			$(this).toggleClass('active');
+			menu.toggleClass('hide');
+		});
+
+		function toggleMenu() {
+			if ($(window).width() < 992) {
+				menuBtn.addClass('show');
+				menu.addClass('hide');
+			} else {
+				menuBtn.removeClass('show');
+				menu.removeClass('hide');
+			}
+			if (menu.hasClass('hide')) {
+				menuBtn.removeClass('active')
+			} else {
+				menuBtn.addClass('active')
+			}
+		};
+
+		toggleMenu();
+	})();
+
 	// Swiper-button
 	(function(){
 		var initialMouse = 0;
@@ -88,37 +119,6 @@ $(function() {
 		});
 	})();
 
-	// Responsive menu
-	(function(){
-		var menu = $('#js-top-nav'),
-			menuBtn = $('#js-top-nav-btn');
-
-		$(window).on('resize', toggleMenu);
-
-		menuBtn.on('click', function(event) {
-			event.preventDefault();
-			$(this).toggleClass('active');
-			menu.toggleClass('hide');
-		});
-
-		function toggleMenu() {
-			if ($(window).width() <= 992) {
-				menuBtn.addClass('show');
-				menu.addClass('hide');
-			} else {
-				menuBtn.removeClass('show');
-				menu.removeClass('hide');
-			}
-			if (menu.hasClass('hide')) {
-				menuBtn.removeClass('active')
-			} else {
-				menuBtn.addClass('active')
-			}
-		};
-
-		toggleMenu();
-	})();
-
 	// Responsive footer nav
 	(function(){
 		var footerTitle = $('.footer__nav-title');
@@ -128,6 +128,7 @@ $(function() {
 		footerTitle.on('click', function(event) {
 			event.preventDefault();
 			$(this).next('ul').toggleClass('hide');
+			$(this).toggleClass('active');
 		});
 
 		function toggleFooterNav() {
@@ -139,6 +140,18 @@ $(function() {
 		}
 
 		toggleFooterNav();
+	})();
+
+	// Faq accardion
+	(function() {
+		var questionBtn = $('.qa-block__question');
+
+		questionBtn.on('click', function(event) {
+			event.preventDefault();
+			$(this).toggleClass('active');
+			$(this).next('.qa-block__answer').slideToggle('fast');
+		});
+
 	})();
 
 });
