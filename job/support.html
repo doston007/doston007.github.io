@@ -119,7 +119,7 @@
 					<h2 class="title title--md support__title">Не нашли ответ на свой вопрос?</h2>
 				</div>
 				<div class="col-12">
-					<a href="#" class="button button--default support__not-find-button">Создать обращение</a>
+					<a href="#" class="button button--default support__appeal-button" id="js-open-appeal-modal">Создать обращение</a>
 				</div>
 			</div>
 		</div>
@@ -155,7 +155,7 @@
 					<div class="col-12 footer-top__row">
 						<div class="footer-top__left-col">
 							<a href="#" class="logo footer__logo">
-								<img src="img/logo.svg" alt="SUPER-OPT" class="logo__icon img-responsive">
+								<img src="img/logo-main.svg" alt="SUPER-OPT" class="logo__icon img-responsive">
 							</a>
 							<p class="footer__description">Интернет-магазин популярных товаров в Москве</p>
 							<a href="#" class="footer__tel-number">8 800 5005 870</a>
@@ -236,6 +236,64 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="modal" id="appeal-modal">
+		<div class="modal__overlay"></div>
+		<div class="modal__body">
+			<div class="modal__close">
+				<svg class="icon">
+					<use xlink:href="img/sprite.svg#close-icon"></use>
+				</svg>
+			</div>
+			<h3 class="title title--sm modal__title">Создать обращение</h3>
+			<form class="modal__form">
+				<div class="modal__form-group">
+					<label for="theme" class="modal__form-label">Тема обращения</label>
+					<select name="theme" class="modal__form-input" id="theme">
+						<option disabled selected>Выбрать тему</option>
+						<option value="theme1">Тема 1</option>
+						<option value="theme1">Тема 2</option>
+					</select>
+				</div>
+				<div class="modal__form-group">
+					<label for="question" class="modal__form-label">Ваш вопрос</label>
+					<textarea name="question" class="modal__form-input modal__form-textarea" id="question" placeholder="Имя..."></textarea>
+				</div>
+				<div class="modal__form-group">
+					<label for="name" class="modal__form-label">Имя</label>
+					<input type="text" class="modal__form-input" id="name" name="name" placeholder="Введите ваше имя">
+				</div>
+				<div class="modal__form-group">
+					<label for="email" class="modal__form-label">Электронная почта <span>На почту придёт ответ на ваше обращение</span></label>
+					<input type="email" class="modal__form-input" id="email" name="email" placeholder="...@mail.com">
+				</div>
+				<div class="modal__form-group">
+					<label class="modal__form-label">Добавить файл</label>
+					<div class="modal__form-files">
+						<div class="modal__form-file">
+							<div class="modal__form-file-img-wrapper">
+								<img src="img/miband.png" alt="miband">
+							</div>
+							<div class="modal__form-file-close">
+								<svg class="icon">
+									<use xlink:href="img/sprite.svg#close-icon-s"></use>
+								</svg>
+							</div>
+						</div>
+						<div class="modal__form-file">
+							<div class="modal__form-file-img-wrapper"></div>
+							<div class="modal__form-file-close">
+								<svg class="icon">
+									<use xlink:href="img/sprite.svg#close-icon-s"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button type="submit" class="button--default modal__form-submit">Отправить вопрос</button>
+			</form>
+		</div>
+	</div>
 
 	<script src="js/scripts.min.js"></script>
 
