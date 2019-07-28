@@ -1,0 +1,46 @@
+.tool
+	display: flex
+	flex-direction: column
+	align-items: center
+	width: 70px
+	text-align: center
+	text-decoration: none
+	transition: .2s
+	&__icon
+		transition: .2s
+		width: 40px
+		height: 40px
+		padding: 10px
+		border-radius: 50%
+	&--phone
+		.tool__icon
+			fill: #3BA59E
+	&--map
+		.tool__text
+			font-size: $_8px
+		.tool__icon
+			fill: #39A8D8
+	&__text
+		color: #333
+		letter-spacing: 2.5px
+		text-transform: uppercase
+		line-height: 14px
+		font-size: $_9px
+		font-size: $second-font
+
+	&.active
+		.tool
+			&__text
+				display: none
+			&__icon
+				fill: #fff
+	&.active.tool--map
+		.tool__icon
+			background-image: linear-gradient(to top, #50BCEC, darken(#50BCEC, 20))
+			box-shadow: 0px 5px 15px rgba(18, 95, 129, 0.4)
+			transform: translateY(-10px)
+	.tool--phone:hover
+		.tool__icon
+			background-image: linear-gradient(to top, #3BA59E, darken(#3BA59E, 20))
+			box-shadow: 0px 5px 15px rgba(18, 95, 129, 0.4)
+			transform: translateY(-10px)

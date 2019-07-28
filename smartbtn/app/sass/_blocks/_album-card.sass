@@ -1,0 +1,47 @@
+.album-card
+	display: flex
+	flex-direction: column
+	text-decoration: none
+	&__thumb-wrapper
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+		img
+			max-width: 100%
+			height: auto
+			border-radius: 5px
+		&--multiple
+			flex-direction: row
+			flex-wrap: wrap
+			img
+				max-width: 50%
+				height: auto
+				padding-top: 2px
+				padding-left: 2px
+				// &:nth-child(odd)
+				// 	padding-left: 0
+	&__title
+		font-size: $_15px
+		text-decoration: none
+		color: $text
+		line-height: 18px
+		margin-top: 6px
+	&__amount
+		color: #8C8C8C
+		font-size: $_15px
+		line-height: 18px
+		margin-top: 2px
+	&__favourite-btn
+		width: 18px
+		height: 16px
+		background: none
+		border: none
+		position: absolute
+		bottom: 8px
+		left: 8px
+		.icon
+			width: 18px
+			height: 18px
+			fill: #fff
+
