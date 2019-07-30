@@ -31,6 +31,7 @@ window.onload = function() {
 			e.preventDefault();
 
 			contactBox.classList.remove('active');
+			connectBtnIcons.classList.add('slide-anim');
 		});
 
 		openMapBtn.addEventListener('click', function(e) {
@@ -42,7 +43,7 @@ window.onload = function() {
 			if (contactBox.classList.contains('active')) {
 				contactBox.classList.remove('active');
 			}
-			
+
 			if (contactBox.classList.contains('active')) {
 				connectBtnIcons.classList.remove('slide-anim');
 			} else {
