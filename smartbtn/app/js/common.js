@@ -1,70 +1,10 @@
 window.onload = function() {
 
-	// Coin-effect animation
-	(function() {
-		var socialsIconsName = ['vk', 'tg', 'fb', 'ok', 'wa', 'vb'],
-			connectBtn = document.querySelector('.connect-btn'),
-			btnIcon = connectBtn.querySelector('use'),
-			btnSvg = connectBtn.querySelector('.connect-btn__icon'),
-			i = 0;
-
-
-		setInterval(function() {
-				var coinAnim = setInterval(function() {
-					if (i < socialsIconsName.length) {
-						if (document.querySelector('.contact-box').classList.contains('active')) {
-							btnIcon.setAttribute('xlink:href', 'img/sprites.svg#message-icon');
-							connectBtn.classList.remove('coin-anim');
-							for (let i = 0; i < socialsIconsName.length; i++) {
-								connectBtn.classList.remove('connect-btn' + '--' + socialsIconsName[i]);
-							}
-						} else {
-							btnIcon.setAttribute('xlink:href', 'img/sprites.svg#' + socialsIconsName[i] + '-icon');
-							connectBtn.classList.remove('connect-btn' + '--' + socialsIconsName[i - 1]);
-							connectBtn.classList.add('connect-btn' + '--' + socialsIconsName[i]);
-							connectBtn.classList.add('coin-anim');
-						}
-						i++;
-					} else {
-						i = 0;
-						connectBtn.classList.remove('connect-btn--vb');
-						btnIcon.setAttribute('xlink:href', 'img/sprites.svg#message-icon');
-						connectBtn.classList.remove('coin-anim');
-						clearInterval(coinAnim);
-					}
-				}, 1000);
-		}, 8000);
-
-		setInterval(function() {
-			if (i < socialsIconsName.length) {
-				if (document.querySelector('.contact-box').classList.contains('active')) {
-					btnIcon.setAttribute('xlink:href', 'img/sprites.svg#message-icon');
-					connectBtn.classList.remove('coin-anim');
-					for (let i = 0; i < socialsIconsName.length; i++) {
-						connectBtn.classList.remove('connect-btn' + '--' + socialsIconsName[i]);
-					}
-				} else {
-					btnIcon.setAttribute('xlink:href', 'img/sprites.svg#' + socialsIconsName[i] + '-icon');
-					connectBtn.classList.remove('connect-btn' + '--' + socialsIconsName[i - 1]);
-					connectBtn.classList.add('connect-btn' + '--' + socialsIconsName[i]);
-					connectBtn.classList.add('coin-anim');
-				}
-				i++;
-			} else {
-				i = 0;
-				connectBtn.classList.remove('connect-btn--vb');
-				btnIcon.setAttribute('xlink:href', 'img/sprites.svg#message-icon');
-				connectBtn.classList.remove('coin-anim');
-				clearInterval(coinAnim);
-			}
-		}, 1000);
-
-	})();
-
 	// Open, close contact and map box
 	(function() {
 		let connectBtn = document.querySelector('.connect-btn'),
 			contactBox = document.querySelector('.contact-box'),
+			connectBtnIcons = connectBtn.querySelector('.connect-btn__icons'),
 			backContactBtn = contactBox.querySelector('.header__back'),
 			openMapBtn = document.querySelector('.tool--map'),
 			mapBox = document.querySelector('.map-box'),
@@ -74,6 +14,12 @@ window.onload = function() {
 			e.preventDefault();
 
 			contactBox.classList.toggle('active');
+			
+			if (contactBox.classList.contains('active')) {
+				connectBtnIcons.classList.remove('slide-anim');
+			} else {
+				connectBtnIcons.classList.add('slide-anim');
+			}
 
 			if (mapBox.classList.contains('active')) {
 				mapBox.classList.remove('active');
@@ -96,6 +42,13 @@ window.onload = function() {
 			if (contactBox.classList.contains('active')) {
 				contactBox.classList.remove('active');
 			}
+			
+			if (contactBox.classList.contains('active')) {
+				connectBtnIcons.classList.remove('slide-anim');
+			} else {
+				connectBtnIcons.classList.add('slide-anim');
+			}
+
 		});
 
 		backMapBtn.addEventListener('click', function(e) {
