@@ -5,8 +5,8 @@
 	overflow: hidden
 	justify-content: center
 	align-items: center
-	width: 75px
-	height: 75px
+	width: 60px
+	height: 60px
 	transition: .2s 
 	border-radius: 50%
 	transition: .4s
@@ -25,42 +25,58 @@
 		left: 0
 		transition: .4s
 		&.slide-anim
-			animation: slide-anim 10s linear infinite
-			animation-delay: 1s
+			animation: slide-anim 14s linear infinite
+			.connect-btn__icon:not(:first-child)
+				animation: scale-anim 1.25s linear infinite
 	&__icon
-		width: 35px
-		height: 35px
+		width: 30px
+		height: 30px
 		fill: #fff
-		margin-left: 20px
-		margin-right: 20px
+		margin-left: 15px
+		margin-right: 15px
+		transition: .4s
+		transform: scale(.6)
 		&:last-child
 			margin-right: 40px
+		&:first-child
+			transform: scale(1)
 	
 
 	@keyframes slide-anim
 		0
 			left: 0
-		12.5%
+		8.3%
 			background: #2E77A4
-			left: -80px
-		25%
+		16.6%
 			background: #00A8DD
-			left: -160px
-		37.5%
-			left: -240px
+		24.9%
 			background: #23599B
-		50%
-			left: -320px
+		33.2%
 			background: #FF9500
-		62.5%
-			left: -400px
+		41.5%
 			background: #4AB632
-		75%
-			left: -460px
+		49.3%
+			left: -600%
 			background: #7D3DAE
-		87.5%
-			left: 0
-			background: transparent
+		58.2%
+			background: #4AB632
+		66.5%
+			background: #FF9500
+		74.8%
+			background: #23599B
+		83%
+			background: #00A8DD
+		91.4%
+			background: #2E77A4
 		100%
 			left: 0
+			background: transparent
+
+	@keyframes scale-anim
+		30%
+			transform: scale(.6)
+		69%
+			transform: scale(1)
+		100%
+			transform: scale(.6)
 		
