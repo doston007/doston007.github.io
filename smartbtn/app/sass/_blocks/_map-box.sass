@@ -1,17 +1,19 @@
 .map-box
 	position: fixed
-	top: 100%
+	top: 0
 	bottom: 0
 	right: 0
 	left: 0
 	background-color: $default-bg
 	z-index: 2
 	overflow-y: auto
-	transition: top .4s
+	transition: transform .4s
 	height: 100vh
 	overflow-y: hidden
+	transform: scaleY(0)
+	transform-origin: bottom
 	&.active
-		top: 0
+		transform: scaleY(1)
 	&__header
 		background-color: #39A8D9
 		background-image: url('../img/header-bg.svg')

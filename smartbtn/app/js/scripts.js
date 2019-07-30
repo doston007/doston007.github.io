@@ -24,11 +24,8 @@ window.onload = function() {
 						connectBtn.classList.remove('coin-anim');
 						clearInterval(coinAnim);
 					}
-				}, 500);
-		}, 6000)
-
-		// setTimeout(function() {
-		// }, 1500);
+				}, 1000);
+		}, 8000)
 
 	})();
 

@@ -6,12 +6,13 @@
 	height: 75px
 	transition: .2s 
 	border-radius: 50%
-	transition: .2s
+	transition: .4s
 	background-image: linear-gradient(to left, $accent, darken($accent, 20))
 	box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.4)
 	transform-origin: center
 	&.coin-anim
-		animation: coin-anim 1s linear infinite
+		transition: .4s
+		animation: coin-anim 2s linear infinite
 		// animation-delay: .25s
 	&__icon
 		width: 35px
@@ -31,7 +32,6 @@
 		background: #7D3DAE
 	&:hover
 		box-shadow: none
-		background-image: linear-gradient(to left, darken($accent, 20), $accent)
 	&__wrapper
 		perspective-origin: 0 50%
 		perspective: 200px
