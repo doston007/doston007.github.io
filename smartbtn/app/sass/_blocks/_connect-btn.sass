@@ -11,12 +11,24 @@
 	box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.4)
 	transform-origin: center
 	&.coin-anim
-		animation: coin-anim 2s linear infinite
-		animation-delay: 2s
+		animation: coin-anim 1s linear infinite
+		// animation-delay: .25s
 	&__icon
 		width: 35px
 		height: 35px
 		fill: #fff
+	&--vk
+		background: #2E77A4
+	&--tg
+		background: #00A8DD
+	&--fb
+		background: #23599B
+	&--ok
+		background: #FF9500
+	&--wa
+		background: #4AB632
+	&--vb
+		background: #7D3DAE
 	&:hover
 		box-shadow: none
 		background-image: linear-gradient(to left, darken($accent, 20), $accent)
