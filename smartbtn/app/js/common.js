@@ -12,10 +12,18 @@ window.onload = function() {
 		setInterval(function() {
 				var coinAnim = setInterval(function() {
 					if (i < socialsIconsName.length) {
-						btnIcon.setAttribute('xlink:href', 'img/sprites.svg#' + socialsIconsName[i] + '-icon');
-						connectBtn.classList.remove('connect-btn' + '--' + socialsIconsName[i - 1]);
-						connectBtn.classList.add('connect-btn' + '--' + socialsIconsName[i]);
-						connectBtn.classList.add('coin-anim');
+						if (document.querySelector('.contact-box').classList.contains('active')) {
+							btnIcon.setAttribute('xlink:href', 'img/sprites.svg#message-icon');
+							connectBtn.classList.remove('coin-anim');
+							for (let i = 0; i < socialsIconsName.length; i++) {
+								connectBtn.classList.remove('connect-btn' + '--' + socialsIconsName[i]);
+							}
+						} else {
+							btnIcon.setAttribute('xlink:href', 'img/sprites.svg#' + socialsIconsName[i] + '-icon');
+							connectBtn.classList.remove('connect-btn' + '--' + socialsIconsName[i - 1]);
+							connectBtn.classList.add('connect-btn' + '--' + socialsIconsName[i]);
+							connectBtn.classList.add('coin-anim');
+						}
 						i++;
 					} else {
 						i = 0;
@@ -25,7 +33,31 @@ window.onload = function() {
 						clearInterval(coinAnim);
 					}
 				}, 1000);
-		}, 8000)
+		}, 8000);
+
+		setInterval(function() {
+			if (i < socialsIconsName.length) {
+				if (document.querySelector('.contact-box').classList.contains('active')) {
+					btnIcon.setAttribute('xlink:href', 'img/sprites.svg#message-icon');
+					connectBtn.classList.remove('coin-anim');
+					for (let i = 0; i < socialsIconsName.length; i++) {
+						connectBtn.classList.remove('connect-btn' + '--' + socialsIconsName[i]);
+					}
+				} else {
+					btnIcon.setAttribute('xlink:href', 'img/sprites.svg#' + socialsIconsName[i] + '-icon');
+					connectBtn.classList.remove('connect-btn' + '--' + socialsIconsName[i - 1]);
+					connectBtn.classList.add('connect-btn' + '--' + socialsIconsName[i]);
+					connectBtn.classList.add('coin-anim');
+				}
+				i++;
+			} else {
+				i = 0;
+				connectBtn.classList.remove('connect-btn--vb');
+				btnIcon.setAttribute('xlink:href', 'img/sprites.svg#message-icon');
+				connectBtn.classList.remove('coin-anim');
+				clearInterval(coinAnim);
+			}
+		}, 1000);
 
 	})();
 
