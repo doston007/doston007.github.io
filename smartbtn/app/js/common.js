@@ -59,5 +59,5 @@ window.onload = function() {
 			openMapBtn.classList.remove('active');
 		});
 	})();
-
+	
 };
