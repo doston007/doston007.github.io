@@ -25,7 +25,7 @@ $(function() {
 	});
 	$('.modal__close').click(function(event) {
 		event.preventDefault();
-		
+
 		$('.modal').fadeOut('fast');
 		$('body').css("overflow", "auto");
 	});
