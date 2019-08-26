@@ -182,7 +182,7 @@
 										<img src="img/offer-1.png" alt="">
 									</div>
 									<div class="offer-box__info">
-										<a href="#" class="offer-box__text">SPA для Вашего «Мерседес-Бенц»</a>
+										<span class="offer-box__text">SPA для Вашего «Мерседес-Бенц»</span>
 										<a href="#" class="btn offer-box__btn">Подробнее</a>
 									</div>
 								</div>
@@ -193,7 +193,7 @@
 										<img src="img/offer-2.png" alt="">
 									</div>
 									<div class="offer-box__info">
-										<a href="#" class="offer-box__text">Специальное предложение на ТО -50%</a>
+										<span class="offer-box__text">Специальное предложение на ТО -50%</span>
 										<a href="#" class="btn offer-box__btn">Подробнее</a>
 									</div>
 								</div>
@@ -204,7 +204,7 @@
 										<img src="img/offer-3.png" alt="">
 									</div>
 									<div class="offer-box__info">
-										<a href="#" class="offer-box__text">Замена масла ДВС Вашего «Мерседес-Бенц» в подарок</a>
+										<span class="offer-box__text">Замена масла ДВС Вашего «Мерседес-Бенц» в подарок</span>
 										<a href="#" class="btn offer-box__btn">Подробнее</a>
 									</div>
 								</div>
@@ -215,7 +215,7 @@
 										<img src="img/offer-4.png" alt="">
 									</div>
 									<div class="offer-box__info">
-										<a href="#" class="offer-box__text">Подменный автомобиль</a>
+										<span class="offer-box__text">Подменный автомобиль</span>
 										<a href="#" class="btn offer-box__btn">Подробнее</a>
 									</div>
 								</div>
@@ -227,7 +227,7 @@
 										<img src="img/offer-5.png" alt="">
 									</div>
 									<div class="offer-box__info">
-										<a href="#" class="offer-box__text">Полировка кузова</a>
+										<span class="offer-box__text">Полировка кузова</span>
 										<a href="#" class="btn offer-box__btn">Подробнее</a>
 									</div>
 								</div>
@@ -238,7 +238,7 @@
 										<img src="img/offer-6.png" alt="">
 									</div>
 									<div class="offer-box__info">
-										<a href="#" class="offer-box__text">Выгода 50% на замену колодок и дисков Вашего «Мерседес-Бенц</a>
+										<span class="offer-box__text">Выгода 50% на замену колодок и дисков Вашего «Мерседес-Бенц</span>
 										<a href="#" class="btn offer-box__btn">Подробнее</a>
 									</div>
 								</div>
@@ -249,7 +249,7 @@
 										<img src="img/offer-7.png" alt="">
 									</div>
 									<div class="offer-box__info">
-										<a href="#" class="offer-box__text">Дарим Вам 50% на очистку радиатора Вашего «Мерседес-Бенц»</a>
+										<span class="offer-box__text">Дарим Вам 50% на очистку радиатора Вашего «Мерседес-Бенц»</span>
 										<a href="#" class="btn offer-box__btn">Подробнее</a>
 									</div>
 								</div>
@@ -325,17 +325,24 @@
 									<div class="inner-col-6">
 										<input type="text" class="input input--text bottom-form__input" placeholder="Имя" name="name">
 									</div>
+									<div class="inner-col-6 show-sm">
+										<select name="model-mobil" class="input input--select bottom-form__input">
+											<option disabled selected>Выберите модель</option>
+											<option value="model1">Модель 1</option>
+											<option value="model2">Модель 2</option>
+										</select>
+									</div>
 									<div class="inner-col-6">
 										<input type="text" class="input input--text bottom-form__input" placeholder="Телефон" name="tel">
 									</div>
 									<div class="inner-col-6 order-sm-1">
-										<select name="model" class="input input--select bottom-form__input">
+										<select name="model" class="input input--select bottom-form__input hide-sm">
 											<option disabled selected>Выберите модель</option>
 											<option value="model1">Модель 1</option>
 											<option value="model2">Модель 2</option>
 										</select>
 										<label class="custom-checkbox">
-											<input type="checkbox" class="custom-checkbox__checkbox">
+											<input type="checkbox" class="custom-checkbox__checkbox" checked>
 											<span class="custom-checkbox__text">Я согласен на обработку персональных данных.<br><a href="#">С Политикой защиты данных</a> ознакомлен</span>
 										</label>
 									</div>
@@ -352,6 +359,38 @@
 				</div>
 			</section>
 		</main>
+
+		<div class="modal">
+			<div class="modal__overlay"></div>
+			<div class="modal__content feature-modal">
+				<a href="#" class="modal__close">
+					<span></span>
+					<span></span>
+				</a>
+				<span class="feature-modal__heading">При любом визите на сервис получите комплекс SPA-услуг для Вашего «Мерседес-Бенц» в подарок: </span>
+				<ul class="feature-modal__ul">
+					<li class="feature-modal__li">Комплексная мойка автомобиля</li>
+					<li class="feature-modal__li">Влажная уборка салона</li>
+					<li class="feature-modal__li">Озонирование салона автомобиля</li>
+				</ul>
+				<form class="modal-form">
+					<h3 class="modal-form__title">Осмотр состояния ходовой части  в подарок при любом обращении на сервис!</h3>
+					<div class="modal-form__group">
+						<label class="modal-form__label">
+							<span>Имя</span>
+							<input type="text" name="name" class="input modal-form__input">
+						</label>
+						<label class="modal-form__label">
+							<span>Ваш номер телефона</span>
+							<input type="text" name="tel" class="input modal-form__input" placeholder="+7 (000) 000-00-00">
+						</label>
+					</div>
+					<div class="text-center">
+						<button type="submit" class="btn modal-form__btn">Записаться</button>
+					</div>
+				</form>
+			</div>
+		</div>
 
 		<!-- Footer -->
 
