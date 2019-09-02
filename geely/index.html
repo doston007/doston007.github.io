@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="UTF-8">
+	<!-- <base href="/"> -->
+
+	<title>Greely</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body class="page home-page">
+
+	<header class="header header--fixed">
+		<div class="container header__container">
+			<a href="index.html" class="logo header__logo">
+				<img src="img/logo.png" alt="Geely" class="logo__img">
+			</a>
+			<div class="awards header__awards">
+				<div class="awards__award">
+					<img src="img/icons/yandex-icon.png" alt="Yandex" class="awards__icon">
+					<img src="img/icons/star-icon.png" alt="Star" class="awards__icon">
+					<div class="awards__name">Яндекс рекомендует Geely «Авангард»</div>
+				</div>
+				<div class="awards__award">
+					<img src="img/icons/award-icon.png" alt="" class="awards__icon">
+					<div class="awards__name">Дилер Geely №1 в Санкт-Петербурге</div>
+				</div>
+			</div>
+			<div class="mini-contacts">
+				<div class="mini-contacts__address">
+					<svg class="mini-contacts__icon">
+						<use xlink:href="img/sprites.svg#mark-icon"></use>
+					</svg>
+					<span>Приморский проспект, д.54, корп.4</span>
+				</div>
+				<a href="tel:+78122104610" class="mini-contacts__tel">
+					<svg class="mini-contacts__icon">
+						<use xlink:href="img/sprites.svg#tel-icon"></use>
+					</svg>
+					<span>+7 (812) 210-46-10</span>
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<section class="section hero-section">
+		<div class="container hero-section__container">
+			<div class="row hero-section__row hero-slider" id="js-hero-slider">
+				<div class="col-12 hero-slider__slide">
+					<div class="hero-slider__view">
+						<div class="hero-slider__model-name">GEELY ATLAS</div>
+						<div class="hero-slider__model-img-wrapper">
+							<img src="img/geely-atlas.png" alt="Geely atlas" class="hero-slider__model-img">
+						</div>
+					</div>
+					<div class="hero-slider__info">
+						<div class="hero-slider__info-inner">
+							<div class="hero-slider__heading">
+								<h1 class="hero-slider__title">GEELY ATLAS</h1>
+								<div class="hero-slider__model-price">oт 7200р / месяц</div>
+							</div>
+							<div class="hero-slider__features-list">
+								<li class="hero-slider__feature">Каско в подарок</li>
+								<li class="hero-slider__feature">Скидка 50 000₽ за визит</li>
+								<li class="hero-slider__feature">Перебьем любую цену</li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 hero-slider__slide">
+					<div class="hero-slider__view">
+						<div class="hero-slider__model-name">GEELY ATLAS</div>
+						<div class="hero-slider__model-img-wrapper">
+							<img src="img/geely-atlas.png" alt="Geely atlas" class="hero-slider__model-img">
+						</div>
+					</div>
+					<div class="hero-slider__info">
+						<div class="hero-slider__info-inner">
+							<div class="hero-slider__heading">
+								<h1 class="hero-slider__title">GEELY ATLAS</h1>
+								<div class="hero-slider__model-price">oт 7200р / месяц</div>
+							</div>
+							<div class="hero-slider__features-list">
+								<li class="hero-slider__feature">Каско в подарок</li>
+								<li class="hero-slider__feature">Скидка 50 000₽ за визит</li>
+								<li class="hero-slider__feature">Перебьем любую цену</li>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 hero-slider__slide">
+					<div class="hero-slider__view">
+						<div class="hero-slider__model-name">GEELY ATLAS</div>
+						<div class="hero-slider__model-img-wrapper">
+							<img src="img/geely-atlas.png" alt="Geely atlas" class="hero-slider__model-img">
+						</div>
+					</div>
+					<div class="hero-slider__info">
+						<div class="hero-slider__info-inner">
+							<div class="hero-slider__heading">
+								<h1 class="hero-slider__title">GEELY ATLAS</h1>
+								<div class="hero-slider__model-price">oт 7200р / месяц</div>
+							</div>
+							<div class="hero-slider__features-list">
+								<li class="hero-slider__feature">Каско в подарок</li>
+								<li class="hero-slider__feature">Скидка 50 000₽ за визит</li>
+								<li class="hero-slider__feature">Перебьем любую цену</li>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section countdown-section">
+		<div class="container countdown-section__container">
+			<div class="countdown">
+				<div class="countdown__title">Предложение истекает через: </div>
+				<div class="countdown__item" id="js-countdown"></div>
+			</div>
+			<div class="countdown-section__arrow">
+				<img src="img/double-arrow.png">
+			</div>
+			<form class="form countdown-section__form">
+				<div class="form__title">Зафиксируйте условия!</div>
+				<div class="form__group">
+					<input type="text" class="input form__input" placeholder="Ваше имя">
+					<input type="text" class="input form__input" placeholder="Ваш телефон">
+				</div>
+				<button class="btn btn--submit btn--block form__btn">ЗАФИКСИРУЙТЕ УСЛОВИЯ</button>
+			</form>
+		</div>
+	</section>
+
+	<section class="section catalog-section">
+		<div class="container catalog-section__container">
+			<div class="row catalog-section__heading">
+				<div class="col-12">
+					<h2 class="catalog-section__title">Автомобили <span>в наличии</span></h2>
+				</div>
+			</div>
+			<div class="row catalog-section__row">
+				<div class="col-md-3 catalog-section__col">
+					<div class="catalog-card">
+						<div class="catalog-card__name">GEELY ATLAS STANDART</div>
+						<div class="catalog-card__img-wrapper">
+							<img src="img/catalog-img-1.png" alt="" class="catalog-card__img">
+						</div>
+						<div class="catalog-card__price">от 989 900 Р</div>
+						<a href="#" class="btn btn--block btn--outline catalog-card__btn">5 автомобилей в наличии</a>
+						<a href="#" class="btn btn--block btn--default catalog-card__btn">Получить предложение</a>
+						<div class="yandex-services catalog-card__yandex-services">
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-1.png" alt="#">
+							</a>
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-2.png" alt="#">
+							</a>
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-3.png" alt="#">
+							</a>
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-4.png" alt="#">
+							</a>
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-5.png" alt="#">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 catalog-section__col">
+					<div class="catalog-card">
+						<div class="catalog-card__name">GEELY ATLAS STANDART</div>
+						<div class="catalog-card__img-wrapper">
+							<img src="img/catalog-img-1.png" alt="" class="catalog-card__img">
+						</div>
+						<div class="catalog-card__price">от 989 900 Р</div>
+						<a href="#" class="btn btn--block btn--outline catalog-card__btn">5 автомобилей в наличии</a>
+						<a href="#" class="btn btn--block btn--default catalog-card__btn">Получить предложение</a>
+						<div class="yandex-services catalog-card__yandex-services">
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-1.png" alt="#">
+							</a>
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-2.png" alt="#">
+							</a>
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-3.png" alt="#">
+							</a>
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-4.png" alt="#">
+							</a>
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-5.png" alt="#">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 catalog-section__col">
+					<div class="catalog-card">
+						<div class="catalog-card__name">GEELY ATLAS STANDART</div>
+						<div class="catalog-card__img-wrapper">
+							<img src="img/catalog-img-1.png" alt="" class="catalog-card__img">
+						</div>
+						<div class="catalog-card__price">от 989 900 Р</div>
+						<a href="#" class="btn btn--block btn--outline catalog-card__btn">5 автомобилей в наличии</a>
+						<a href="#" class="btn btn--block btn--default catalog-card__btn">Получить предложение</a>
+						<div class="yandex-services catalog-card__yandex-services">
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-1.png" alt="#">
+							</a>
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-2.png" alt="#">
+							</a>
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-3.png" alt="#">
+							</a>
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-4.png" alt="#">
+							</a>
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-5.png" alt="#">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 catalog-section__col">
+					<div class="catalog-card">
+						<div class="catalog-card__name">GEELY ATLAS STANDART</div>
+						<div class="catalog-card__img-wrapper">
+							<img src="img/catalog-img-1.png" alt="" class="catalog-card__img">
+						</div>
+						<div class="catalog-card__price">от 989 900 Р</div>
+						<a href="#" class="btn btn--block btn--outline catalog-card__btn">5 автомобилей в наличии</a>
+						<a href="#" class="btn btn--block btn--default catalog-card__btn">Получить предложение</a>
+						<div class="yandex-services catalog-card__yandex-services">
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-1.png" alt="#">
+							</a>
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-2.png" alt="#">
+							</a>
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-3.png" alt="#">
+							</a>
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-4.png" alt="#">
+							</a>
+							<a href="#" class="yandex-services__item">
+								<img src="img/yandex-s-5.png" alt="#">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section gallery-section">
+		<div class="container gallery-section__container">
+			<div class="row gallery-section__heading">
+				<div class="col-12">
+					<h3 class="gallery-section__title">Фото <span>галерея</span></h3>
+				</div>
+			</div>
+			<div class="row gallery-slider" id="js-gallery-slider">
+				<div class="col-md-3 gallery-slider__slide">
+					<img src="img/gallery-1.png" alt="">
+				</div>
+				<div class="col-md-3 gallery-slider__slide">
+					<img src="img/gallery-1.png" alt="">
+				</div>
+				<div class="col-md-3 gallery-slider__slide">
+					<img src="img/gallery-1.png" alt="">
+				</div>
+				<div class="col-md-3 gallery-slider__slide">
+					<img src="img/gallery-1.png" alt="">
+				</div>
+				<div class="col-md-3 gallery-slider__slide">
+					<img src="img/gallery-1.png" alt="">
+				</div>
+				<div class="col-md-3 gallery-slider__slide">
+					<img src="img/gallery-1.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section connect-section">
+		<div class="container connect-section__container">
+			<div class="row connect-section__row">
+				<div class="col-md-6 connect-section__col">
+					<h2 class="connect-section__title">ВОСПОЛЬЗУЙТЕСЬ ПРОГРАММОЙ<br>TRADE-IN</h2>
+					<form class="form connect-section__form">
+						<div class="form__group">
+							<input type="text" class="input form__input" placeholder="Ваше имя">
+							<input type="text" class="input form__input" placeholder="Ваш телефон">
+						</div>
+						<button class="btn btn--submit btn--block form__btn">ЗАФИКСИРУЙТЕ УСЛОВИЯ</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section map-section">
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Afd5fdf33ac0aeda5990a47e1cb0719880c68d5dd59ae3fdb2a56a061427e811d&amp;source=constructor" width="100%" height="560" frameborder="0"></iframe>
+	</section>
+
+	<footer class="footer">
+		<div class="container footer__container">
+			<h3 class="footer__title">ОСТАЛИСЬ ВОПРОСЫ? ЗВОНИТЕ НАМ <a href="tel:+88122104743">8 (812) 210 47 43</a></h3>
+			<div class="footer__copyright">@ 2019 Авангард Лахта</div>
+			<p>*-Данная информация не является офертой, определяемой положениями статей 435, 437 Гражданского Кодекса РФ</p>
+			<a href="#">Соглашение о конфидецальности и защите персональных данных</a>
+			<p>*Скидка предоставляется по программе Trade-in</p>
+			<p>**Выгода - единственная и разовая скидка, предоставляемая клиенту от розничной цены нового автомобиля, приобретаемого по программе Trade-in</p>
+		</div>
+	</footer>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
