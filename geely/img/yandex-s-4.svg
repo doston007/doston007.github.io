@@ -1,0 +1,81 @@
+<svg id="Layer_8" data-name="Layer 8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="64 64 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-5 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-7 {
+        clip-path: url(#clip-path-3);
+      }
+
+      .cls-8 {
+        fill: url(#linear-gradient-3);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="SVGID" class="cls-1" d="M187.38,104.091A64.016,64.016,0,0,0,72.89,95.449c20.507-20.5,45.012-11.586,61.769.82,13.816,9.7,32.529,42.775,22.776,52.479-3.5,3.482-11.416,5.908-20.5,6.9.217.014.338.021.344.02C158.233,154.086,194.779,133.769,187.38,104.091Z"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="1062.989" y1="670.267" x2="1063.971" y2="670.267" gradientTransform="matrix(0, 114.422, -114.422, 0, 76827.256, -121579.595)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c326ff"/>
+      <stop offset="0.402" stop-color="#8f26ff"/>
+      <stop offset="0.8" stop-color="#6226ff"/>
+      <stop offset="1" stop-color="#5126ff"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <path id="SVGID-2" data-name="SVGID" class="cls-1" d="M191.021,116.8a63.519,63.519,0,0,0-3.641-12.707c6.063,24.32-17.386,42.274-37.581,48.859-.6.195-1.193.387-1.784.561a90.557,90.557,0,0,1-11.081,2.135c-1.543.168-3.119.295-4.714.378-1.4.073-2.8.115-4.215.12-12.525-.048-24.816-2.805-29.43-7.4-2.577-2.565-3.166-6.763-2.382-11.729-3.7,18.826-1.055,47.563,22.04,54.24a64.508,64.508,0,0,0,25.164-1.128,66.966,66.966,0,0,0,14.3-5.428c.158-.083.317-.166.475-.25l.4-.211A64.1,64.1,0,0,0,191.021,116.8Z"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="1085.033" y1="667.569" x2="1086.203" y2="667.143" gradientTransform="translate(-59035.042 96410.889) rotate(-90) scale(88.674)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c326ff"/>
+      <stop offset="0.139" stop-color="#ad26ff"/>
+      <stop offset="0.48" stop-color="#7b26ff"/>
+      <stop offset="0.739" stop-color="#5d26ff"/>
+      <stop offset="0.884" stop-color="#5126ff"/>
+    </linearGradient>
+    <clipPath id="clip-path-3">
+      <path id="SVGID-3" data-name="SVGID" class="cls-1" d="M72.89,95.449c-.19.322-.379.644-.564.97a64,64,0,0,0,45.908,94.84c-23.095-6.677-25.744-35.414-22.04-54.24a38.784,38.784,0,0,1,1.175-5.049q.409-1.367.917-2.773.281-.794.576-1.53c5.295-13.527,16.551-28.607,24.967-32.895a9.56,9.56,0,0,1,4.191-1.2c1.942.009,4.215.992,6.639,2.693C117.9,83.863,93.4,74.95,72.89,95.449Z"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-3" x1="1071.164" y1="657.624" x2="1072.145" y2="657.624" gradientTransform="matrix(97.142, 0, 0, 97.142, -103997.059, -63745.379)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c326ff"/>
+      <stop offset="0.065" stop-color="#ba26ff"/>
+      <stop offset="0.502" stop-color="#8126ff"/>
+      <stop offset="0.826" stop-color="#5e26ff"/>
+      <stop offset="1" stop-color="#5126ff"/>
+    </linearGradient>
+  </defs>
+  <title>alisa_mobius</title>
+  <g>
+    <rect class="cls-2" x="89.018" y="89.018" width="77.965" height="77.965"/>
+    <g>
+      <g class="cls-3">
+        <rect class="cls-4" x="63.668" y="34.251" width="140.332" height="151.393" transform="translate(-28.301 170.877) rotate(-60)"/>
+      </g>
+      <g class="cls-5">
+        <rect class="cls-6" x="79.996" y="81.891" width="127.274" height="132.538" transform="translate(-56.494 198.47) rotate(-60)"/>
+      </g>
+      <g class="cls-7">
+        <rect class="cls-8" x="34.899" y="79.778" width="128.859" height="115.192" transform="translate(-69.305 154.709) rotate(-60)"/>
+      </g>
+    </g>
+  </g>
+</svg>
