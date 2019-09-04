@@ -24,7 +24,7 @@ $(function() {
 	
 	// Gallery slider
 	$('#js-gallery-slider').owlCarousel({
-		items: 1,
+		items: 2,
 		responsive: {
 			768: {
 				items: 2
@@ -55,9 +55,20 @@ $(function() {
 	$('.js-open-modal-form').click(function(event) {
 		event.preventDefault();
 
-		$('.modal').fadeIn('fast');
+		$('.form-modal').fadeIn('fast');
 		$('body').css("overflow", "hidden");
 	});
+	// ---
+	
+	// Gallery modal
+	$('#js-gallery-slider img').click(function(event) {
+		event.preventDefault();
+
+		$('.gallery-modal').fadeIn('fast');
+		$('body').css("overflow", "hidden");
+		$('.modal-gallery').html('<img src="' + $(this).attr('src') + '">');
+	});
+	
 	// ---
 
 	// Modal close
