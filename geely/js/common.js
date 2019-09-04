@@ -59,17 +59,6 @@ $(function() {
 		$('body').css("overflow", "hidden");
 	});
 	// ---
-	
-	// Gallery modal
-	$('#js-gallery-slider img').click(function(event) {
-		event.preventDefault();
-
-		$('.gallery-modal').fadeIn('fast');
-		$('body').css("overflow", "hidden");
-		$('.modal-gallery').html('<img src="' + $(this).attr('src') + '">');
-	});
-	
-	// ---
 
 	// Modal close
 	$('.modal__overlay').click(function(event) {
