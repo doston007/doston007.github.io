@@ -1,0 +1,123 @@
+.hero-slider
+	position: relative
+	&__slide
+		display: flex
+		justify-content: center
+		flex-direction: row
+		flex-wrap: wrap
+		.mobile-v, .desktop-v
+			display: block
+		.mobile-v
+			display: none
+	&__view
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 45%
+		z-index: 1
+		padding-top: 45px
+	&__model-img-wrapper
+		display: flex
+		justify-content: center
+		align-items: center
+		transform: translateX(30px)
+	&__model-img
+		max-width: 100%
+		height: auto
+	&__model-name
+		font-size: $_44px
+		opacity: .4
+		font-weight: bold
+		margin-bottom: 40px
+		line-height: 1.1
+	&__info
+		height: 100%
+		background-color: $accent
+		color: $text-light
+		width: 55%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		padding-left: 60px
+		padding-right: 30px
+		transform: skew(-10deg)
+		z-index: 0
+		text-shadow: 0px 2px 5px rgba(#000,.5)
+		&-inner
+			transform: skew(10deg)
+	&__heading
+		padding-bottom: 25px
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			left: 0
+			bottom: 0
+			height: 3px
+			width: 120px
+			background-color: #fff
+	&__title
+		font-size: $_80px
+		line-height: 1
+	&__model-price
+		font-size: $_42px
+		line-height: 1
+	&__features-list
+		list-style: none
+		margin-top: 25px
+	&__feature
+		font-size: $_28px
+		padding-left: 40px
+		background-image: url('../img/icons/tick-icon.png')
+		background-repeat: no-repeat
+		background-position: 0 50%
+
+	// Owl styles
+	.owl-stage
+		display: flex !important
+	.owl-item
+		display: flex !important
+	.owl-dots
+		position: absolute
+		bottom: 25px
+		left: 50%
+		transform: translateX(-50%)
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: row
+		flex-wrap: nowrap
+	.owl-dot
+		width: 10px
+		height: 10px
+		border-radius: 50%
+		background-color: #fff
+		opacity: .5
+		border: none
+		margin-right: 8px
+		transition: .2s
+		&:last-child
+			margin-right: 0
+		&:hover, &:focus
+			outline: none
+			opacity: 1
+		&.active
+			transform: scale(1.5)
+			opacity: 1
+	.owl-prev, .owl-next
+		background: transparent
+		border: none
+		color: #fff
+		font-size: $_80px
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		opacity: 0
+		transition: .2s
+	.owl-prev
+		left: -15px
+	.owl-next
+		right: -15px
+	&:hover
+		.owl-prev, .owl-next
+			opacity: 1

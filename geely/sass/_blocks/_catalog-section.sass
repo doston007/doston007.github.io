@@ -1,0 +1,29 @@
+.catalog-section
+	padding-top: 45px
+	padding-bottom: 5px
+	border-top: 5px solid $second-c
+	&__title
+		line-height: 1
+		font-size: $_36px
+		color: $second-c
+		text-align: center
+		text-transform: uppercase
+		position: relative
+		padding-bottom: 30px
+		font-weight: bold
+		&::after
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+			height: 2px
+			width: 145px
+			background-color: $accent
+		span
+			font-weight: 100
+	&__row
+		margin-top: 15px
+	&__col
+		padding-top: 20px
+		padding-bottom: 20px

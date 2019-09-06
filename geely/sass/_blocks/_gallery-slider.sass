@@ -1,0 +1,39 @@
+.gallery-slider
+	overflow: hidden
+	position: relative
+	.owl-stage
+		display: flex
+	.owl-dots
+		display: none
+	.owl-prev, .owl-next
+		background: transparent
+		border: none
+		color: #fff
+		font-size: $_24px
+		display: flex
+		justify-content: center
+		align-items: center
+		line-height: 1
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		width: 38px
+		height: 38px
+		background-color: $accent
+		border-radius: 50%
+	.owl-prev
+		left: 0
+	.owl-next
+		right: 0
+	.owl-item
+		padding-left: 15px
+		padding-right: 15px
+		display: flex
+		justify-content: center
+		align-items: center
+		> div
+			display: block !important
+		img
+			display: block
+			max-width: 100%
+			height: auto

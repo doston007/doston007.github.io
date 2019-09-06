@@ -1,0 +1,52 @@
+@import "reset"
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #9FA1A5
+
+::selection
+	background-color: $accent
+	color: #fff
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+
+// Blocks
+@import "_blocks/page"
+@import "_blocks/section"
+@import "_blocks/header"
+@import "_blocks/logo"
+@import "_blocks/awards"
+@import "_blocks/mini-contacts"
+@import "_blocks/form"
+@import "_blocks/input"
+@import "_blocks/btn"
+@import "_blocks/countdown"
+@import "_blocks/catalog-card"
+@import "_blocks/yandex-services"
+@import "_blocks/modal"
+@import "_blocks/hero-slider"
+@import "_blocks/gallery-slider"
+@import "_blocks/hero-section"
+@import "_blocks/countdown-section"
+@import "_blocks/catalog-section"
+@import "_blocks/gallery-section"
+@import "_blocks/connect-section"
+@import "_blocks/map-section"
+@import "_blocks/footer"
+
+
+@import "media" // Always at the end

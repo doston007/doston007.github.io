@@ -1,0 +1,191 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	// Header
+	.header
+		&__awards
+			display: none
+
+// ≥992px
++media-breakpoint-down(md)
+	// Page
+	.page
+		font-size: 10px
+
+	// Countdown section
+	.countdown-section
+		&__container
+			justify-content: center
+		&__arrow
+			display: none
+		&__form
+			margin-top: 60px
+
+	// Connect section
+	.connect-section
+		&__col
+			padding-left: 15px
+// ≥768px
++media-breakpoint-down(sm)
+	// Form
+	.form
+		&__title
+			text-align: center
+
+	// Hero slider
+	.hero-slider
+		&__feature
+			font-size: $_18px
+
+	// Connect section
+	.connect-section
+		background-size: 250%
+		background-position: left
+		position: relative
+		&::after // Overlay
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			right: 0
+			bottom: 0
+			background-color: $second-c
+			opacity: .8
+			z-index: 0
+		&>*
+			z-index: 1
+			position: relative
+		&__title
+			text-align: center
+			padding-bottom: 20px
+			&::after
+				left: 50%
+				transform: translateX(-50%)
+
+// ≥576px
++media-breakpoint-down(xs)
+	// Header
+	.header
+		.mini-contacts__address
+			display: none
+
+	// Connect Section
+	.connect-section
+		background-size: 450%
+
+	// Hero slider
+	.hero-slider
+		&__slide
+			.mobile-v
+				display: block
+			.desktop-v
+				display: none
+		&__model-name
+			display: none
+		&__view
+			width: 70%
+			order: 1
+		&__info
+			width: 100%
+			height: auto
+			background-color: transparent
+			padding-left: 15px
+			padding-right: 15px
+		&__heading
+			padding-bottom: 10px
+			&::after
+				display: none
+		&__features-list
+			margin-top: 10px
+			margin-left: 25%
+		&__feature
+			font-size: $_28px
+		&__model-img-wrapper
+			transform: translateX(0)
+
+	// Mini contacts
+	.mini-contacts
+		&__tel
+			font-size: $_24px
+
+	// Hero slider
+	.hero-slider
+		.owl-prev
+			left: 5px
+		.owl-next
+			right: 5px
+	
+	// Form
+	.form
+		&__input
+			font-size: $_16px
+
+	// Catalog section
+	.catalog-section
+		&__title
+			font-size: $_28px
+			padding-bottom: 15px
+
+	// Catalog card
+	.catalog-card
+		font-size: $_16px
+
+	// Yandex services
+	.yandex-services
+		&__item
+			img
+				height: 25px
+	
+// ≥410px
+@media (max-width: 410px)
+	// Hero slider
+	.hero-slider
+		&__features-list
+			margin-left: 15%
+	.countdown
+		.flip-clock-wrapper ul
+			width: 35px
+
+// ≥380px
+@media (max-width: 380px)
+	// Header mini-contacts
+	.header
+		.mini-contacts
+			&__tel
+				font-size: $_20px
+			&__icon
+				width: 13px
+				height: 13px
+				margin-right: 3px
+
+	// Countdown
+	.countdown
+		.flip-clock-wrapper ul
+			width: 30px
+		.flip-clock-wrapper ul li a div div.inn
+			font-size: 34px
+
+// ≥350px
+@media (max-width: 350px)
+	// Connect section
+	.connect-section
+		background-size: 520%
+		&__title
+			font-size: $_36px
+
+	// Header mini-contacts
+	.header
+		.mini-contacts
+			&__tel
+				font-size: $_16px
+
+	// Countdown
+	.countdown
+		.flip-clock-wrapper ul
+			width: 28px
+		.flip-clock-divider .flip-clock-label
+			right: -50px

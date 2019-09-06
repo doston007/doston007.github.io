@@ -1,5 +1,23 @@
 $(function() {
 
+	// Masked input
+	$('.input[name=phone]').mask("9 (999) 999-99-99");
+	// ---
+
+	// Ajax Form
+	$(".form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "php/send_form.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			th.addClass('form--done');
+		});
+	return false;
+	});
+	// ---
+
 	// Padding for fixed header
 	var page = $('.page');
 
@@ -18,7 +36,6 @@ $(function() {
 	// Hero slider
 	$('#js-hero-slider').owlCarousel({
 		items: 1,
-		margin: 200
 	});
 	// ---
 	
