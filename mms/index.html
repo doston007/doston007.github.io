@@ -28,7 +28,7 @@
 
 <body class="page main-page">
 
-	<header class="header header--fixed">
+	<header class="header header--fixed animated fadeIn">
 		<div class="container header__container">
 			<a href="index.html" class="logo header__logo">
 				<img src="img/logo.svg" alt="MMS" class="logo__img">
@@ -36,13 +36,9 @@
 			<nav class="nav header__nav">
 				<ul id="main-nav" class="nav__list">
 					<li class="nav__item nav__item--current"><a href="#hero" class="nav__link" data-menuanchor="hero">Главная</a></li>
-					<li class="nav__item"><a href="#product" class="nav__link" data-menuanchor="product">Продукция</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Сопутствующие товары</a></li>
 					<li class="nav__item"><a href="#about-company" class="nav__link" data-menuanchor="about-company">О Компании</a></li>
 					<li class="nav__item"><a href="#contacts" class="nav__link" data-menuanchor="contacts">Контакты</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">О нас в цифрах</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Почему мы?</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+					<li class="nav__item"><a href="#product" class="nav__link" data-menuanchor="product">Продукция</a></li>
 				</ul>
 			</nav>
 			<a href="+998901000000" class="tel header__tel">+998 90 <span class="tel__highlighted">100-00-00</span></a>
@@ -54,7 +50,7 @@
 		<div class="hero-section section" data-section="hero">
 			<div class="container hero-section__container">
 				<div class="row hero-section__row">
-					<div class="col-lg-5">
+					<div class="col-lg-5 animated slideInLeft">
 						<h1 class="title title--lg hero-section__title">Мы предлагаем</h1>
 						<div class="hero-section__description">Установку Газового оборудавния и расходных<br>материалов по цене на <span>15% ниже</span> рыночной</div>
 						<p class="hero-section__text">Установка Газового оборудавния и расходных материалов по цене на 15% ниже<br>рыночной установка Газового оборудавния</p>
@@ -62,7 +58,7 @@
 							<span class="button__text">Подробно</span>
 						</a>
 					</div>
-					<div class="col-lg-6 hero-section__gasbag">
+					<div class="col-lg-6 hero-section__gasbag animated slideInRight">
 						<img src="img/gasbag.png" alt="Газовый баллон" class="img-responsive">
 					</div>
 				</div>
@@ -72,10 +68,10 @@
 		<div class="about-company-section section" data-section="about-company">
 			<div class="container about-company-section__container">
 				<div class="row about-company-section__row">
-					<div class="col-lg-6 about-company-section__motor">
+					<div class="col-lg-6 about-company-section__motor animated slideInLeft">
 						<img src="img/motor-main.png" alt="Двигатель" class="img-responsive">
 					</div>
-					<div class="col-lg-5 about-company-section__info">
+					<div class="col-lg-5 about-company-section__info animated slideInRight">
 						<h2 class="title title--lg about-company-section__title">О компании</h2>
 						<h4 class="about-company-section__subtitle">The standard Lorem Ipsum passage</h4>
 						<p class="about-company-section__text">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
@@ -101,7 +97,84 @@
 
 		<div class="contacts-section section" data-section="contacts">
 			<div class="container contacts-section__container">
-				
+				<div class="map animated slideInDown">
+					<div class="map__country">Узбекистан</div>
+					<img src="img/map.png" alt="Uzbekistan" class="img-responsive">
+
+					<!-- Cities -->
+					<div class="map__city map__samarkand">
+						<div class="map__city-info">
+							<div class="map__city-name">Самарканд</div>
+							<div class="map__city-address">ул.Амира Темура дом 73 <span class="map__city-tel">Тел: +998 90 100-00-00</span></div>
+						</div>
+					</div>
+					<div class="map__city map__andijan">
+						<div class="map__city-info">
+							<div class="map__city-name">Андижан</div>
+							<div class="map__city-address"><span class="map__city-tel">+998 90 100-00-00</span></div>
+						</div>
+					</div>
+					<div class="map__city map__namangan">
+						<div class="map__city-info">
+							<div class="map__city-name">Наманган</div>
+							<div class="map__city-address"><span class="map__city-tel">+998 90 100-00-00</span></div>
+						</div>
+					</div>
+					<div class="map__city map__fergana">
+						<div class="map__city-info">
+							<div class="map__city-name">Фергана</div>
+							<div class="map__city-address"><span class="map__city-tel">+998 90 100-00-00</span></div>
+						</div>
+					</div>
+					<div class="map__city map__tashkent">
+						<div class="map__city-info">
+							<div class="map__city-name">Ташкент</div>
+							<div class="map__city-address"><span class="map__city-tel">+998 90 100-00-00</span></div>
+						</div>
+					</div>
+					<div class="map__city map__jizakh">
+						<div class="map__city-info">
+							<div class="map__city-name">Джизак</div>
+							<div class="map__city-address"><span class="map__city-tel">+998 90 100-00-00</span></div>
+						</div>
+					</div>
+					<div class="map__city map__navoi">
+						<div class="map__city-info">
+							<div class="map__city-name">Навои</div>
+							<div class="map__city-address"><span class="map__city-tel">+998 90 100-00-00</span></div>
+						</div>
+					</div>
+					<div class="map__city map__termez">
+						<div class="map__city-info">
+							<div class="map__city-name">Термез</div>
+							<div class="map__city-address"><span class="map__city-tel">+998 90 100-00-00</span></div>
+						</div>
+					</div>
+					<div class="map__city map__bukhara">
+						<div class="map__city-info">
+							<div class="map__city-name">Бухара</div>
+							<div class="map__city-address"><span class="map__city-tel">+998 90 100-00-00</span></div>
+						</div>
+					</div>
+					<div class="map__city map__urgench">
+						<div class="map__city-info">
+							<div class="map__city-name">Ургенч</div>
+							<div class="map__city-address"><span class="map__city-tel">+998 90 100-00-00</span></div>
+						</div>
+					</div>
+					<div class="map__city map__nukus">
+						<div class="map__city-info">
+							<div class="map__city-name">Нукус</div>
+							<div class="map__city-address"><span class="map__city-tel">+998 90 100-00-00</span></div>
+						</div>
+					</div>
+
+
+					<div class="map__info">
+						<div class="map__title">Установку Газового оборудавния и расходных материалов по цене на <span>15% ниже</span> рыночной</div>
+						<p class="map__desc">Установка Газового оборудавния и расходных материалов по цене на 15% ниже рыночной установка Газового оборудавния</p>
+					</div>
+				</div>
 			</div>
 		</div>
 
@@ -110,7 +183,6 @@
 				<div class="row product-section__heading">
 					<div class="col-12">
 						<h2 class="title title--lg product-section__title">Продукция</h2>
-						<div class="product-section__subtitle">сопутствующие товары</div>
 					</div>
 				</div>
 				<div class="row justify-content-center product-section__row">

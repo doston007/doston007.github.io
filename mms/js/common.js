@@ -1,5 +1,8 @@
 window.addEventListener('load', function() {
 
+	// WOW init
+	new WOW().init();
+
 	// FullPage
 	let sections = document.querySelectorAll('.section');
 	let sectionAnchors = [];
