@@ -1,8 +1,5 @@
 window.addEventListener('load', function() {
 
-	// WOW init
-	new WOW().init();
-
 	// FullPage
 	let sections = document.querySelectorAll('.section');
 	let sectionAnchors = [];
@@ -15,7 +12,19 @@ window.addEventListener('load', function() {
 	$('#fullpage').fullpage({
 		menu: '#main-nav',
 		navigation: false,
-		anchors: sectionAnchors
+		anchors: sectionAnchors,
+		onLeave: function(index, nextIndex, direction) {
+			if( index == 1 && nextIndex == 2 ) {
+				$('#js-2-anim').addClass('animated slideInLeft');
+				$('#js-3-anim').addClass('animated slideInRight');
+
+			} else if( ( index == 1 || index == 2 ) && nextIndex == 3 ) {
+				$('#js-4-anim').addClass('animated fadeIn duration-2s');
+			} else if( ( index == 1 || index == 2 || index == 3 ) && nextIndex == 4 ) {
+				$('#js-5-anim').addClass('animated fadeIn');
+				$('#js-6-anim').addClass('animated slideInUp');
+			}
+		}
 	});
 
 	$('#js-to-down').on('click', function () {
