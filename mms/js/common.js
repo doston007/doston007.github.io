@@ -1,5 +1,16 @@
 window.addEventListener('load', function() {
 
+	// Burger button
+	$('.burger-btn').click(function(event) {
+		event.preventDefault();
+
+		$('.header').toggleClass('header--opened');
+	});
+
+	$('.nav__link').click(function(event) {
+		$('.header').removeClass('header--opened');
+	});
+
 	// FullPage
 	let sections = document.querySelectorAll('.section');
 	let sectionAnchors = [];
@@ -13,6 +24,7 @@ window.addEventListener('load', function() {
 		menu: '#main-nav',
 		navigation: false,
 		anchors: sectionAnchors,
+		responsiveWidth: 768,
 		onLeave: function(index, nextIndex, direction) {
 			if( index == 1 && nextIndex == 2 ) {
 				$('#js-2-anim').addClass('animated slideInLeft');
@@ -26,6 +38,7 @@ window.addEventListener('load', function() {
 			}
 		}
 	});
+
 
 	// $('#js-to-down').on('click', function () {
 	// 	try {
@@ -54,14 +67,32 @@ window.addEventListener('load', function() {
 		dots: false,
 		arrows: true,
 		slidesToShow: 2,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					arrows: false
+				}
+			},
+		]
 	});
 
 	$('#js-product-slider').slick({
 		dots: false,
 		arrows: true,
 		slidesToShow: 4,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: true
+				}
+			},
+		]
 	});
 
 	// More button

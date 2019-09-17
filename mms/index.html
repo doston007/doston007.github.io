@@ -31,7 +31,9 @@
 	<header class="header header--fixed animated fadeIn">
 		<div class="container header__container">
 			<a href="index.html" class="logo header__logo">
-				<img src="img/logo.svg" alt="MMS" class="logo__img">
+				<svg class="logo__icon">
+					<use xlink:href="img/sprites.svg#logo"></use>
+				</svg>
 			</a>
 			<nav class="nav header__nav">
 				<ul id="main-nav" class="nav__list">
@@ -40,8 +42,29 @@
 					<li class="nav__item"><a href="#contacts" class="nav__link" data-menuanchor="contacts">Контакты</a></li>
 					<li class="nav__item"><a href="#product" class="nav__link" data-menuanchor="product">Продукция</a></li>
 				</ul>
+				<div class="social nav__social">
+					<a href="#" class="social__link">
+						<svg class="social__icon">
+							<use xlink:href="img/sprites.svg#fb-icon"></use>
+						</svg>
+					</a>
+					<a href="" class="social__link">
+						<svg class="social__icon">
+							<use xlink:href="img/sprites.svg#inst-icon"></use>
+						</svg>
+					</a>
+					<a href="" class="social__link">
+						<svg class="social__icon">
+							<use xlink:href="img/sprites.svg#yt-icon"></use>
+						</svg>
+					</a>
+				</div>
 			</nav>
 			<a href="+998901000000" class="tel header__tel">+998 90 <span class="tel__highlighted">100-00-00</span></a>
+			<a href="#" class="burger-btn">
+				<span></span>
+				<span></span>
+			</a>
 		</div>
 	</header>
 
@@ -106,10 +129,10 @@
 		<div class="about-company-section section" data-section="about-company">
 			<div class="container about-company-section__container">
 				<div class="row about-company-section__row">
-					<div class="col-lg-6 about-company-section__motor" id="js-2-anim">
+					<div class="col-lg-6 col-md-5 about-company-section__motor" id="js-2-anim">
 						<img src="img/motor-main.png" alt="Двигатель" class="img-responsive">
 					</div>
-					<div class="col-lg-5 about-company-section__info" id="js-3-anim">
+					<div class="col-lg-5 col-md-7 about-company-section__info" id="js-3-anim">
 						<h2 class="title title--lg about-company-section__title">О компании</h2>
 						<h4 class="about-company-section__subtitle">The standard Lorem Ipsum passage</h4>
 						<p class="about-company-section__text">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
@@ -136,6 +159,7 @@
 		<div class="contacts-section section" data-section="contacts">
 			<div class="container contacts-section__container">
 				<div class="map" id="js-4-anim">
+					<h2 class="title title--lg contacts-section__title">Контакты</h2>
 					<div class="map__country">Узбекистан</div>
 					<img src="img/map.png" alt="Uzbekistan" class="img-responsive">
 
@@ -305,10 +329,10 @@
 		<div class="about-product-section section" data-section="about-product">
 			<div class="container about-product-section__container">
 				<div class="row about-product-section__row">
-					<div class="col-lg-6 about-product-section__motor">
+					<div class="col-lg-6 col-md-5 about-product-section__motor">
 						<img src="img/motor-main.png" alt="Двигатель" class="img-responsive" id="js-detail-img">
 					</div>
-					<div class="col-lg-5 about-product-section__info">
+					<div class="col-lg-5 col-md-7 about-product-section__info">
 						<h2 class="title title--lg about-product-section__title">О продукции</h2>
 						<h4 class="about-product-section__subtitle">Деталь №<span id="js-detail-number">2332</span></h4>
 						<p class="about-product-section__text" id="js-detail-description">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
