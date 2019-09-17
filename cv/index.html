@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="UTF-8">
+	<!-- <base href="/"> -->
+
+	<title>Анкета</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body class="page form-page">
+
+	<header class="header header--fixed form-page__form">
+		<div class="mini-container header__mini-container">
+			<div class="nav header__nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#self-info" class="nav__link">Личная информация</a></li>
+					<li class="nav__item"><a href="#experience" class="nav__link">Опыт</a></li>
+					<li class="nav__item"><a href="#js" class="nav__link">JavaScript</a></li>
+					<li class="nav__item"><a href="#about-myself" class="nav__link">О себе</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<form class="main-form form-page__main-form">
+		<div class="main-form__header">
+			<h1 class="title title--lg main-form__title text-center">Анкета</h1>
+		</div>
+
+		<section class="self-info main-form__self-info" id="self-info">
+			<div class="mini-container">
+				<h2 class="title title--md title--with-icon self-info__title">
+					<svg class="title__icon">
+						<use xlink:href="img/sprites.svg#self-info-icon"></use>
+					</svg>
+					<span class="title__text">Личная информация</span>
+				</h2>
+				<div class="self-info__group">
+					<input type="text" name="fio" class="input" placeholder="ФИО" required>
+					<select class="input input--select self-info__select" name="birthyear" id="js-birthyear" required>
+						<option disabled selected>Год рождения</option>
+						<!-- JS Building -->
+					</select>
+					<input type="text" name="location" class="input" placeholder="Место проживания" required>
+					<input type="text" name="skype" class="input" placeholder="Skype" required>
+					<input type="email" name="email" class="input" placeholder="E-mail" required>
+				</div>
+			</div>
+		</section>
+
+		<section class="experience main-form__experience" id="experience">
+			<div class="mini-container">
+				<h2 class="title title--md title--with-icon experience__title">
+					<svg class="title__icon">
+						<use xlink:href="img/sprites.svg#experience-icon"></use>
+					</svg>
+					<span class="title__text">Расскажите о своем опыте</span>
+				</h2>
+				<div class="experience__row">
+					<div class="experience__col">
+						<label class="checkbox-wrapper">
+							<input type="checkbox" name="bem-oocss" class="checkbox">
+							<span>БЭМ/OOCSS</span>
+						</label>
+					</div>
+					<div class="experience__col">
+						<label class="checkbox-wrapper">
+							<input type="checkbox" name="css-preproc" class="checkbox">
+							<span>Styles/LESS/SASS</span>
+						</label>
+					</div>
+					<div class="experience__col">
+						<label class="checkbox-wrapper">
+							<input type="checkbox" name="svg" class="checkbox">
+							<span>Работаю с SVG</span>
+						</label>
+					</div>
+					<div class="experience__col">
+						<label class="checkbox-wrapper">
+							<input type="checkbox" name="semantic" class="checkbox">
+							<span>Верстаю семантично</span>
+						</label>
+					</div>
+					<div class="experience__col">
+						<label class="checkbox-wrapper">
+							<input type="checkbox" name="es6" class="checkbox">
+							<span>ES2015/ES2016</span>
+						</label>
+					</div>
+					<div class="experience__col">
+						<label class="checkbox-wrapper">
+							<input type="checkbox" name="gulp-grunt" class="checkbox">
+							<span>Gulp/GRUNT</span>
+						</label>
+					</div>
+					<div class="experience__col">
+						<label class="checkbox-wrapper">
+							<input type="checkbox" name="webpack" class="checkbox">
+							<span>Webpack</span>
+						</label>
+					</div>
+					<div class="experience__col">
+						<label class="checkbox-wrapper">
+							<input type="checkbox" name="jquery" class="checkbox">
+							<span>jQuery</span>
+						</label>
+					</div>
+					<div class="experience__col">
+						<label class="checkbox-wrapper">
+							<input type="checkbox" name="git" class="checkbox">
+							<span>Использую Git</span>
+						</label>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="js main-form__js" id="js">
+			<div class="mini-container">
+				<h2 class="title title--md title--with-icon js__title">
+					<svg class="title__icon">
+						<use xlink:href="img/sprites.svg#js-icon"></use>
+					</svg>
+					<span class="title__text">Уровень владения JavaScript</span>
+				</h2>
+				<div class="js-level js__js-level">
+					<div class="js-level__stages">
+						<div class="js-level__stage">Не владею</div>
+						<div class="js-level__stage">Использую готовые решения</div>
+						<div class="js-level__stage">Использую готовые решения и умею и переделывать</div>
+						<div class="js-level__stage">Пишу сложный JS с нуля</div>
+					</div>
+					<input type="range" class="js-level__range" name="js-level" min="1" max="4" value="3" step="1">
+				</div>
+			</div>
+		</section>
+
+		<section class="about-myself main-form__about-myselft" id="about-myself">
+			<div class="mini-container">
+				<h2 class="title title--md title--with-icon about-myself__title">
+					<svg class="title__icon">
+						<use xlink:href="img/sprites.svg#about-myself-icon"></use>
+					</svg>
+					<span class="title__text">Расскажите о себе</span>
+				</h2>
+				<div class="about-myself__subtitle">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</div>
+				<textarea class="input input--textarea" name="about-myself" placeholder="Понравилась тем, что..."></textarea>
+				<button class="button about-myself__button" type="submit">Готово</button>
+			</div>
+		</section>
+	</form>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
