@@ -113,9 +113,8 @@ window.addEventListener('load', function() {
 	});
 
 	////////////////////////////
-	///////////////////////////////
-	// About Product Building // //
-	///////////////////////////////	////////////////////////////
+	// About Product Building //
+	////////////////////////////
 	let details = [
 		{
 			detailNumber: 2331,
@@ -172,7 +171,7 @@ window.addEventListener('load', function() {
 
 	//////////////////////////
 	// Navigation on mobile //
-	//////////////////////////	
+	//////////////////////////	z
 	$('.nav__link').on('click', function(event) {
 		if ($(window).width() < 768) {
 			event.preventDefault();
