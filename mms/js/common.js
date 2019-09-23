@@ -1,6 +1,8 @@
 window.addEventListener('load', function() {
 
-	// Burger button
+	///////////////////
+	// Burger button //
+	///////////////////
 	$('.burger-btn').click(function(event) {
 		event.preventDefault();
 
@@ -55,7 +57,9 @@ window.addEventListener('load', function() {
 	// });
 
 
-	// Slick sliders
+	///////////////////
+	// Slick sliders //
+	///////////////////
 	$('#js-hero-slider').slick({
 		dots: false,
 		arrows: false,
@@ -107,7 +111,10 @@ window.addEventListener('load', function() {
 		$(this).parent().parent().parent().parent().fadeOut('fast');
 	});
 
-	// About Product Building
+	////////////////////////////
+	///////////////////////////////
+	// About Product Building // //
+	///////////////////////////////	////////////////////////////
 	let details = [
 		{
 			detailNumber: 2331,
@@ -159,6 +166,19 @@ window.addEventListener('load', function() {
 				scrollTop: window.innerHeight
 			}, 400, function () {
 			});
+		}
+	});
+
+	//////////////////////////
+	// Navigation on mobile //
+	//////////////////////////	
+	$('.nav__link').on('click', function(event) {
+		if ($(window).width() < 768) {
+			event.preventDefault();
+			let section = $('[data-section=' + $(this).attr('data-menuanchor') + ']');
+			$('html, body').animate({
+				scrollTop: section.offset().top - 30
+			}, 1000);
 		}
 	});
 
