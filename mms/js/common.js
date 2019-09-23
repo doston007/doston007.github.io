@@ -27,6 +27,7 @@ window.addEventListener('load', function() {
 		navigation: false,
 		anchors: sectionAnchors,
 		responsiveWidth: 768,
+		url: false,
 		onLeave: function(index, nextIndex, direction) {
 			if( index == 1 && nextIndex == 2 ) {
 				$('#js-2-anim').addClass('animated slideInLeft');
@@ -181,5 +182,11 @@ window.addEventListener('load', function() {
 			}, 1000);
 		}
 	});
+
+	if ($(window).width() < 768) {
+		$('html, body').animate({
+			scrollTop: $('[data-section=' + location.hash.slice(1) + ']').offset().top - 30
+		}, 1000);
+	}
 
 });
