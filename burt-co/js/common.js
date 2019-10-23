@@ -1,5 +1,14 @@
 $(function() {
 
+	// Navigation
+	$('.footer__nav-link, .nav__link').click(function(event) {
+		event.preventDefault();
+
+		$('html, body').animate({
+			scrollTop: $($(this).attr('href')).offset().top
+		}, 1000)
+	});
+
 	// HERO TYPED.JS EFFECT
 	let titleTexts = ['Приводим реальные лиды в отдел продаж и сервиса', 'Улучшаем видимость в поисковых системах', 'Обеспечиваем рост органического трафика', 'Увеличиваем количество заявок с поиска', 'Настраиваем сквозную аналитику', 'Работаем по KPI'];
 	let pagination = document.querySelector('#js-typed-pag');
@@ -24,16 +33,33 @@ $(function() {
 		}
 	});
 
+	// More works
+	$('#js-more-works').click(function() {
+		$('.all-works-section').slideToggle('fast');
+	});
+
 	// Header overlay on scroll
-	$(window).scroll(function() {
-		if ($(this).scrollTop() > 10) {
-			$('.header').addClass('header--scrolled');
-		} else if ($(this).scrollTop() < 10) {
-			$('.header').removeClass('header--scrolled');
-		}
+	// $(window).scroll(function() {
+	// 	if ($(this).scrollTop() > 10) {
+	// 		$('.header').addClass('header--scrolled');
+	// 	} else if ($(this).scrollTop() < 10) {
+	// 		$('.header').removeClass('header--scrolled');
+	// 	}
+	// });
+	
+	// Burger button
+	$('.nav__btn').click(function(event) {
+		event.preventDefault();
+
+		$('.header').toggleClass('header--opened');
+	});
+
+	$('.nav__link').click(function(event) {
+		$('.header').removeClass('header--opened');
 	});
 
 	// Owl sliders
+	// 1
 	$('#js-result-slider').owlCarousel({
 		items: 1
 	});
@@ -41,8 +67,13 @@ $(function() {
 		$(this).children('span').text($(this).index()+1);
 	});
 	$('#js-result-slider .owl-nav').hide();
+	// 2
+	$('#js-power-bi-slider').owlCarousel({
+		items: 1
+	});
+	$('#js-power-bi-slider .owl-dots').hide();
 
 	// Input mask
-	$('.input[name=phone]').mask("9 (999) 999-99-99");
+	$('.input[name=phone]').mask("+7 (999) 999-99-99");
 
 });

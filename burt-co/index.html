@@ -28,23 +28,22 @@
 
 <body class="page">
 
-	<header class="header header--fixed">
+	<header class="header header--top">
 		<div class="container header__container">
-			<div class="row header__row">
-				<a href="#" class="logo header__logo">
-					<img src="img/logo.png" alt="Logo" class="logo__img">
-				</a>
-				<nav class="nav header__nav">
-					<ul class="nav__list">
-						<li class="nav__item"><a href="#" class="nav__link">Наши результаты</a></li>
-						<li class="nav__item"><a href="#" class="nav__link">Что мы делаем</a></li>
-						<li class="nav__item"><a href="#" class="nav__link">Что используем</a></li>
-						<li class="nav__item"><a href="#" class="nav__link">Как отчитываемся</a></li>
-						<li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
-						<li class="nav__item"><a href="#" class="nav__link">Тарифы</a></li>
-					</ul>
-				</nav>
-			</div>
+			<a href="#" class="logo header__logo">
+				<img src="img/logo.png" alt="Logo" class="logo__img">
+			</a>
+			<nav class="nav header__nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#results" class="nav__link">Наши результаты</a></li>
+					<li class="nav__item"><a href="#we-do" class="nav__link">Что мы делаем</a></li>
+					<li class="nav__item"><a href="#we-use" class="nav__link">Что используем</a></li>
+					<li class="nav__item"><a href="#report" class="nav__link">Как отчитываемся</a></li>
+					<li class="nav__item"><a href="#about" class="nav__link">О компании</a></li>
+					<li class="nav__item"><a href="#tariffs" class="nav__link">Тарифы</a></li>
+				</ul>
+			</nav>
+			<a href="#" class="nav__btn"><img src="img/menu.svg"></a>
 		</div>
 	</header>
 
@@ -66,7 +65,7 @@
 		</div>
 	</section>
 
-	<section class="section results-section">
+	<section class="section results-section" id="results">
 		<div class="container results-section__container">
 			<div class="row results-section__brends-row">
 				<div class="col-md-6">
@@ -94,7 +93,7 @@
 				</div>
 			</div>
 			<div class="row results-section__result-row">
-				<div class="col-md-8">
+				<div class="col-md-8 hide-xs">
 					<img src="img/table-1.png" alt="Результаты" class="img-responsive">
 				</div>
 				<div class="col-md-4 results-section__slider-col">
@@ -111,7 +110,7 @@
 		</div>
 	</section>
 
-	<section class="section we-do-section">
+	<section class="section we-do-section" id="we-do">
 		<div class="we-do-section__smoke">
 			<img src="img/smoke.png" class="img-responsive">
 		</div>
@@ -145,13 +144,43 @@
 							<div class="we-do-list__text">Формирование ссылочного профиля</div>
 						</li>
 					</ul>
-					<button class="btn we-do-section__btn">Весь список работ</button>
+					<button class="btn we-do-section__btn" id="js-more-works">Весь список работ</button>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="section we-use-section">
+	<section class="section all-works-section">
+		<div class="container all-works-section__container">
+			<div class="row justify-content-center all-works-section__row">
+				<div class="col-md-10 all-works-section__inner">
+					<h3 class="title title--sm all-works-section__title">Ежемесячные работы</h3>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+					<p class="all-works-section__text">Анализ видимости сайта в поискавых системах</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section we-use-section" id="we-use">
 		<div class="container we-use-section__container">
 			<h2 class="title title--md title--bg-dark title--bg-dark-align-left"><span>Что используем <br> в работе</span></h2>
 			<div class="row justify-content-center we-use-section__row">
@@ -306,7 +335,7 @@
 		</div>
 	</section>
 
-	<section class="section report-section">
+	<section class="section report-section" id="report">
 		<div class="container report-section__container">
 			<div class="row justify-content-around report-section__how-row">
 				<div class="col-12 text-center">
@@ -331,8 +360,38 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- Slider -->
+			<div class="power-bi-box report-section__power-bi-box">
+				<h2 class="power-bi-box__heading">Power Bi отчеты</h2>
+				<div class="power-bi-box__left-col">
+					<div class="power-bi-box__slider" id="js-power-bi-slider">
+						<img src="img/power-bi-img.png" alt="Schedule" class="img-responsive">
+						<img src="img/power-bi-img.png" alt="Schedule" class="img-responsive">
+						<img src="img/power-bi-img.png" alt="Schedule" class="img-responsive">
+					</div>
+				</div>
+				<div class="power-bi-box__right-col">
+					<div class="power-bi-box__info">
+						<h4>По звонкам</h4>
+						<span>API колл-трекинга</span>
+					</div>
+					<div class="power-bi-box__info">
+						<h4>По обращениям</h4>
+						<span>API / Цели</span>
+					</div>
+					<div class="power-bi-box__info">
+						<h4>По трафику</h4>
+						<span>API / Я.Метрика</span>
+					</div>
+					<div class="power-bi-box__info">
+						<h4>По ссылочному профилю</h4>
+						<span>API Megaindex / Я.Вебмастер</span>
+					</div>
+					<div class="power-bi-box__info">
+						<h4>По видимости</h4>
+						<span>API Megaindex / Serpstat</span>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -364,26 +423,159 @@
 		</div>
 	</section>
 
-	<!-- <section class="section team-section">
-		<div class="container team-section__container">
-			<div class="row">
-				<div class="col-md-2">
-					<div class="team-box">
-						<img src="" alt="" class="team-box__ava">
+	<section class="section tariffs-section" id="tariffs">
+		<div class="container tariffs-section__container">
+			<div class="row justify-content-around tariffs-section__row">
+				<div class="col-12">
+					<h2 class="title title--md title--bg-dark title--bg-dark-align-left tariffs-section__title"><span>Тарифы</span></h2>
+				</div>
+				<div class="col-md-4">
+					<div class="tariff-card">
+						<div class="tariff-card__name">
+							<span>Стандарт</span>
+							<div class="tariff-card__price">50 000 р.</div>
+						</div>
+						<div class="tariff-card__up-side">
+							<ul class="tariff-card__list">
+								<li class="tariff-card__list-item">Анализ конкурентов</li>
+								<li class="tariff-card__list-item">Сбор семантического ядра</li>
+								<li class="tariff-card__list-item">Кластеризация и группировка фраз</li>
+								<li class="tariff-card__list-item">Отслеживание позиций</li>
+								<li class="tariff-card__list-item">Технический аудит</li>
+								<li class="tariff-card__list-item">Рекомендации по технической оптимизации</li>
+								<li class="tariff-card__list-item">Настройка панелей веб-мастера в Я и G</li>
+								<li class="tariff-card__list-item">Контроль внедрения работ по оптимизации</li>
+								<li class="tariff-card__list-item">Контент для продвигаемых страниц (5 стр./мес)</li>
+								<li class="tariff-card__list-item">Мета-данные (title, description, h1)</li>
+							</ul>
+						</div>
+						<div class="tariff-card__down-side">
+							<div class="tariff-card__plus">+</div>
+							<ul class="tariff-card__list">
+								<li class="tariff-card__list-item">Пакет обратных ссылок (за счет Заказчика) <div>Например, 10 с форумов  /   5 статейных</div></li>
+							</ul>
+							<a href="#" class="btn btn--block tariff-card__btn">Заказать</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="tariff-card">
+						<div class="tariff-card__name">
+							<span>Расширенный</span>
+							<div class="tariff-card__price">90 000 р.</div>
+						</div>
+						<div class="tariff-card__up-side">
+							<ul class="tariff-card__list">
+								<li class="tariff-card__list-item">Анализ конкурентов</li>
+								<li class="tariff-card__list-item">Сбор семантического ядра</li>
+								<li class="tariff-card__list-item">Кластеризация и группировка фраз</li>
+								<li class="tariff-card__list-item">Отслеживание позиций</li>
+								<li class="tariff-card__list-item">Технический аудит</li>
+								<li class="tariff-card__list-item">Рекомендации по технической оптимизации</li>
+								<li class="tariff-card__list-item">Настройка панелей веб-мастера в Я и G</li>
+								<li class="tariff-card__list-item">Контроль внедрения работ по оптимизации</li>
+								<li class="tariff-card__list-item">Контент для продвигаемых страниц (5 стр./мес)</li>
+								<li class="tariff-card__list-item">Мета-данные (title, description, h1)</li>
+							</ul>
+						</div>
+						<div class="tariff-card__down-side">
+							<div class="tariff-card__plus">+</div>
+							<ul class="tariff-card__list">
+								<li class="tariff-card__list-item">Аналитика</li>
+								<li class="tariff-card__list-item">Настройка конверсионных целей в системах статистики, рекомендации для разработчиков для корректной отправки выполнения цели (после отправки данных с форм)</li>
+								<li class="tariff-card__list-item">Вывод цены в сниппете ПС Яндекс для любой страницы (модели, классы, карточка авто, комплектации, в кредит, услуги и т.д.)</li>
+								<li class="tariff-card__list-item">Внедрение микроразметки schema.org для ПС Яндекс (навигация, контакты) Внедрение микроразметки Json.ld для ПС Google</li>
+								<li class="tariff-card__list-item">Регистрация в каталогах фирм (тематические: автопорталы, агрегаторы), общие (по региону, справочники)</li>
+								<li class="tariff-card__list-item">Размещение пресс-релизов по инфоповодам автосалона, дилера</li>
+							</ul>
+							<a href="#" class="btn btn--block tariff-card__btn">Заказать</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="tariff-card tariff-card--vip">
+						<div class="tariff-card__name">
+							<span>VIP</span>
+							<div class="tariff-card__price">150 000 р.</div>
+						</div>
+						<div class="tariff-card__up-side">
+							<ul class="tariff-card__list">
+								<li class="tariff-card__list-item">Работы из пакета Стандарт + Расширенный</li>
+								<li class="tariff-card__list-item">PowerBi - SEO отчет с данными из API:
+									<ul class="tariff-card__sub-list">
+										<li class="tariff-card__list-item">Я.Метрика (поисковый трафик)</li>
+										<li class="tariff-card__list-item">Я.Вебмастер (популярные запросы, клики по фразам, статистика обхода 404 301 200, динамика по кол-ву страниц в индексе, динамика по обратным ссылкам)</li>
+										<li class="tariff-card__list-item">Calltouch, Comagic, Roistat, Callkeeper и т.п. (данные по звонкам из ПС)</li>
+										<li class="tariff-card__list-item">SEO сервисы (serpstat, megaindex, keys.so)</li>
+									</ul>
+								</li>
+							</ul>
+							<a href="#" class="btn btn--block tariff-card__btn">Заказать</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section> -->
+	</section>
 
-	<section class="section about-section">
+	<section class="section team-section">
+		<div class="container team-section__container">
+			<div class="row justify-content-around team-section__row">
+				<div class="col-12">
+					<h2 class="title title--md title--bg-dark title--bg-dark-align-right team-section__title"><span>Наша <br> команда</span></h2>
+				</div>
+				<div class="team-section__col">
+					<div class="team-box">
+						<img src="img/team-ava.png" alt="Business women" class="team-box__ava img-responsive">
+						<div class="team-box__job">
+							<div class="team-box__job-text"><span>SEO-архитектор</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="team-section__col">
+					<div class="team-box">
+						<img src="img/team-ava.png" alt="Business women" class="team-box__ava img-responsive">
+						<div class="team-box__job">
+							<div class="team-box__job-text"><span>SEO-архитектор</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="team-section__col">
+					<div class="team-box">
+						<img src="img/team-ava.png" alt="Business women" class="team-box__ava img-responsive">
+						<div class="team-box__job">
+							<div class="team-box__job-text"><span>SEO-архитектор</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="team-section__col">
+					<div class="team-box">
+						<img src="img/team-ava.png" alt="Business women" class="team-box__ava img-responsive">
+						<div class="team-box__job">
+							<div class="team-box__job-text"><span>SEO-архитектор</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="team-section__col">
+					<div class="team-box">
+						<img src="img/team-ava.png" alt="Business women" class="team-box__ava img-responsive">
+						<div class="team-box__job">
+							<div class="team-box__job-text"><span>SEO-архитектор</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section about-section" id="about">
 		<div class="container about-section__container">
 			<div class="row justify-content-around about-section__row">
-				<div class="col-md-5 about-section__col">
+				<div class="col-lg-5 col-md-6 about-section__col">
 					<h2 class="title title--md title--bg-dark title--bg-dark-align-left about-section__title"><span>О компании</span></h2>
 					<p class="about-section__text">Considered discovered ye sentiments projecting entreaties of melancholy is. Able rent long in do we. Celebrated delightful an especially increasing instrument am. Way own uncommonly travelling now acceptance bed compliment solicitude. Estate was tended ten boy nearer seemed. An stairs as be lovers uneasy.</p>
 				</div>
-				<div class="col-md-5 about-section__col">
+				<div class="col-lg-5 col-md-6 about-section__col">
 					<a href="#" class="logo about-section__logo">
 						<img src="img/logo.png" alt="Logo" class="logo__img">
 					</a>
@@ -399,12 +591,12 @@
 				<div class="col-12 text-center">
 					<h2 class="title title--md contact-section__title">Наши преимущества</h2>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-6 col-lg-4">
 					<input type="text" name="name" class="input form__input" placeholder="Имя">
 					<input type="text" name="phone" class="input form__input" placeholder="Телефон">
 					<input type="text" name="website" class="input form__input" placeholder="Сайт">
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-6 col-lg-4">
 					<textarea name="message" class="input form__textarea
 					" placeholder="Ваше сообщение"></textarea>
 				</div>
@@ -421,12 +613,12 @@
 				<img src="img/logo.png" alt="Logo" class="logo__img">
 			</a>
 			<nav class="footer__nav">
-				<a href="#" class="footer__nav-link">Как отчитываемся</a>
-				<a href="#" class="footer__nav-link">О компании</a>
-				<a href="#" class="footer__nav-link">Тарифы</a>
-				<a href="#" class="footer__nav-link">Наши результаты</a>
-				<a href="#" class="footer__nav-link">Что мы делаем</a>
-				<a href="#" class="footer__nav-link">Что используем</a>
+				<a href="#results" class="footer__nav-link">Наши результаты</a>
+				<a href="#we-do" class="footer__nav-link">Что мы делаем</a>
+				<a href="#we-use" class="footer__nav-link">Что используем</a>
+				<a href="#report" class="footer__nav-link">Как отчитываемся</a>
+				<a href="#about" class="footer__nav-link">О компании</a>
+				<a href="#tariffs" class="footer__nav-link">Тарифы</a>
 			</nav>
 			<div class="footer__info">
 				<a href="mailto:email@gmail.com">E-mail@gmail.com</a>
