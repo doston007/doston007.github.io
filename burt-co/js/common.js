@@ -37,15 +37,6 @@ $(function() {
 	$('#js-more-works').click(function() {
 		$('.all-works-section').slideToggle('fast');
 	});
-
-	// Header overlay on scroll
-	// $(window).scroll(function() {
-	// 	if ($(this).scrollTop() > 10) {
-	// 		$('.header').addClass('header--scrolled');
-	// 	} else if ($(this).scrollTop() < 10) {
-	// 		$('.header').removeClass('header--scrolled');
-	// 	}
-	// });
 	
 	// Burger button
 	$('.nav__btn').click(function(event) {
@@ -59,14 +50,15 @@ $(function() {
 	});
 
 	// Owl sliders
-	// 1
+	// 1 Result-slider
 	let mainImg = document.querySelector('#js-result-main-img');
 	let resultsSlider = document.querySelector('#js-result-slider');
 
 	mainImg.src = resultsSlider.firstElementChild.src;
 	let owlResultSlider = $('#js-result-slider').owlCarousel({
 		items: 1,
-		autoHeight: true
+		autoHeight: true,
+		loop: true
 	});
 	owlResultSlider.on('changed.owl.carousel',function(property){
 		let current = property.item.index;
@@ -82,16 +74,15 @@ $(function() {
 	$('#js-result-slider .owl-dot').each(function(){
 		$(this).children('span').text($(this).index()+1);
 	});
-	$('#js-result-slider .owl-nav').hide();
 
-	// 2
+	// 2 Power Bi-slider
 	$('#js-power-bi-slider').owlCarousel({
 		items: 1,
 		loop: true
 	});
 	$('#js-power-bi-slider .owl-dots').hide();
-	// 3
-	
+
+	// 3 Team slider
 	$('#js-team-slider').owlCarousel({
 		responsive: {
 			0: {
