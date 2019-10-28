@@ -33,24 +33,6 @@ $(function() {
 		}
 	});
 
-	// Results bigger sliders
-	let mainImg = document.querySelector('#js-result-main-img');
-	let resultsSlider = document.querySelector('#js-result-slider');
-
-	mainImg.src = resultsSlider.firstElementChild.src;
-
-	resultsSlider.querySelectorAll('img').forEach(function(item) {
-		item.addEventListener('click', function() {
-			mainImg.style.opacity = 0;
-			setTimeout(function() {
-				mainImg.src = item.src;
-			}, 400);
-			setTimeout(function() {
-				mainImg.style.opacity = 1;
-			}, 400);
-		})
-	})
-
 	// More works
 	$('#js-more-works').click(function() {
 		$('.all-works-section').slideToggle('fast');
@@ -78,21 +60,30 @@ $(function() {
 
 	// Owl sliders
 	// 1
-	$('#js-result-slider').owlCarousel({
-		responsive: {
-			0: {
-				items: 1,
-				autoHeight: true
-			},
-			768: {
-				items: 2
-			}
-		}
+	let mainImg = document.querySelector('#js-result-main-img');
+	let resultsSlider = document.querySelector('#js-result-slider');
+
+	mainImg.src = resultsSlider.firstElementChild.src;
+	let owlResultSlider = $('#js-result-slider').owlCarousel({
+		items: 1,
+		autoHeight: true
+	});
+	owlResultSlider.on('changed.owl.carousel',function(property){
+		let current = property.item.index;
+		let src = $(property.target).find(".owl-item").eq(current).find("img").attr('src');
+		mainImg.style.opacity = 0;
+		setTimeout(function() {
+			mainImg.src = src;
+		}, 400);
+		setTimeout(function() {
+			mainImg.style.opacity = 1;
+		}, 400);
 	});
 	$('#js-result-slider .owl-dot').each(function(){
 		$(this).children('span').text($(this).index()+1);
 	});
 	$('#js-result-slider .owl-nav').hide();
+
 	// 2
 	$('#js-power-bi-slider').owlCarousel({
 		items: 1,
@@ -100,6 +91,7 @@ $(function() {
 	});
 	$('#js-power-bi-slider .owl-dots').hide();
 	// 3
+	
 	$('#js-team-slider').owlCarousel({
 		responsive: {
 			0: {
