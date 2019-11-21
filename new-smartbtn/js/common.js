@@ -66,14 +66,12 @@ window.onload = function() {
 
 	document.querySelector('#js-phone-btn').addEventListener('click', function() {
 		this.classList.add('btn-hide');
-		document.querySelector('.app').style.overflow = 'hidden';
 		document.querySelector('.view').classList.add('view--opened');
 	});
 
 	document.querySelector('#js-back-view').addEventListener('click', function(e) {
 		e.preventDefault();
 		document.querySelector('#js-phone-btn').classList.remove('btn-hide');
-		document.querySelector('.app').style.overflow = 'auto';
 		document.querySelector('.view').classList.remove('view--opened');
 	});
 
