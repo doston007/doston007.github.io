@@ -1,0 +1,27 @@
+.map-box
+	position: fixed
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	background-color: $default-bg
+	z-index: 2
+	overflow-y: auto
+	transition: transform .4s
+	height: 100vh
+	overflow-y: hidden
+	transform: scaleY(0)
+	transform-origin: bottom
+	&.active
+		transform: scaleY(1)
+	&__header
+		background-color: #39A8D9
+		background-image: url('../img/header-bg.svg')
+		background-repeat: no-repeat
+		background-position: center bottom
+		background-size: 100%
+	&__destination-box
+		width: 310px
+		margin-left: auto
+		margin-right: auto
+		transform: translateY(13vh)

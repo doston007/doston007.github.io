@@ -1,0 +1,46 @@
+.iphone-btn
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 60px
+	height: 100px
+	border: 5px solid #E3E0F6
+	border-radius: 15px
+	transition: .4s
+	background-image: linear-gradient(135deg, #6B96F3, #DD52C4)
+	&.vibrated
+		animation: vebration .5s linear infinite
+	&.btn-hide
+		transform: scale(0)
+	&::after
+		content: ''
+		position: absolute
+		width: 30px
+		height: 5px
+		border-bottom-right-radius: 10px
+		border-bottom-left-radius: 10px
+		background-color: #E3E0F6
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+	&--fixed
+		position: fixed
+		right: 20px
+		bottom: 20px
+		z-index: 9
+	.icon
+		fill: #E3E0F6
+		width: 25px
+		height: 25px
+
+@keyframes vebration
+	0%
+		transform: translateY(0)
+	25%
+		transform: translateY(-15px)
+	50%
+		transform: translateY(0)
+	75%
+		transform: translateY(-15px)
+	100%
+		transform: translateY(0)

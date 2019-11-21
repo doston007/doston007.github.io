@@ -1,0 +1,107 @@
+.btn-desktop
+	position: relative
+	width: 180px
+	height: 180px
+	box-shadow: 0 0 10px 10px rgba(#F74DA1, .12)
+	border-radius: 50%
+	background-color: rgba(#F74DA1, .12)
+	margin: 10px
+	display: flex
+	justify-content: center
+	align-items: center
+	&--fixed
+		position: fixed
+		bottom: 5px
+		right: 5px
+	&.active
+		.rotated
+			animation: none !important
+		.btn-desktop__social
+			animation: none !important
+		.btn-desktop__social--selected
+			transform: scale(1.8)
+			z-index: 2
+		.btn-desktop__logo
+			box-shadow: 0 0 10px 60px rgba(247,77,161,.2)
+	&__logo
+		width: 80px
+		height: 80px
+		border: none
+		background-color: #F1FFFF
+		border-radius: 50%
+		cursor: pointer
+		z-index: 1
+		transition: .5s
+		&:focus
+			outline: none
+		img
+			width: 90%
+			height: auto
+	&__socials
+		position: absolute
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		background-image: url('../img/atom.png')
+		background-repeat: no-repeat
+		background-size: 170%
+		transform: 2.5s all
+		background-position: center center
+		&.rotated
+			transform: 2.5s all
+			animation: rotateAnim 20s linear infinite
+	&__social
+		width: 22px
+		height: 22px
+		display: flex
+		justify-content: center
+		align-items: center
+		position: absolute
+		transition: .4s
+		border-radius: 50%
+		animation: rotateElem 20s linear infinite
+		.icon
+			fill: #fff
+			width: 15px
+			height: 15px
+		img
+			max-width: 100%
+			height: auto
+		&--tg
+			background-color: #00A8DD
+			top: 17px
+			left: 82px
+		&--vb
+			background-color: #7D3DAE
+			top: 46px
+			left: 132px
+		&--wa
+			background-color: #4AB632
+			top: 109px
+			left: 135px
+		&--fb
+			background-color: #23599B
+			top: 140px
+			left: 80px
+		&--vk
+			background-color: #2E77A4
+			top: 107px
+			left: 26px
+		&--ok
+			background-color: #FF9500
+			top: 46px
+			left: 28px
+
+
+@keyframes rotateAnim
+	from
+		transform: rotate(0)
+	to
+		transform: rotate(360deg)
+
+@keyframes rotateElem
+	from
+		transform: rotate(0)
+	to
+		transform: rotate(-360deg)
